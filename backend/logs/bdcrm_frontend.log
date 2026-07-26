@@ -1,0 +1,118 @@
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1 --port 5175
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m1017[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m
+[2m2:11:56 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m2:12:03 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m2:12:03 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m5:12:27 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m5:21:18 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m5:21:18 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m5:21:51 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m5:21:51 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m5:45:44 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m11:42:13 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m11:42:13 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m11:42:13 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m1:06:01 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/Components/Utils/auth.ts[22m
+[2m1:06:02 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/Components/Utils/auth.ts[22m
+[2m1:06:02 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1 --port 5175
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m2410[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1 --port 5175
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m625[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m
+
+<--- Last few GCs --->
+
+[11784:000002B52F132000]  8908291 ms: Scavenge (interleaved) 87.4 (105.1) -> 76.4 (107.0) MB, pooled: 0 MB, 9.65 / 0.01 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[11784:000002B52F132000]  8908458 ms: Scavenge (interleaved) 90.5 (107.8) -> 81.5 (111.0) MB, pooled: 1 MB, 69.94 / 0.01 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF60F5197FF 
+ 2: 00007FF61015DA77 
+ 3: 00007FF60FAD8A46 
+ 4: 00007FF610ADE320 
+ 5: 00007FF610907619 
+ 6: 00007FF60F9D0BF6 
+ 7: 00007FF60F9AE4EF 
+ 8: 00007FF6100D9D73 
+ 9: 00007FF6100DBE4A 
+10: 00007FF60FB5F0E1 
+11: 00007FF60FB5D1DF 
+12: 000002B56783733A 
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1 --port 5175
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m781[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m
+
+<--- Last few GCs --->
+
+[18256:000001BA80177000]     4387 ms: Scavenge 84.4 (117.9) -> 56.2 (119.4) MB, pooled: 0 MB, 2.54 / 0.00 ms  (average mu = 0.992, current mu = 0.983) allocation failure; 
+[18256:000001BA80177000]     4590 ms: Scavenge 86.3 (119.4) -> 57.9 (120.9) MB, pooled: 22 MB, 81.41 / 0.00 ms  (average mu = 0.992, current mu = 0.983) allocation failure; 
+
+FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 00007FF60F5197FF 
+ 2: 00007FF61015DA77 
+ 3: 00007FF60FF5E327 
+ 4: 00007FF60FEF6D4B 
+ 5: 00007FF60FECE79E 
+ 6: 00007FF60FF60DC2 
+ 7: 00007FF60FF5FD77 
+ 8: 00007FF60FF70CE2 
+ 9: 00007FF60FF7080B 
+10: 00007FF6113D89AD 
+11: 00007FF60FF5BDF0 
+12: 00007FF60FF7667A 
+13: 00007FF60FF82A96 
+14: 00007FF60FB55BB7 
+15: 000001BAB87F733A 
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1 --port 5175
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m979[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m
+[2m5:45:58 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m5:46:05 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m5:46:09 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m5:46:16 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/Components/Planner/ActivityPlannerPage.tsx[22m
+[2m5:46:28 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/Components/Planner/ActivityPlannerPage.tsx[22m
+[2m5:46:40 pm[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m5:46:40 pm[22m [36m[1m[vite][22m[39m server restarted.
+
+> frontend@0.0.0 dev
+> vite --host 127.0.0.1 --port 5175
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m486[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5175[22m/[39m

@@ -1,0 +1,17 @@
+{
+  "name": "company-portal-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node ./scripts/dev.mjs",
+    "dev:all": "node ./scripts/dev.mjs",
+    "dev:portal": "node ./scripts/portal-only.mjs",
+    "dev:marketing": "node ./scripts/crm-dev.mjs marketing",
+    "dev:salespie": "node ./scripts/crm-dev.mjs salespie",
+    "dev:bdcrm": "node ./scripts/crm-dev.mjs bdcrm",
+    "dev:raw": "vite",
+    "build": "tsc -b && vite build"
+  },
+  "dependencies": { "@vitejs/plugin-react": "latest", "vite": "latest", "typescript": "latest", "react": "latest", "react-dom": "latest", "lucide-react": "latest" },
+  "devDependencies": { "@types/react": "latest", "@types/react-dom": "latest" }
+}
