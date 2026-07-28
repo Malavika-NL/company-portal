@@ -37,7 +37,12 @@ SECRET_KEY = os.getenv('PORTAL_SECRET_KEY', 'django-insecure-local-company-porta
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    host.strip() for host in os.getenv(
+        'PORTAL_ALLOWED_HOSTS',
+        '127.0.0.1,localhost,192.168.1.56',
+    ).split(',') if host.strip()
+]
 
 
 # Application definition
@@ -147,7 +152,7 @@ REST_FRAMEWORK = {
 
 PORTAL_SSO_SHARED_SECRET = os.getenv('PORTAL_SSO_SHARED_SECRET', 'change-this-local-shared-secret')
 PORTAL_SSO_CODE_TTL_SECONDS = int(os.getenv('PORTAL_SSO_CODE_TTL_SECONDS', '60'))
-MARKETING_CRM_URL = os.getenv('MARKETING_CRM_URL', 'http://127.0.0.1:5173')
+MARKETING_CRM_URL = os.getenv('MARKETING_CRM_URL', 'http://192.168.1.56:5173')
 # Marketing CRM authorization-code provider settings.  The client secret is used
 # only for the portal-to-Marketing token exchange, never in a browser.
 MARKETING_CRM_AUTHORIZE_URL = os.getenv('MARKETING_CRM_AUTHORIZE_URL', f'{MARKETING_CRM_URL}/api/sso/authorize/')
@@ -160,9 +165,9 @@ MARKETING_CRM_TOKEN_TIMEOUT_SECONDS = int(os.getenv('MARKETING_CRM_TOKEN_TIMEOUT
 MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://127.0.0.1:8003/api/login/')
 BDCRM_ACCOUNT_LOOKUP_URL = os.getenv('BDCRM_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8000/api/portal/company-account/')
 SALESPIE_ACCOUNT_LOOKUP_URL = os.getenv('SALESPIE_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8001/portal/company-account/')
-SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://127.0.0.1:5174')
-BDCRM_URL = os.getenv('BDCRM_URL', 'http://127.0.0.1:5175')
-PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://localhost:5176')
+SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://192.168.1.56:5174')
+BDCRM_URL = os.getenv('BDCRM_URL', 'http://192.168.1.56:5175')
+PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://192.168.1.56:8002')
 
 PORTAL_AUTO_START_CRMS = env_bool('PORTAL_AUTO_START_CRMS', DEBUG)
 PORTAL_AUTO_START_CRMS_ON_BOOT = env_bool('PORTAL_AUTO_START_CRMS_ON_BOOT', PORTAL_AUTO_START_CRMS)
@@ -190,7 +195,7 @@ CRM_LOCAL_SERVICES = {
             'health_url': 'http://127.0.0.1:5173/',
             'accept': 'text/html',
             'healthy_statuses': [200],
-            'command': [NPM_COMMAND, 'run', 'dev', '--', '--host', '127.0.0.1', '--port', '5173'],
+            'command': [NPM_COMMAND, 'run', 'dev', '--', '--host', '0.0.0.0', '--port', '5173'],
             'cwd': str(WORKSPACE_HOME / 'email_campaign_project-4' / 'frontend'),
         },
     ],
@@ -212,7 +217,7 @@ CRM_LOCAL_SERVICES = {
             'health_url': 'http://127.0.0.1:5174/',
             'accept': 'text/html',
             'healthy_statuses': [200],
-            'command': [NPM_COMMAND, 'run', 'dev', '--', '--host', '127.0.0.1', '--port', '5174'],
+            'command': [NPM_COMMAND, 'run', 'dev', '--', '--host', '0.0.0.0', '--port', '5174'],
             'cwd': str(WORKSPACE_HOME / 'SalesPie' / 'frontend'),
         },
     ],
@@ -225,7 +230,12 @@ CRM_LOCAL_SERVICES = {
             'healthy_statuses': [400, 401, 403],
             'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8000', '--noreload'],
             'cwd': str(WORKSPACE_HOME / 'BDCRM-1' / 'BDCRM' / 'bdcrm'),
-            'env': {'DJANGO_SETTINGS_MODULE': 'bdcrm.settings'},
+            # BDCRM routes Contact queries through its contacts_db alias. Keep
+            # it on the existing BDCRM database when the portal supervises it.
+            'env': {
+                'DJANGO_SETTINGS_MODULE': 'bdcrm.settings',
+                'CONTACTS_DATABASE_NAME': 'BDCRM',
+            },
         },
         {
             'name': 'BDCRM frontend',
@@ -234,7 +244,7 @@ CRM_LOCAL_SERVICES = {
             'health_url': 'http://127.0.0.1:5175/',
             'accept': 'text/html',
             'healthy_statuses': [200],
-            'command': [NPM_COMMAND, 'run', 'dev', '--', '--host', '127.0.0.1', '--port', '5175'],
+            'command': [NPM_COMMAND, 'run', 'dev', '--', '--host', '0.0.0.0', '--port', '5175'],
             'cwd': str(WORKSPACE_HOME / 'BDCRM-1' / 'frontend'),
         },
     ],

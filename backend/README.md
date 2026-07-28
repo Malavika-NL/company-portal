@@ -36,16 +36,30 @@ through `PortalProfile.marketing_user_id` in the admin instead.
 
 ## Local portal startup
 
+## Docker startup
+
+From the repository root, run:
+
+```powershell
+docker compose up --build -d
+```
+
+The portal will be available at `http://192.168.1.56:8002`. This Compose file
+starts the portal frontend, portal backend, and PostgreSQL only. Configure the
+Marketing CRM, SalesPie, and BDCRM URLs and shared SSO secret as environment
+variables on the `backend` service when those separately maintained services
+are deployed.
+
 For normal local development, start the portal from the `frontend` directory:
 
 ```powershell
 npm run dev
 ```
 
-This starts the portal at `http://127.0.0.1:5176`, starts the portal backend on
+This starts the portal at `http://192.168.1.56:8002`, starts the portal backend on
 port 8004, and automatically warms the Marketing CRM, SalesPie, and BDCRM
 backends and frontends. Running the command again reuses the existing portal
-instead of attempting to start a second server on port 5176.
+instead of attempting to start a second server on port 8002.
 
 To choose a startup mode, run one of these commands from `frontend`:
 

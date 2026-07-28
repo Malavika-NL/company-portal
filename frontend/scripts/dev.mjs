@@ -2,10 +2,12 @@ import { createServer } from 'vite';
 import { get } from 'node:http';
 import { createConnection } from 'node:net';
 
-const portalUrl = 'http://127.0.0.1:5176';
+const portalHost = '192.168.1.56';
+const portalPort = 8002;
+const portalUrl = `http://${portalHost}:${portalPort}`;
 
 const isPortOpen = () => new Promise((complete) => {
-  const socket = createConnection({ host: '127.0.0.1', port: 5176 });
+  const socket = createConnection({ host: '127.0.0.1', port: portalPort });
   socket.setTimeout(500);
   socket.once('connect', () => { socket.destroy(); complete(true); });
   socket.once('timeout', () => { socket.destroy(); complete(false); });
@@ -28,7 +30,7 @@ const explainExistingServer = async () => {
     console.log(`\nCompany Portal is already running at ${portalUrl}`);
     console.log('Open that address in your browser. A second portal server was not started.');
   } else {
-    console.log(`\nPort 5176 is being used by another application.`);
+    console.log(`\nPort ${portalPort} is being used by another application.`);
     console.log('Close that application, then run npm run dev again.');
   }
 };
@@ -45,7 +47,7 @@ if (await isPortOpen()) {
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     const portIsInUse = (error && error.code === 'EADDRINUSE')
-      || /port\s+5176\s+is\s+already\s+in\s+use/i.test(message);
+      || new RegExp(`port\\s+${portalPort}\\s+is\\s+already\\s+in\\s+use`, 'i').test(message);
 
     if (portIsInUse) {
       await explainExistingServer();

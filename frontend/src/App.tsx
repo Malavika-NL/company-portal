@@ -15,7 +15,7 @@ import {
   Sparkles,
   UsersRound,
 } from 'lucide-react';
-import { api, Company, session } from './api';
+import { api, Company, Session, session } from './api';
 
 type Application = { key: string; name: string; launch_url: string };
 
@@ -51,7 +51,7 @@ export default function App() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [launchingApp, setLaunchingApp] = useState<string | null>(null);
-  const active = session.get();
+  const [active, setActive] = useState<Session | null>(() => session.get());
 
   useEffect(() => {
     let cancelled = false;
@@ -151,6 +151,7 @@ export default function App() {
       const data = await response.json();
       if (!response.ok) throw new Error(data.detail || 'Unable to sign in.');
       session.set(data);
+      setActive(data);
       setPassword('');
       setSelectedCompany(null);
     } catch (reason) {
@@ -190,7 +191,13 @@ export default function App() {
 
   const signOut = () => {
     session.clear();
-    location.reload();
+    setActive(null);
+    setApps([]);
+    setSelectedCompany(null);
+    setEmail('');
+    setPassword('');
+    setError('');
+    setLaunchingApp(null);
   };
 
   return (

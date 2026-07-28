@@ -27,6 +27,7 @@ urlpatterns = [
     path('api/auth/marketing/callback/', views.MarketingLoginCallbackView.as_view()),
     path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='portal-token-refresh'),
     path('api/portal/workspace/', views.WorkspaceView.as_view()),
+    path('api/portal/sso/preflight/', views.SSOPreflightView.as_view()),
     path('api/portal/sso/launch/', views.SSOLaunchView.as_view()),
     path('api/portal/sso/exchange/', views.SSOExchangeView.as_view()),
 ]

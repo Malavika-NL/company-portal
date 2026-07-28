@@ -552,3 +552,55 @@ Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
 
 [1m[33mwarn[39m[22m - The class `ease-[cubic-bezier(0.25,1,0.5,1)]` is ambiguous and matches multiple utilities.
 [1m[33mwarn[39m[22m - If this is content and not a class, replace it with `ease-&lsqb;cubic-bezier(0.25,1,0.5,1)&rsqb;` to silence this warning.
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 127.0.0.1 --port 5173
+
+API ready at http://127.0.0.1:8003. Starting Vite...
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m164[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[1m[33mwarn[39m[22m - The class `ease-[cubic-bezier(0.25,1,0.5,1)]` is ambiguous and matches multiple utilities.
+[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `ease-&lsqb;cubic-bezier(0.25,1,0.5,1)&rsqb;` to silence this warning.
+[2m5:33:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m5:33:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/config/auth.ts[22m
+[2m5:33:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/CampaignEditor/CampaignEditor.tsx, /src/index.css[22m
+[2m5:33:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Campaign/Management/management.tsx, /src/index.css[22m
+[2m5:33:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Campaign/Header/header.tsx[22m
+[2m5:33:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/User/UserList.tsx, /src/index.css[22m
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+API ready at http://127.0.0.1:8003. Starting Vite...
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m347[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.18.32.1:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.56:[1m5173[22m/[39m
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[1m[33mwarn[39m[22m - The class `ease-[cubic-bezier(0.25,1,0.5,1)]` is ambiguous and matches multiple utilities.
+[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `ease-&lsqb;cubic-bezier(0.25,1,0.5,1)&rsqb;` to silence this warning.
+[2m12:12:21 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m12:12:21 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m12:12:21 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m12:12:56 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m12:22:38 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m12:33:06 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m12:33:45 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m12:34:06 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m12:39:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m2:49:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
+[2m2:50:07 pm[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m2:50:07 pm[22m [36m[1m[vite][22m[39m server restarted.
