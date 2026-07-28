@@ -1,0 +1,73 @@
+services:
+  database:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: portal_identity
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${PORTAL_DATABASE_PASSWORD:-admin}
+    volumes:
+      - portal-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d portal_identity"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      PORTAL_DATABASE_ENGINE: django.db.backends.postgresql
+      PORTAL_DATABASE_NAME: portal_identity
+      PORTAL_DATABASE_USER: postgres
+      PORTAL_DATABASE_PASSWORD: ${PORTAL_DATABASE_PASSWORD:-admin}
+      PORTAL_DATABASE_HOST: database
+      PORTAL_DATABASE_PORT: 5432
+      PORTAL_SECRET_KEY: ${PORTAL_SECRET_KEY:-change-this-before-production}
+      # A missing secret must stop startup rather than silently falling back
+      # to a value that can differ from the connected CRM backends.
+      PORTAL_SSO_SHARED_SECRET: ${PORTAL_SSO_SHARED_SECRET:?Set PORTAL_SSO_SHARED_SECRET in .env}
+      PORTAL_FRONTEND_URL: http://192.168.1.56:8002
+      PORTAL_ALLOWED_HOSTS: 127.0.0.1,localhost,192.168.1.56,backend
+      PORTAL_AUTO_START_CRMS: "false"
+      PORTAL_AUTO_START_CRMS_ON_BOOT: "false"
+      # The Marketing CRM is a separate Docker project.  Use its Docker
+      # service name rather than a host port that may belong to another CRM.
+      MARKETING_CRM_LOGIN_URL: http://marketing-api:8000/api/login/
+      # These services are published on the host.  127.0.0.1 inside this
+      # container is the Portal itself, not either CRM.
+      SALESPIE_ACCOUNT_LOOKUP_URL: http://salespie:8001/portal/company-account/
+      BDCRM_ACCOUNT_LOOKUP_URL: http://bdcrm_backend:8000/api/portal/company-account/
+    ports:
+      # CRM containers use this local-only endpoint for the SSO code exchange.
+      - "127.0.0.1:8004:8004"
+    networks:
+      - default
+      - marketing_crm_network
+      - salespie_network
+      - bdcrm_network
+    depends_on:
+      database:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    depends_on:
+      - backend
+
+volumes:
+  portal-postgres-data:
+
+networks:
+  marketing_crm_network:
+    external: true
+  salespie_network:
+    external: true
+    name: salespie_default
+  bdcrm_network:
+    external: true
+    name: bdcrm-1_bdcrm_net

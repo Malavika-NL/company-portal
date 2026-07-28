@@ -143,20 +143,33 @@ def ensure_portal_identity(marketing_user_id, company, email=''):
         profile.user.save(update_fields=['email'])
     if not profile.is_active or not profile.user.is_active:
         return None, None
-    membership, _ = Membership.objects.get_or_create(
+    # VBSAI is the trusted company identity provider for this portal. An active
+    # VBSAI user may select a portal company on first sign-in; the membership
+    # is created then, so no separate portal/CRM account setup is required.
+    membership = Membership.objects.filter(
         user=profile.user,
         company=company,
-        defaults={'role': 'member', 'is_active': True},
-    )
-    return profile, membership if membership.is_active else None
+        is_active=True,
+    ).first()
+    if not membership and normalized_email.endswith('@vbsai.com'):
+        membership, _ = Membership.objects.update_or_create(
+            user=profile.user,
+            company=company,
+            defaults={'role': 'member', 'is_active': True},
+        )
+    return profile, membership
 
 
-def find_bdcrm_account(email, company_id):
-    body = json.dumps({'email': email, 'company_id': company_id}).encode()
+def find_bdcrm_account(email, company_id, portal_username='', role='member'):
+    body = json.dumps({
+        'email': email, 'company_id': company_id, 'provision': True,
+        'portal_username': portal_username, 'role': role,
+    }).encode()
     request = Request(settings.BDCRM_ACCOUNT_LOOKUP_URL, data=body, headers={
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
+        'Host': '192.168.1.56',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
@@ -167,11 +180,15 @@ def find_bdcrm_account(email, company_id):
     return str(external_user_id) if external_user_id is not None and not isinstance(external_user_id, (dict, list, bool)) else None
 
 
-def find_salespie_account(email, company_id):
-    request = Request(settings.SALESPIE_ACCOUNT_LOOKUP_URL, data=json.dumps({'email': email, 'company_id': company_id}).encode(), headers={
+def find_salespie_account(email, company_id, portal_username='', role='member'):
+    request = Request(settings.SALESPIE_ACCOUNT_LOOKUP_URL, data=json.dumps({
+        'email': email, 'company_id': company_id, 'provision': True,
+        'portal_username': portal_username, 'role': role,
+    }).encode(), headers={
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
+        'Host': '192.168.1.56',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
@@ -317,6 +334,45 @@ class WorkspaceView(APIView):
         return Response({'company': {'id': membership.company_id, 'code': membership.company.code, 'name': membership.company.name}, 'applications': apps})
 
 
+class SSOPreflightView(APIView):
+    """Check downstream SSO credentials without consuming or creating a login."""
+
+    def get(self, request):
+        company_id = request.auth.get('company_id') if request.auth else None
+        membership = Membership.objects.filter(
+            user=request.user, company_id=company_id, is_active=True,
+        ).first()
+        if not membership:
+            return Response({'detail': 'Select an authorized company.'}, status=403)
+
+        result = {}
+        for application, target_url in (
+            ('salespie', settings.SALESPIE_ACCOUNT_LOOKUP_URL),
+            ('bdcrm', settings.BDCRM_ACCOUNT_LOOKUP_URL),
+        ):
+            probe = Request(
+                target_url,
+                data=json.dumps({'email': request.user.email, 'company_id': company_id, 'provision': False}).encode(),
+                headers={
+                    'Accept': 'application/json', 'Content-Type': 'application/json',
+                    'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
+                    'X-Company-ID': str(company_id),
+                    'Host': '192.168.1.56',
+                }, method='POST',
+            )
+            try:
+                with urlopen(probe, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS):
+                    result[application] = {'ready': True}
+            except HTTPError as exc:
+                # 404 only means this user has not been provisioned yet; the
+                # protected Portal-to-CRM credential was accepted.
+                result[application] = {'ready': exc.code == 404, 'status': exc.code}
+            except (URLError, TimeoutError, ValueError):
+                result[application] = {'ready': False, 'status': 'unreachable'}
+        healthy = all(item['ready'] for item in result.values())
+        return Response({'ready': healthy, 'applications': result}, status=200 if healthy else 503)
+
+
 class SSOLaunchView(APIView):
     def post(self, request):
         application = str(request.data.get('application') or '').strip()
@@ -343,16 +399,17 @@ class SSOLaunchView(APIView):
             ).first()
             external_user_id = mapping.external_user_id if mapping else None
 
-            # Account discovery is required only on the first launch. The CRM
-            # validates the mapped user again during the one-time-code exchange,
-            # so subsequent launches can avoid a redundant network round trip.
-            if not external_user_id:
-                email = str(request.user.email or '').strip().lower()
-                external_user_id = (
-                    find_salespie_account(email, membership.company_id) if application == 'salespie'
-                    else find_bdcrm_account(email, membership.company_id)
-                ) if email else None
-            if external_user_id and not mapping:
+            # Each downstream CRM is keyed by the verified Marketing email.
+            # Resolve it on every launch: this repairs renamed/deactivated local
+            # accounts and provisions a passwordless account on first use.
+            email = str(request.user.email or '').strip().lower()
+            resolved_user_id = (
+                find_salespie_account(email, membership.company_id, request.user.username, membership.role)
+                if application == 'salespie'
+                else find_bdcrm_account(email, membership.company_id, request.user.username, membership.role)
+            ) if email else None
+            external_user_id = resolved_user_id or external_user_id
+            if external_user_id:
                 ApplicationUserMapping.objects.update_or_create(
                     user=request.user,
                     company=membership.company,

@@ -39,7 +39,10 @@ function supervisePortalBackend(): Plugin {
     if (closing || backend || await backendIsRunning()) return;
 
     backend = spawn(
-      process.platform === 'win32' ? 'python.exe' : 'python',
+      // On Windows, `python.exe` can be the Microsoft Store app-execution
+      // alias even when Python is installed. The Python launcher resolves the
+      // actual installed interpreter instead.
+      process.platform === 'win32' ? 'py.exe' : 'python',
       ['manage.py', 'runserver', `127.0.0.1:${portalBackendPort}`, '--noreload'],
       {
         cwd: backendDirectory,
@@ -76,8 +79,9 @@ function supervisePortalBackend(): Plugin {
 export default defineConfig({
   plugins: [react(), portalStatus(), supervisePortalBackend()],
   server: {
-    host: '127.0.0.1',
-    port: 5176,
+    // Listen on every local interface so devices on the LAN can use the portal.
+    host: '0.0.0.0',
+    port: 8002,
     strictPort: true,
     proxy: { '/api': { target: `http://127.0.0.1:${portalBackendPort}`, changeOrigin: true } },
   },

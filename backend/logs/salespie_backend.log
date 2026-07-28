@@ -850,3 +850,1153 @@ Bad Request: /api/company-portal-login/
 [26/Jul/2026 13:50:23] "POST /api/company-portal-login/ HTTP/1.1" 400 41
 Bad Request: /api/company-portal-login/
 [26/Jul/2026 13:50:36] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:48:40] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:49:05] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:49:09] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:49:14] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:49:25] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:54:37] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:55:45] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 16:58:16] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:00:23] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:02:02] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:02:29] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:02:46] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:03:03] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:10:50] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:11:11] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:11:32] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:27:54] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:32:02] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:32:12] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:35:21] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:35:26] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[27/Jul/2026 17:35:26] "POST /portal/company-account/ HTTP/1.1" 200 24
+[27/Jul/2026 17:35:27] "POST /company-portal-login/ HTTP/1.1" 200 827
+[27/Jul/2026 17:35:32] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /show-all-lead/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /opportunities/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /users/ HTTP/1.1" 200 102
+[27/Jul/2026 17:35:32] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /opportunities/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /users/ HTTP/1.1" 200 102
+[27/Jul/2026 17:35:32] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[27/Jul/2026 17:35:32] "GET /show-all-lead/ HTTP/1.1" 200 2
+Unauthorized: /show-all-account-data/
+Unauthorized: /opportunities/
+Unauthorized: /show-all-lead/
+Unauthorized: /show-all-task-data/
+[27/Jul/2026 17:35:36] "GET /show-all-account-data/ HTTP/1.1" 401 58
+Unauthorized: /budgets/team-summary/
+[27/Jul/2026 17:35:36] "GET /show-all-lead/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:36] "GET /opportunities/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:36] "GET /show-all-task-data/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:36] "GET /budgets/team-summary/ HTTP/1.1" 401 58
+Unauthorized: /users/
+[27/Jul/2026 17:35:36] "GET /users/ HTTP/1.1" 401 58
+Unauthorized: /show-all-account-data/
+Unauthorized: /opportunities/
+Unauthorized: /show-all-lead/
+[27/Jul/2026 17:35:41] "GET /show-all-account-data/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:41] "GET /opportunities/ HTTP/1.1" 401 58
+Unauthorized: /show-all-task-data/
+Unauthorized: /budgets/team-summary/
+[27/Jul/2026 17:35:41] "GET /show-all-task-data/ HTTP/1.1" 401 58
+Unauthorized: /users/
+[27/Jul/2026 17:35:41] "GET /show-all-lead/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:41] "GET /budgets/team-summary/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:41] "GET /users/ HTTP/1.1" 401 58
+Unauthorized: /show-all-account-data/
+Unauthorized: /opportunities/
+Unauthorized: /show-all-task-data/
+[27/Jul/2026 17:35:41] "GET /show-all-account-data/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:41] "GET /opportunities/ HTTP/1.1" 401 58
+Unauthorized: /show-all-lead/
+[27/Jul/2026 17:35:41] "GET /show-all-task-data/ HTTP/1.1" 401 58
+Unauthorized: /budgets/team-summary/
+[27/Jul/2026 17:35:41] "GET /show-all-lead/ HTTP/1.1" 401 58
+Unauthorized: /users/
+[27/Jul/2026 17:35:41] "GET /users/ HTTP/1.1" 401 58
+[27/Jul/2026 17:35:41] "GET /budgets/team-summary/ HTTP/1.1" 401 58
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:35:48] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:36:13] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:39:31] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:39:46] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:39:57] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:41:39] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:43:18] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:44:15] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:46:17] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:47:03] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:48:29] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:49:44] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:57:42] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 17:57:54] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:02:04] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:02:38] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:04:45] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:05:00] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[27/Jul/2026 18:05:47] "GET / HTTP/1.1" 200 457
+[27/Jul/2026 18:05:47,395] - Broken pipe from ('127.0.0.1', 63469)
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:06:28] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:06:28] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[27/Jul/2026 18:06:28,650] - Broken pipe from ('127.0.0.1', 52036)
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:07:32] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:09:50] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:30:37] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:38:23] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:38:43] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[27/Jul/2026 18:38:45] "POST /company-portal-login/ HTTP/1.1" 200 827
+[27/Jul/2026 18:38:58] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:58] "GET /show-all-lead/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:58] "GET /users/ HTTP/1.1" 200 202
+[27/Jul/2026 18:38:58] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:58] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:59] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:59] "GET /show-all-lead/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:59] "GET /users/ HTTP/1.1" 200 202
+[27/Jul/2026 18:38:59] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:59] "GET /opportunities/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:59] "GET /opportunities/ HTTP/1.1" 200 2
+[27/Jul/2026 18:38:59] "GET /show-all-task-data/ HTTP/1.1" 200 2
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:39:06] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:39:26] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 18:40:07] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Unauthorized: /api/integrations/sync/users/
+[27/Jul/2026 18:58:20] "GET /api/integrations/sync/users/ HTTP/1.1" 401 47
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:15:46] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:15:55] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:16:29] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:16:48] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:16:55] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:17:09] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:17:16] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:20:28] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[27/Jul/2026 19:20:37] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 09:47:24] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 09:49:41] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 09:50:02] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 09:50:15] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Unauthorized: /company-portal-login/
+[28/Jul/2026 09:50:16] "POST /company-portal-login/ HTTP/1.1" 401 55
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 09:50:40] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Unauthorized: /company-portal-login/
+[28/Jul/2026 09:50:40] "POST /company-portal-login/ HTTP/1.1" 401 55
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 09:53:47] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Unauthorized: /company-portal-login/
+[28/Jul/2026 09:53:47] "POST /company-portal-login/ HTTP/1.1" 401 55
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:02:20] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:02:57] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:03:52] "POST /company-portal-login/ HTTP/1.1" 200 827
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:06:00] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:06:01] "POST /company-portal-login/ HTTP/1.1" 200 827
+[28/Jul/2026 10:06:06] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /users/ HTTP/1.1" 200 202
+[28/Jul/2026 10:06:06] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /users/ HTTP/1.1" 200 202
+[28/Jul/2026 10:06:06] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:06] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:36] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:36] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:36] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:36] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:36] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:06:36] "GET /users/ HTTP/1.1" 200 202
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:06:38] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:06:56] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:07:12] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:07:13] "POST /company-portal-login/ HTTP/1.1" 200 827
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:08:42] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:08:43] "POST /company-portal-login/ HTTP/1.1" 200 832
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:10:09] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:10:10] "POST /company-portal-login/ HTTP/1.1" 200 832
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:12:21] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:12:22] "POST /company-portal-login/ HTTP/1.1" 200 818
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:14:01] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:14:02] "POST /company-portal-login/ HTTP/1.1" 200 818
+[28/Jul/2026 10:14:02] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /users/ HTTP/1.1" 200 202
+[28/Jul/2026 10:14:02] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:02] "GET /users/ HTTP/1.1" 200 202
+[28/Jul/2026 10:14:02] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:13] "GET /warm-leads/ HTTP/1.1" 200 714
+[28/Jul/2026 10:14:13] "GET /warm-leads/ HTTP/1.1" 200 714
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:14:24] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:14:36] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:14:37] "POST /company-portal-login/ HTTP/1.1" 200 818
+[28/Jul/2026 10:14:37] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /users/ HTTP/1.1" 200 202
+[28/Jul/2026 10:14:37] "GET /show-all-task-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /show-all-account-data/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /show-all-lead/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /opportunities/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /budgets/team-summary/ HTTP/1.1" 200 2
+[28/Jul/2026 10:14:37] "GET /users/ HTTP/1.1" 200 202
+[28/Jul/2026 10:14:38] "GET /show-all-task-data/ HTTP/1.1" 200 2
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:34:11] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Internal Server Error: /company-portal-login/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 312, in post
+    user = User.objects.filter(pk=external_user_id, is_active=True).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1106, in first
+    for obj in queryset[:1]:
+               ~~~~~~~~^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 386, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+[28/Jul/2026 10:34:12] "POST /company-portal-login/ HTTP/1.1" 500 175254
+Internal Server Error: /company-portal-login/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 312, in post
+    user = User.objects.filter(pk=external_user_id, is_active=True).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1106, in first
+    for obj in queryset[:1]:
+               ~~~~~~~~^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 386, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+[28/Jul/2026 10:34:13] "POST /company-portal-login/ HTTP/1.1" 500 175254
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:37:42] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:40:30] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:42:36] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Internal Server Error: /company-portal-login/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 312, in post
+    user = User.objects.filter(pk=external_user_id, is_active=True).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1106, in first
+    for obj in queryset[:1]:
+               ~~~~~~~~^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 386, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+[28/Jul/2026 10:42:40] "POST /company-portal-login/ HTTP/1.1" 500 175254
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:42:41] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Internal Server Error: /company-portal-login/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 312, in post
+    user = User.objects.filter(pk=external_user_id, is_active=True).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1106, in first
+    for obj in queryset[:1]:
+               ~~~~~~~~^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 386, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+[28/Jul/2026 10:42:41] "POST /company-portal-login/ HTTP/1.1" 500 175254
+Internal Server Error: /company-portal-login/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedColumn: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 312, in post
+    user = User.objects.filter(pk=external_user_id, is_active=True).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1106, in first
+    for obj in queryset[:1]:
+               ~~~~~~~~^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 386, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg\cursor.py", line 117, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: column sales_user.tenant_company_id does not exist
+LINE 1: ...eeid", "sales_user"."role", "sales_user"."email", "sales_use...
+                                                             ^
+[28/Jul/2026 10:42:42] "POST /company-portal-login/ HTTP/1.1" 500 175254
+[28/Jul/2026 10:46:08] "POST /company-portal-login/ HTTP/1.1" 200 823
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:46:49] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:46:50] "POST /company-portal-login/ HTTP/1.1" 200 823
+[28/Jul/2026 10:46:50] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 10:46:50] "GET /users/ HTTP/1.1" 200 586
+[28/Jul/2026 10:46:50] "GET /budgets/team-summary/ HTTP/1.1" 200 208
+[28/Jul/2026 10:46:50] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 10:46:50] "GET /users/ HTTP/1.1" 200 586
+[28/Jul/2026 10:46:50] "GET /budgets/team-summary/ HTTP/1.1" 200 208
+[28/Jul/2026 10:46:50] "GET /show-all-lead/ HTTP/1.1" 200 31589
+[28/Jul/2026 10:46:51] "GET /show-all-lead/ HTTP/1.1" 200 31589
+[28/Jul/2026 10:46:51] "GET /opportunities/ HTTP/1.1" 200 76980
+Internal Server Error: /show-all-account-data/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 551, in list
+    print("Response data being sent:", response.data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0393' in position 34237: character maps to <undefined>
+[28/Jul/2026 10:46:51] "GET /show-all-account-data/ HTTP/1.1" 500 133469
+[28/Jul/2026 10:46:51] "GET /opportunities/ HTTP/1.1" 200 76980
+Internal Server Error: /show-all-account-data/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 551, in list
+    print("Response data being sent:", response.data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0393' in position 34237: character maps to <undefined>
+[28/Jul/2026 10:46:51] "GET /show-all-account-data/ HTTP/1.1" 500 133469
+[28/Jul/2026 10:46:57] "GET /users/ HTTP/1.1" 200 586
+[28/Jul/2026 10:46:57] "GET /users/ HTTP/1.1" 200 586
+[28/Jul/2026 10:47:21] "DELETE /api/users/51/ HTTP/1.1" 200 40
+Unauthorized: /api/users/1/
+[28/Jul/2026 10:47:37] "PUT /api/users/1/ HTTP/1.1" 401 51
+Forbidden (Origin checking failed - http://192.168.1.56:5174 does not match any trusted origins.): /token/refresh/
+[28/Jul/2026 10:47:37] "POST /token/refresh/ HTTP/1.1" 403 2557
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:47:37] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:47:44] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Forbidden: /company-portal-login/
+[28/Jul/2026 10:47:44] "POST /company-portal-login/ HTTP/1.1" 403 55
+Forbidden: /company-portal-login/
+[28/Jul/2026 10:47:46] "POST /company-portal-login/ HTTP/1.1" 403 55
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:48:00] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Forbidden: /company-portal-login/
+[28/Jul/2026 10:48:01] "POST /company-portal-login/ HTTP/1.1" 403 55
+[28/Jul/2026 10:49:24] "POST /company-portal-login/ HTTP/1.1" 200 815
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'sales' isn't unique. You may not be able to reverse all URLs in this namespace
+sales.User: (auth.W004) 'User.email' is named as the 'USERNAME_FIELD', but it is not unique.
+	HINT: Ensure that your authentication backend(s) can handle non-unique usernames.
+
+System check identified 2 issues (0 silenced).
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:52:10] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:52:26] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:52:38] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:52:38] "POST /portal/company-account/ HTTP/1.1" 200 24
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:57:31] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:57:43] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:57:43] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 10:57:43] "POST /company-portal-login/ HTTP/1.1" 200 815
+[28/Jul/2026 10:57:44] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 10:57:44] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 10:57:44] "GET /budgets/team-summary/ HTTP/1.1" 200 208
+[28/Jul/2026 10:57:44] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 10:57:44] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 10:57:44] "GET /budgets/team-summary/ HTTP/1.1" 200 208
+[28/Jul/2026 10:57:44] "GET /show-all-lead/ HTTP/1.1" 200 31589
+[28/Jul/2026 10:57:45] "GET /opportunities/ HTTP/1.1" 200 76980
+Internal Server Error: /show-all-account-data/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 561, in list
+    print("Response data being sent:", response.data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0393' in position 34237: character maps to <undefined>
+[28/Jul/2026 10:57:45] "GET /show-all-account-data/ HTTP/1.1" 500 133469
+[28/Jul/2026 10:57:45] "GET /show-all-lead/ HTTP/1.1" 200 31589
+[28/Jul/2026 10:57:45] "GET /opportunities/ HTTP/1.1" 200 76980
+Internal Server Error: /show-all-account-data/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 561, in list
+    print("Response data being sent:", response.data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0393' in position 34237: character maps to <undefined>
+[28/Jul/2026 10:57:45] "GET /show-all-account-data/ HTTP/1.1" 500 133469
+[28/Jul/2026 10:57:52] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 10:57:53] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 10:58:06] "PUT /api/users/1/ HTTP/1.1" 200 147
+[28/Jul/2026 10:58:06] "GET /users/ HTTP/1.1" 200 494
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:58:55] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:59:37] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 10:59:48] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 10:59:49] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 10:59:49] "POST /company-portal-login/ HTTP/1.1" 200 815
+[28/Jul/2026 10:59:49] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 10:59:49] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 10:59:49] "GET /budgets/team-summary/ HTTP/1.1" 200 208
+[28/Jul/2026 10:59:49] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 10:59:49] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 10:59:49] "GET /budgets/team-summary/ HTTP/1.1" 200 208
+[28/Jul/2026 10:59:50] "GET /show-all-lead/ HTTP/1.1" 200 31589
+[28/Jul/2026 10:59:50] "GET /show-all-lead/ HTTP/1.1" 200 31589
+Internal Server Error: /show-all-account-data/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 561, in list
+    print("Response data being sent:", response.data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0393' in position 34237: character maps to <undefined>
+[28/Jul/2026 10:59:50] "GET /show-all-account-data/ HTTP/1.1" 500 133469
+[28/Jul/2026 10:59:50] "GET /opportunities/ HTTP/1.1" 200 76980
+Internal Server Error: /show-all-account-data/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 561, in list
+    print("Response data being sent:", response.data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0393' in position 34237: character maps to <undefined>
+[28/Jul/2026 10:59:50] "GET /show-all-account-data/ HTTP/1.1" 500 133469
+[28/Jul/2026 10:59:50] "GET /opportunities/ HTTP/1.1" 200 76980
+[28/Jul/2026 10:59:53] "GET /contacts/ HTTP/1.1" 200 84319
+[28/Jul/2026 10:59:53] "GET /contacts/ HTTP/1.1" 200 84319
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:05:26] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:07:22] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:08:15] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:08:45] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:09:05] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 11:09:05] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 11:09:05] "POST /company-portal-login/ HTTP/1.1" 200 826
+[28/Jul/2026 11:09:07] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:09:07] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:09:07] "GET /budgets/team-summary/ HTTP/1.1" 200 163
+[28/Jul/2026 11:09:07] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:09:07] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:09:07] "GET /budgets/team-summary/ HTTP/1.1" 200 163
+[28/Jul/2026 11:09:07] "GET /account-data/ HTTP/1.1" 200 17884
+[28/Jul/2026 11:09:07] "GET /lead-data/ HTTP/1.1" 200 30711
+[28/Jul/2026 11:09:07] "GET /opportunity-data/ HTTP/1.1" 200 33625
+[28/Jul/2026 11:09:08] "GET /account-data/ HTTP/1.1" 200 17884
+[28/Jul/2026 11:09:08] "GET /lead-data/ HTTP/1.1" 200 30711
+[28/Jul/2026 11:09:08] "GET /opportunity-data/ HTTP/1.1" 200 33625
+[28/Jul/2026 11:09:10] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:09:10] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:09:11] "GET /budgets/team-summary/ HTTP/1.1" 200 163
+[28/Jul/2026 11:09:11] "GET /account-data/ HTTP/1.1" 200 17884
+[28/Jul/2026 11:09:11] "GET /lead-data/ HTTP/1.1" 200 30711
+[28/Jul/2026 11:09:11] "GET /opportunity-data/ HTTP/1.1" 200 33625
+[28/Jul/2026 11:09:21] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:09:21] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:09:21] "GET /budgets/team-summary/ HTTP/1.1" 200 163
+[28/Jul/2026 11:09:21] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:09:21] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:09:21] "GET /budgets/team-summary/ HTTP/1.1" 200 163
+[28/Jul/2026 11:09:21] "GET /account-data/ HTTP/1.1" 200 17884
+[28/Jul/2026 11:09:21] "GET /lead-data/ HTTP/1.1" 200 30711
+[28/Jul/2026 11:09:21] "GET /opportunity-data/ HTTP/1.1" 200 33625
+[28/Jul/2026 11:09:21] "GET /account-data/ HTTP/1.1" 200 17884
+[28/Jul/2026 11:09:21] "GET /lead-data/ HTTP/1.1" 200 30711
+[28/Jul/2026 11:09:21] "GET /opportunity-data/ HTTP/1.1" 200 33625
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:09:44] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:27:00] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:27:11] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 11:27:11] "POST /portal/company-account/ HTTP/1.1" 200 24
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:28:45] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:28:56] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 11:28:57] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 11:28:57] "POST /company-portal-login/ HTTP/1.1" 200 824
+[28/Jul/2026 11:28:58] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:28:58] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:28:58] "GET /budgets/team-summary/ HTTP/1.1" 200 162
+[28/Jul/2026 11:28:58] "GET /show-all-task-data/ HTTP/1.1" 200 1308
+[28/Jul/2026 11:28:58] "GET /account-data/ HTTP/1.1" 200 4022
+[28/Jul/2026 11:28:58] "GET /users/ HTTP/1.1" 200 494
+[28/Jul/2026 11:28:58] "GET /opportunity-data/ HTTP/1.1" 200 7031
+[28/Jul/2026 11:28:58] "GET /budgets/team-summary/ HTTP/1.1" 200 162
+[28/Jul/2026 11:28:58] "GET /lead-data/ HTTP/1.1" 200 13042
+[28/Jul/2026 11:28:58] "GET /account-data/ HTTP/1.1" 200 4022
+[28/Jul/2026 11:28:59] "GET /opportunity-data/ HTTP/1.1" 200 7031
+[28/Jul/2026 11:28:59] "GET /lead-data/ HTTP/1.1" 200 13042
+[28/Jul/2026 11:29:10] "GET /account-data/ HTTP/1.1" 200 4022
+[28/Jul/2026 11:29:10] "GET /account-data/ HTTP/1.1" 200 4022
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:29:14] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/company-portal-login/
+[28/Jul/2026 11:29:37] "POST /api/company-portal-login/ HTTP/1.1" 400 41
+[28/Jul/2026 11:49:22] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 11:49:23] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 11:49:23] "POST /portal/company-account/ HTTP/1.1" 200 24
+[28/Jul/2026 11:49:23] "POST /portal/company-account/ HTTP/1.1" 200 24
+Internal Server Error: /portal/company-account/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 355, in post
+    username = f"portal-{company_id}-{portal_username or email.split('@', 1)[0]}"
+                         ^^^^^^^^^^
+NameError: name 'company_id' is not defined
+[28/Jul/2026 11:49:23] "POST /portal/company-account/ HTTP/1.1" 500 20050
+Internal Server Error: /portal/company-account/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 355, in post
+    username = f"portal-{company_id}-{portal_username or email.split('@', 1)[0]}"
+                         ^^^^^^^^^^
+NameError: name 'company_id' is not defined
+[28/Jul/2026 11:49:23] "POST /portal/company-account/ HTTP/1.1" 500 20050
+Internal Server Error: /portal/company-account/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\SalesPie\backend\sales\views.py", line 355, in post
+    username = f"portal-{company_id}-{portal_username or email.split('@', 1)[0]}"
+                         ^^^^^^^^^^
+NameError: name 'company_id' is not defined
+[28/Jul/2026 11:49:23] "POST /portal/company-account/ HTTP/1.1" 500 20050
