@@ -24,7 +24,8 @@ mappings. It never matches CRM users by email.
    endpoints then send each CRM a short-lived one-time code, which it exchanges
    for the explicitly mapped local user ID.
 
-1. Create PostgreSQL database `portal_identity`.
+1. Create PostgreSQL database `portal_identity` in the local PostgreSQL
+   server used by pgAdmin.
 2. Copy `.env.example` to `.env` and supply the PostgreSQL password.
 3. Set the Marketing client URLs/secret in `.env`, load the environment
    variables, then run `python manage.py migrate`.
@@ -45,10 +46,17 @@ docker compose up --build -d
 ```
 
 The portal will be available at `http://192.168.1.56:8002`. This Compose file
-starts the portal frontend, portal backend, and PostgreSQL only. Configure the
+starts the portal frontend and backend; it uses the local PostgreSQL server
+available through pgAdmin (`host.docker.internal`) rather than creating a
+second database. Configure the
 Marketing CRM, SalesPie, and BDCRM URLs and shared SSO secret as environment
 variables on the `backend` service when those separately maintained services
 are deployed.
+
+Use either the Docker workflow or the local development workflow at a time;
+both reserve ports 8002 and 8004. They can safely share the same local
+PostgreSQL database, so an SSO handoff is always redeemed against the same
+portal records.
 
 For normal local development, start the portal from the `frontend` directory:
 

@@ -1,19 +1,4 @@
 services:
-  database:
-    image: postgres:16-alpine
-    restart: unless-stopped
-    environment:
-      POSTGRES_DB: portal_identity
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: ${PORTAL_DATABASE_PASSWORD:-admin}
-    volumes:
-      - portal-postgres-data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d portal_identity"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
-
   backend:
     build: ./backend
     restart: unless-stopped
@@ -22,7 +7,10 @@ services:
       PORTAL_DATABASE_NAME: portal_identity
       PORTAL_DATABASE_USER: postgres
       PORTAL_DATABASE_PASSWORD: ${PORTAL_DATABASE_PASSWORD:-admin}
-      PORTAL_DATABASE_HOST: database
+      # Use the PostgreSQL instance on the Windows host, which is also the
+      # database managed through pgAdmin. All CRM and Portal data therefore
+      # lives in one persistent local PostgreSQL server.
+      PORTAL_DATABASE_HOST: host.docker.internal
       PORTAL_DATABASE_PORT: 5432
       PORTAL_SECRET_KEY: ${PORTAL_SECRET_KEY:-change-this-before-production}
       # A missing secret must stop startup rather than silently falling back
@@ -44,6 +32,7 @@ services:
       MARKETING_CRM_AUTHORIZE_URL: http://192.168.1.56:8000/api/sso/authorize/
       MARKETING_CRM_TOKEN_URL: http://marketing-api:8000/api/sso/token/
       MARKETING_CRM_LOGIN_URL: http://marketing-api:8000/api/login/
+      MARKETING_CRM_REDIRECT_URI: http://localhost:8004/api/auth/marketing/callback/
       SALESPIE_CRM_URL: http://192.168.1.56:8001
       BDCRM_URL: http://192.168.1.56:8003
       # These services are published on the host.  127.0.0.1 inside this
@@ -64,10 +53,6 @@ services:
       bdcrm_network:
         aliases:
           - company-portal-api
-    depends_on:
-      database:
-        condition: service_healthy
-
   frontend:
     build: ./frontend
     restart: unless-stopped
@@ -75,9 +60,6 @@ services:
       - "8002:8002"
     depends_on:
       - backend
-
-volumes:
-  portal-postgres-data:
 
 networks:
   marketing_crm_network:
