@@ -15,14 +15,28 @@ const isPortOpen = () => new Promise((complete) => {
 });
 
 const isPortalServer = () => new Promise((complete) => {
+  const checkDockerPortal = () => {
+    const rootRequest = get(`${portalUrl}/`, { timeout: 1000 }, (response) => {
+      let body = '';
+      response.setEncoding('utf8');
+      response.on('data', (chunk) => { body += chunk; });
+      response.on('end', () => complete(response.statusCode === 200 && body.includes('id="root"')));
+    });
+    rootRequest.once('timeout', () => { rootRequest.destroy(); complete(false); });
+    rootRequest.once('error', () => complete(false));
+  };
+
   const request = get(`${portalUrl}/__company-portal/status`, { timeout: 1000 }, (response) => {
     let body = '';
     response.setEncoding('utf8');
     response.on('data', (chunk) => { body += chunk; });
-    response.on('end', () => complete(response.statusCode === 200 && body.includes('company-portal')));
+    response.on('end', () => {
+      if (response.statusCode === 200 && body.includes('company-portal')) complete(true);
+      else checkDockerPortal();
+    });
   });
   request.once('timeout', () => { request.destroy(); complete(false); });
-  request.once('error', () => complete(false));
+  request.once('error', checkDockerPortal);
 });
 
 const explainExistingServer = async () => {
