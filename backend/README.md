@@ -24,7 +24,8 @@ mappings. It never matches CRM users by email.
    endpoints then send each CRM a short-lived one-time code, which it exchanges
    for the explicitly mapped local user ID.
 
-1. Create PostgreSQL database `portal_identity`.
+1. Create PostgreSQL database `portal_identity` in the local PostgreSQL
+   server used by pgAdmin.
 2. Copy `.env.example` to `.env` and supply the PostgreSQL password.
 3. Set the Marketing client URLs/secret in `.env`, load the environment
    variables, then run `python manage.py migrate`.

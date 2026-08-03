@@ -6,7 +6,9 @@ import { fileURLToPath } from 'node:url';
 const crmKey = process.argv[2];
 const portalFrontend = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const workspaceHome = resolve(portalFrontend, '..', '..');
-const python = process.platform === 'win32' ? 'python.exe' : 'python';
+// Prefer the Windows Python launcher: `python.exe` may only be the
+// Microsoft Store app-execution alias.
+const python = process.platform === 'win32' ? 'py.exe' : 'python';
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 
 const crms = {

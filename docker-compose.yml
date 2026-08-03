@@ -1,0 +1,72 @@
+services:
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      PORTAL_DATABASE_ENGINE: django.db.backends.postgresql
+      PORTAL_DATABASE_NAME: portal_identity
+      PORTAL_DATABASE_USER: postgres
+      PORTAL_DATABASE_PASSWORD: ${PORTAL_DATABASE_PASSWORD:-admin}
+      # Use the PostgreSQL instance on the Windows host, which is also the
+      # database managed through pgAdmin. All CRM and Portal data therefore
+      # lives in one persistent local PostgreSQL server.
+      PORTAL_DATABASE_HOST: host.docker.internal
+      PORTAL_DATABASE_PORT: 5432
+      PORTAL_SECRET_KEY: ${PORTAL_SECRET_KEY:-change-this-before-production}
+      # A missing secret must stop startup rather than silently falling back
+      # to a value that can differ from the connected CRM backends.
+      PORTAL_SSO_SHARED_SECRET: ${PORTAL_SSO_SHARED_SECRET:?Set PORTAL_SSO_SHARED_SECRET in .env}
+      PORTAL_FRONTEND_URL: http://192.168.1.56:8002
+      # A unique, network-scoped name is used by all CRM containers for SSO.
+      # Do not depend on host.docker.internal: it is a Windows Docker bridge
+      # and can be unavailable or rejected depending on how Docker starts.
+      PORTAL_ALLOWED_HOSTS: 127.0.0.1,localhost,192.168.1.56,backend,company-portal-api
+      PORTAL_AUTO_START_CRMS: "false"
+      PORTAL_AUTO_START_CRMS_ON_BOOT: "false"
+      # The Marketing CRM is a separate Docker project.  Use its Docker
+      # service name rather than a host port that may belong to another CRM.
+      # Browser-facing launch and authorization URLs use Marketing CRM's
+      # public Nginx endpoint; the token exchange stays private on the
+      # shared Docker network.
+      MARKETING_CRM_URL: http://192.168.1.56:8000
+      MARKETING_CRM_AUTHORIZE_URL: http://192.168.1.56:8000/api/sso/authorize/
+      MARKETING_CRM_TOKEN_URL: http://marketing-api:8000/api/sso/token/
+      MARKETING_CRM_LOGIN_URL: http://marketing-api:8000/api/login/
+      MARKETING_CRM_REDIRECT_URI: http://localhost:8004/api/auth/marketing/callback/
+      SALESPIE_CRM_URL: http://192.168.1.56:8001
+      BDCRM_URL: http://192.168.1.56:8003
+      # These services are published on the host.  127.0.0.1 inside this
+      # container is the Portal itself, not either CRM.
+      SALESPIE_ACCOUNT_LOOKUP_URL: http://salespie:8001/portal/company-account/
+      BDCRM_ACCOUNT_LOOKUP_URL: http://bdcrm_backend:8000/api/portal/company-account/
+    ports:
+      # CRM containers use this local-only endpoint for the SSO code exchange.
+      - "127.0.0.1:8004:8004"
+    networks:
+      default: {}
+      marketing_crm_network:
+        aliases:
+          - company-portal-api
+      salespie_network:
+        aliases:
+          - company-portal-api
+      bdcrm_network:
+        aliases:
+          - company-portal-api
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    depends_on:
+      - backend
+
+networks:
+  marketing_crm_network:
+    external: true
+  salespie_network:
+    external: true
+    name: salespie_default
+  bdcrm_network:
+    external: true
+    name: bdcrm-1_bdcrm_net

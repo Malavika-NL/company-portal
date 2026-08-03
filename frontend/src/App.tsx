@@ -1,11 +1,14 @@
 import { FormEvent, useEffect, useState } from 'react';
 import {
+  Activity,
   ArrowLeft,
   ArrowRight,
+  BarChart3,
   Building2,
   Check,
   ChevronRight,
   CircleCheck,
+  Headphones,
   LockKeyhole,
   LogOut,
   Mail,
@@ -13,9 +16,10 @@ import {
   Send,
   ShieldCheck,
   Sparkles,
+  BriefcaseBusiness,
   UsersRound,
 } from 'lucide-react';
-import { api, Company, session } from './api';
+import { api, Company, Session, session } from './api';
 
 type Application = { key: string; name: string; launch_url: string };
 
@@ -51,7 +55,7 @@ export default function App() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [launchingApp, setLaunchingApp] = useState<string | null>(null);
-  const active = session.get();
+  const [active, setActive] = useState<Session | null>(() => session.get());
 
   useEffect(() => {
     let cancelled = false;
@@ -151,6 +155,7 @@ export default function App() {
       const data = await response.json();
       if (!response.ok) throw new Error(data.detail || 'Unable to sign in.');
       session.set(data);
+      setActive(data);
       setPassword('');
       setSelectedCompany(null);
     } catch (reason) {
@@ -190,7 +195,13 @@ export default function App() {
 
   const signOut = () => {
     session.clear();
-    location.reload();
+    setActive(null);
+    setApps([]);
+    setSelectedCompany(null);
+    setEmail('');
+    setPassword('');
+    setError('');
+    setLaunchingApp(null);
   };
 
   return (
@@ -221,7 +232,7 @@ export default function App() {
                 </button>
               </>
             ) : (
-              <span className="secure-chip"><ShieldCheck size={16} /> Secure access</span>
+              <><span className="header-status"><i /> Systems operational</span><span className="secure-chip"><ShieldCheck size={16} /> Secure access</span></>
             )}
           </div>
         </div>
@@ -307,7 +318,11 @@ export default function App() {
 
             <div className="login-panel">
               <div className="panel-heading">
-                <span className="step-label">Step 2 of 2</span>
+                <div className="login-panel-topline">
+                  <span className="login-crest"><ShieldCheck size={18} /></span>
+                  <span className="step-label">Step 2 of 2</span>
+                  <span className="verified-label"><i /> Encrypted</span>
+                </div>
                 <h2>Welcome back</h2>
                 <p>Enter your Marketing CRM credentials to continue.</p>
               </div>
@@ -346,31 +361,58 @@ export default function App() {
                 </button>
               </form>
               <p className="privacy-note"><ShieldCheck size={15} /> Your password is verified by Marketing CRM and is never stored here.</p>
+              <a className="support-contact" href="mailto:support@nltechnologies.in">
+                <span className="support-icon"><Headphones size={18} /></span>
+                <span><strong>Need help signing in?</strong><small>Contact the NL Technologies support team</small></span>
+                <ChevronRight size={17} aria-hidden="true" />
+              </a>
             </div>
           </section>
         ) : (
           <section className="selection-layout">
             <div className="welcome-copy">
-              <p className="eyebrow"><Sparkles size={14} /> One secure login</p>
-              <h1>Your business tools, connected.</h1>
+              <div className="hero-meta"><span>NL Technologies</span><i /> <span>Company access portal</span></div>
+              <p className="eyebrow"><span className="eyebrow-spark"><Sparkles size={13} /></span> Unified workspace access</p>
+              <h1>Every team.<br /><span>One secure</span> starting point.</h1>
               <p className="lead-copy">
-                Choose your organization and sign in once with your Marketing CRM account to access every connected workspace.
+                Select your organization, then use your Marketing CRM account once to move seamlessly between your business tools.
               </p>
+              <div className="access-visual" aria-hidden="true">
+                <div className="access-visual-top">
+                  <span className="visual-live"><i /> LIVE CONNECTION</span>
+                  <span>3 workspaces</span>
+                </div>
+                <div className="access-map">
+                  <span className="map-pulse pulse-one" />
+                  <span className="map-pulse pulse-two" />
+                  <div className="map-hub"><ShieldCheck size={20} /><span>Secure<br />access</span></div>
+                  <div className="map-line line-one" />
+                  <div className="map-line line-two" />
+                  <div className="map-line line-three" />
+                  <span className="map-node node-marketing"><Send size={15} /> Marketing</span>
+                  <span className="map-node node-sales"><BarChart3 size={15} /> Sales</span>
+                  <span className="map-node node-bd"><BriefcaseBusiness size={15} /> Development</span>
+                </div>
+              </div>
+              <div className="hero-assurance"><ShieldCheck size={16} /><span><strong>Protected identity</strong> Your access is verified before every workspace opens.</span></div>
               <div className="feature-row">
                 <span><strong>1</strong><small>secure login</small></span>
                 <i />
                 <span><strong>3</strong><small>connected CRMs</small></span>
                 <i />
-                <span><ShieldCheck size={22} /><small>protected access</small></span>
+                <span><Activity size={22} /><small>always connected</small></span>
               </div>
             </div>
 
             <div className="company-panel">
+              <div className="panel-orbit orbit-one" aria-hidden="true" />
+              <div className="panel-orbit orbit-two" aria-hidden="true" />
               <div className="panel-heading">
-                <span className="step-label">Step 1 of 2</span>
+                <div className="panel-progress"><span>Step 1 of 2</span><i><b /></i></div>
                 <h2>Select your company</h2>
-                <p>Choose the organization you want to access.</p>
+                <p>Choose the organization you want to access. Your roles and permissions will follow you.</p>
               </div>
+              <div className="company-panel-note"><span><ShieldCheck size={15} /></span><p>One verified identity gives you access to every authorized workspace.</p></div>
               <div className="company-list">
                 {companies.length === 0 && !error && [1, 2].map((item) => <div className="company-option skeleton" key={item} />)}
                 {companies.map((company) => (
