@@ -17,13 +17,11 @@ class MarketingProviderLoginTests(TestCase):
         PortalProfile.objects.create(user=self.user, marketing_user_id='15')
         Membership.objects.create(user=self.user, company=self.company)
 
-    @patch('identity.views.warm_application_services')
-    def test_companies_endpoint_initializes_default_companies(self, warm_services):
+    def test_companies_endpoint_initializes_default_companies(self):
         Company.objects.all().delete()
 
         response = self.client.get('/api/companies/')
 
-        warm_services.assert_called_once()
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
             {company['code'] for company in response.data},

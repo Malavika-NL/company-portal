@@ -894,3 +894,25 @@ Not Found: /api/marketing-campaigns/
 [26/Jul/2026 14:57:17] "GET /api/marketing-campaigns/ HTTP/1.1" 404 70254
 Not Found: /api/token/refresh/
 [26/Jul/2026 14:57:17] "POST /api/token/refresh/ HTTP/1.1" 404 70237
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:10:23] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:10:59] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41
+Not Found: /api/company-portal-login/
+[03/Aug/2026 19:11:17] "POST /api/company-portal-login/ HTTP/1.1" 404 74520
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:11:17] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:12:06] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41
+Not Found: /api/company-portal-login/
+[03/Aug/2026 19:12:08] "POST /api/company-portal-login/ HTTP/1.1" 404 74520
+Not Found: /api/company-portal-login/
+[03/Aug/2026 19:12:10] "POST /api/company-portal-login/ HTTP/1.1" 404 74520
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:12:28] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:12:35] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41
+Not Found: /api/company-portal-login/
+[03/Aug/2026 19:12:46] "POST /api/company-portal-login/ HTTP/1.1" 404 74520
+Bad Request: /api/auth/company-portal-login/
+[03/Aug/2026 19:12:46] "POST /api/auth/company-portal-login/ HTTP/1.1" 400 41

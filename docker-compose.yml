@@ -16,13 +16,12 @@ services:
       # A missing secret must stop startup rather than silently falling back
       # to a value that can differ from the connected CRM backends.
       PORTAL_SSO_SHARED_SECRET: ${PORTAL_SSO_SHARED_SECRET:?Set PORTAL_SSO_SHARED_SECRET in .env}
-      PORTAL_FRONTEND_URL: http://192.168.1.56:8002
+      PORTAL_FRONTEND_URL: ${PORTAL_FRONTEND_URL:-http://192.168.1.56:8002}
       # A unique, network-scoped name is used by all CRM containers for SSO.
       # Do not depend on host.docker.internal: it is a Windows Docker bridge
       # and can be unavailable or rejected depending on how Docker starts.
       PORTAL_ALLOWED_HOSTS: 127.0.0.1,localhost,192.168.1.56,backend,company-portal-api
       PORTAL_AUTO_START_CRMS: "false"
-      PORTAL_AUTO_START_CRMS_ON_BOOT: "false"
       # The Marketing CRM is a separate Docker project.  Use its Docker
       # service name rather than a host port that may belong to another CRM.
       # Browser-facing launch and authorization URLs use Marketing CRM's

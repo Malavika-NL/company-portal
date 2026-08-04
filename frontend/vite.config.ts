@@ -8,6 +8,7 @@ import react from '@vitejs/plugin-react';
 const backendDirectory = resolve(dirname(fileURLToPath(import.meta.url)), '../backend');
 // This is the SSO exchange endpoint configured in SalesPie and BDCRM.
 const portalBackendPort = 8004;
+const portalFrontendPort = Number(process.env.PORTAL_VITE_PORT || 8002);
 
 function portalStatus(): Plugin {
   return {
@@ -77,11 +78,15 @@ function supervisePortalBackend(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [react(), portalStatus(), supervisePortalBackend()],
+  plugins: [
+    react(),
+    portalStatus(),
+    ...(process.env.PORTAL_EXTERNAL_BACKEND === 'true' ? [] : [supervisePortalBackend()]),
+  ],
   server: {
     // Listen on every local interface so devices on the LAN can use the portal.
     host: '0.0.0.0',
-    port: 8002,
+    port: portalFrontendPort,
     strictPort: true,
     proxy: { '/api': { target: `http://127.0.0.1:${portalBackendPort}`, changeOrigin: true } },
   },

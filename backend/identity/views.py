@@ -17,7 +17,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from .local_services import ensure_application_services, warm_application_services
+from .local_services import ensure_application_services
 from .models import (
     ApplicationUserMapping,
     Company,
@@ -205,9 +205,6 @@ class CompaniesView(APIView):
 
     def get(self, request):
         ensure_default_companies()
-        # Warm the three connected workspaces as soon as the portal page loads.
-        # This is backgrounded and idempotent, so the company selector stays fast.
-        warm_application_services()
         return Response(list(Company.objects.filter(is_active=True).values('id', 'code', 'name')))
 
 
@@ -330,7 +327,6 @@ class WorkspaceView(APIView):
             {'key': 'salespie', 'name': 'SalesPie', 'launch_url': settings.SALESPIE_CRM_URL},
             {'key': 'bdcrm', 'name': 'BDCRM', 'launch_url': settings.BDCRM_URL},
         ]
-        warm_application_services()
         return Response({'company': {'id': membership.company_id, 'code': membership.company.code, 'name': membership.company.name}, 'applications': apps})
 
 

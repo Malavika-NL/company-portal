@@ -170,7 +170,6 @@ BDCRM_URL = os.getenv('BDCRM_URL', 'http://192.168.1.56:8003')
 PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://192.168.1.56:8002')
 
 PORTAL_AUTO_START_CRMS = env_bool('PORTAL_AUTO_START_CRMS', DEBUG)
-PORTAL_AUTO_START_CRMS_ON_BOOT = env_bool('PORTAL_AUTO_START_CRMS_ON_BOOT', PORTAL_AUTO_START_CRMS)
 PORTAL_AUTO_RESTART_UNHEALTHY_CRMS = env_bool('PORTAL_AUTO_RESTART_UNHEALTHY_CRMS', DEBUG)
 PORTAL_AUTO_START_TIMEOUT_SECONDS = float(os.getenv('PORTAL_AUTO_START_TIMEOUT_SECONDS', '45'))
 PORTAL_SERVICE_HEALTH_CACHE_SECONDS = float(os.getenv('PORTAL_SERVICE_HEALTH_CACHE_SECONDS', '5'))
@@ -181,9 +180,9 @@ CRM_LOCAL_SERVICES = {
         {
             'name': 'Marketing CRM backend',
             'port': 8003,
-            'health_url': 'http://127.0.0.1:8003/api/login/',
-            'health_method': 'POST',
-            'healthy_statuses': [400, 401, 403],
+            # The login endpoint intentionally rejects empty POSTs.  A TCP check
+            # verifies that Django is listening without creating noisy 400 logs.
+            'port_only_health': True,
             'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8003', '--noreload'],
             'cwd': str(WORKSPACE_HOME / 'email_campaign_project-4' / 'backend'),
             'env': {'DJANGO_SETTINGS_MODULE': 'email_campaign_project.settings'},
@@ -203,9 +202,9 @@ CRM_LOCAL_SERVICES = {
         {
             'name': 'SalesPie backend',
             'port': 8001,
-            'health_url': 'http://127.0.0.1:8001/api/company-portal-login/',
-            'health_method': 'POST',
-            'healthy_statuses': [400, 401, 403],
+            # The SSO endpoint intentionally rejects empty POSTs.  A TCP check
+            # verifies that Django is listening without creating noisy 400 logs.
+            'port_only_health': True,
             'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8001', '--noreload'],
             'cwd': str(WORKSPACE_HOME / 'SalesPie' / 'backend'),
             'env': {'DJANGO_SETTINGS_MODULE': 'spplus.settings'},
@@ -225,9 +224,9 @@ CRM_LOCAL_SERVICES = {
         {
             'name': 'BDCRM backend',
             'port': 8000,
-            'health_url': 'http://127.0.0.1:8000/api/auth/company-portal-login/',
-            'health_method': 'POST',
-            'healthy_statuses': [400, 401, 403],
+            # The SSO endpoint intentionally rejects empty POSTs.  A TCP check
+            # verifies that Django is listening without creating noisy 400 logs.
+            'port_only_health': True,
             'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8000', '--noreload'],
             'cwd': str(WORKSPACE_HOME / 'BDCRM-1' / 'BDCRM' / 'bdcrm'),
             # BDCRM routes Contact queries through its contacts_db alias. Keep
