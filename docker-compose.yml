@@ -56,6 +56,9 @@ services:
     build: ./frontend
     restart: unless-stopped
     ports:
+      # Direct LAN IP access (without a port) enters through the Company
+      # Portal and is redirected by Nginx to its public port below.
+      - "80:80"
       - "8002:8002"
     depends_on:
       - backend
