@@ -604,3 +604,419 @@ Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
 [2m2:49:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TelemarketingCRM/AssignedContactsPage.tsx, /src/index.css[22m
 [2m2:50:07 pm[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
 [2m2:50:07 pm[22m [36m[1m[vite][22m[39m server restarted.
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+API ready at http://127.0.0.1:8003. Starting Vite...
+[2m3:13:53 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m8247[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.46:[1m5173[22m/[39m
+[2m3:14:00 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  C:/Users/akhil/Desktop/Company_portal/email_campaign_project-4/frontend/index.html
+
+  [31mBuild failed with 2 errors:
+
+[31m[PARSE_ERROR] Error:[0m Encountered diff marker
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../../MarketingCRMNew/email_campaign_project-4/frontend/src/components/TelemarketingCRM/WorkspacePage.tsx:36:1 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m36 │[0m <<<<<<<[38;5;249m [0m[38;5;249mH[0m[38;5;249mE[0m[38;5;249mA[0m[38;5;249mD[0m
+ [38;5;240m   │[0m ───┬───  
+ [38;5;240m   │[0m    ╰───── between this marker and `=======` is the code that we're merging into
+ [38;5;240m   │[0m 
+ [38;5;246m39 │[0m =======
+ [38;5;240m   │[0m ───┬───  
+ [38;5;240m   │[0m    ╰───── between this marker and `>>>>>>>` is the incoming code
+ [38;5;240m   │[0m 
+ [38;5;246m41 │[0m >>>>>>>[38;5;249m [0m[38;5;249mM[0m[38;5;249mA[0m[38;5;249mL[0m[38;5;249mA[0m[38;5;249mV[0m[38;5;249mI[0m[38;5;249mK[0m[38;5;249mA[0m[38;5;249m_[0m[38;5;249mN[0m[38;5;249mE[0m[38;5;249mW[0m
+ [38;5;240m   │[0m ───┬───  
+ [38;5;240m   │[0m    ╰───── this marker concludes the conflict region
+ [38;5;240m   │[0m 
+ [38;5;240m   │[0m [38;5;115mHelp[0m: Conflict markers indicate that a merge was started but could not be completed due to merge conflicts.
+ [38;5;240m   │[0m       To resolve a conflict, keep only the code you want and then delete the lines containing conflict markers.
+ [38;5;240m   │[0m       If you're having merge conflicts after pulling new code, the top section is the code you already had and the bottom section is the remote code.
+ [38;5;240m   │[0m       If you're in the middle of a rebase, the top section is the code being rebased onto and the bottom section is the code coming from the current commit being rebased.
+ [38;5;240m   │[0m       If you have nested conflicts, resolve the outermost conflict first.
+[38;5;246m────╯[0m
+
+[31m[PARSE_ERROR] Error:[0m Encountered diff marker
+      [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m ../../../MarketingCRMNew/email_campaign_project-4/frontend/src/components/Campaign/Sidebar/sidebar.tsx:1106:1 [38;5;246m][0m
+      [38;5;246m│[0m
+ [38;5;246m1106 │[0m <<<<<<<[38;5;249m [0m[38;5;249mH[0m[38;5;249mE[0m[38;5;249mA[0m[38;5;249mD[0m
+ [38;5;240m     │[0m ───┬───  
+ [38;5;240m     │[0m    ╰───── between this marker and `=======` is the code that we're merging into
+ [38;5;246m1107 │[0m =======
+ [38;5;240m     │[0m ───┬───  
+ [38;5;240m     │[0m    ╰───── between this marker and `>>>>>>>` is the incoming code
+ [38;5;240m     │[0m 
+ [38;5;246m1121 │[0m >>>>>>>[38;5;249m [0m[38;5;249mm[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249mv[0m[38;5;249mi[0m[38;5;249mk[0m[38;5;249ma[0m[38;5;249m_[0m[38;5;249ml[0m[38;5;249mo[0m[38;5;249mc[0m[38;5;249ma[0m[38;5;249ml[0m
+ [38;5;240m     │[0m ───┬───  
+ [38;5;240m     │[0m    ╰───── this marker concludes the conflict region
+ [38;5;240m     │[0m 
+ [38;5;240m     │[0m [38;5;115mHelp[0m: Conflict markers indicate that a merge was started but could not be completed due to merge conflicts.
+ [38;5;240m     │[0m       To resolve a conflict, keep only the code you want and then delete the lines containing conflict markers.
+ [38;5;240m     │[0m       If you're having merge conflicts after pulling new code, the top section is the code you already had and the bottom section is the remote code.
+ [38;5;240m     │[0m       If you're in the middle of a rebase, the top section is the code being rebased onto and the bottom section is the code coming from the current commit being rebased.
+ [38;5;240m     │[0m       If you have nested conflicts, resolve the outermost conflict first.
+[38;5;246m──────╯[0m
+
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2659:18)
+    at unwrapBindingResult (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2634:128)
+    at scan (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/experimental-index.mjs:166:3)
+    at async Object.build$2 [as build] (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:31020:3)
+    at async scan$1 (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:30965:4)
+    at async file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:34083:15[39m
+[2m3:17:38 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:40:50 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:41:13 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:42:55 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:20:44 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:40:22 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:46:25 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:46:44 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:47:14 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+API ready at http://127.0.0.1:8003. Starting Vite...
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m1692[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.46:[1m5173[22m/[39m
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2m2:53:21 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:53:21 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:53:21 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:53:21 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:19 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:19 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:19 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:24 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:24 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:27 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:17:27 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:26:30 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m3:26:30 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m3:26:30 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m3:27:34 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:31:00 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:36:57 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:37:02 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:38:28 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:38:59 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:40:59 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:41:09 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:55:25 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:18:41 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:19:18 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:26:25 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:27:12 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:27:29 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m10:40:48 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m10:40:58 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m10:52:31 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m10:52:32 am[22m [36m[1m[vite][22m[39m server restarted.
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.100:[1m5173[22m/[39m
+[2m12:14:00 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:01 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m12:14:01 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:14:05 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:05 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:06 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:07 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:14:08 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:10 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:14:10 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  C:/Users/akhil/Desktop/Company_portal/email_campaign_project-4/frontend/index.html
+
+  [31mBuild failed with 1 error:
+
+[plugin vite:dep-scan:resolve]
+Error: The server is being restarted or closed. Request is outdated
+    at throwClosedServerError (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:30225:32)
+    at EnvironmentPluginContainer.resolveId (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:30357:65)
+    at resolveId (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:31060:38)
+    at resolve$4 (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:31065:22)
+    at PluginContextImpl.resolveId (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:31211:28)
+    at plugin (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:3096:30)
+    at plugin.<computed> (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:3611:18)
+    at aggregateBindingErrorsIntoJsError (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2659:18)
+    at unwrapBindingResult (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/shared/src-CYkh2Ybc.mjs:2634:128)
+    at scan (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/rolldown/dist/experimental-index.mjs:166:3)
+    at async Object.build$2 [as build] (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:31020:3)
+    at async scan$1 (file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:30965:4)
+    at async file:///C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/node_modules/vite/dist/node/chunks/node.js:34083:15[39m
+[2m12:14:11 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:14:12 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:14 pm[22m [36m[1m[vite][22m[39m server restarted.
+[2m12:14:17 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:17 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m12:14:19 pm[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+API ready at http://127.0.0.1:8003. Starting Vite...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m7252[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.46:[1m5173[22m/[39m
+[2m1:17:22 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:34:04 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:54:52 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:54:57 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:55:01 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:55:07 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:55:07 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:30:48 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m5:18:46 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m5:18:46 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:23:22 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:23:23 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:18:18 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:19:07 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:35 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:36 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:41 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:41 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:43 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:43 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m7:20:46 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code -1073741510). Run 'py -3 manage.py check' from the backend folder to 
+see the cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code -1073741510). Run 'py -3 manage.py chec 
+   k' from the backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from the backend folder to see the 
+cause.
+At C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\frontend\scripts\dev.ps1:45 char:17
++ ...             throw "The Django API stopped during startup (exit code $ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (The Django API ... see the cause.:String) [], RuntimeException
+    + FullyQualifiedErrorId : The Django API stopped during startup (exit code 1). Run 'py -3 manage.py check' from th 
+   e backend folder to see the cause.
+ 
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+Starting Django API at http://127.0.0.1:8003 ...
+API ready at http://127.0.0.1:8003. Starting Vite...
+[2m8:21:21 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m7591[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.100:[1m5173[22m/[39m
+[2m8:21:27 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m8:30:24 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+
+> emailfront@0.0.0 dev
+> powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/dev.ps1 --host 0.0.0.0 --port 5173
+
+[2m8:42:28 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+  [32m[1mROLLDOWN-VITE[22m v7.2.5[39m  [2mready in [0m[1m4831[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.100:[1m5173[22m/[39m
+[2m8:42:33 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m9:15:38 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m12:15:25 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:12:08 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:12:26 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:21:39 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:24:55 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m5:47:17 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:06:56 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:56:55 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:57:06 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:57:22 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:43:31 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:23:19 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:43:50 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m3:44:02 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m5:38:36 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m5:40:13 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m5:40:21 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:21:01 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:22:12 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m12:58:30 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m1:24:31 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m1:25:43 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m1:28:02 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m1:28:22 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m1:44:38 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:26:11 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:34:53 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:35:10 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:35:30 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:35:52 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:36:14 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:36:24 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m2:36:37 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m8:37:12 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m8:37:30 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m12:07:58 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m12:22:51 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m4:42:11 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/main.jsx (resolved id: C:/Users/akhil/Desktop/MarketingCRMNew/email_campaign_project-4/frontend/src/main.tsx). Does the file exist?
+[2m6:14:02 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m6:14:04 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+[2m6:14:05 am[22m [36m[1m[vite][22m[39m server restarted.
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.101:[1m5173[22m/[39m

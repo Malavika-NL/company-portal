@@ -2250,3 +2250,2088 @@ ConnectionRefusedError: [WinError 10061] No connection could be made because the
 [28/Jul/2026 14:48:42] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 10999
 [28/Jul/2026 14:49:07] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 10999
 [28/Jul/2026 14:49:38] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 10999
+[29/Jul/2026 15:13:38] "POST /api/login/ HTTP/1.1" 400 76
+[29/Jul/2026 15:13:44] "POST /api/login/ HTTP/1.1" 200 1040
+[29/Jul/2026 15:13:45] "POST /api/login/ HTTP/1.1" 400 76
+[29/Jul/2026 15:17:37] "POST /api/login/ HTTP/1.1" 400 76
+[29/Jul/2026 16:40:50] "POST /api/login/ HTTP/1.1" 400 76
+[29/Jul/2026 16:41:13] "POST /api/login/ HTTP/1.1" 400 76
+[29/Jul/2026 16:41:13] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:13] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:13] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:13] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:13] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:14] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:14] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:14] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:14] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:15] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:15] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:15] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:15] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:15] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:16] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:16] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:16] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:16] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:16] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:17] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:17] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:17] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:17] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:18] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:18] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:18] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:18] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:18] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:19] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:19] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:19] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:19] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:19] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:20] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:20] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:20] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:20] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:21] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:21] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:21] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:21] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:21] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:22] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:22] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:22] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:22] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:23] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:23] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:23] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:23] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:23] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:24] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:24] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:24] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:24] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:24] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:25] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:25] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:25] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:25] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:26] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:26] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:26] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:26] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:26] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:27] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:27] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:27] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:27] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:28] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:28] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:28] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:28] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:28] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:29] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:29] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:29] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:29] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:29] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:30] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:30] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:30] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:30] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:31] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:31] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:31] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:31] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:31] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:32] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:32] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:32] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:32] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:33] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:33] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:33] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:33] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:33] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:34] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:34] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:34] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:34] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:34] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:35] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:35] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:35] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:35] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:36] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:36] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:36] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:36] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:36] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:37] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:37] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:37] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:37] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:38] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:38] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:38] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:38] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:38] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:39] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:39] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:39] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:39] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:40] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:40] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:40] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:40] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:40] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:41] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:41] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:41] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:41] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:41] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:42] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:42] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:42] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:42] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:43] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:43] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:43] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:43] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:43] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:44] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:44] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:44] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:44] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:45] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:45] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:45] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:45] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:45] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:46] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:46] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:46] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:46] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:47] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:47] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:47] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:47] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:47] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:48] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:48] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:48] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:48] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:48] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:49] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:49] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:49] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:49] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:50] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:50] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:50] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:41:50] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[29/Jul/2026 16:42:55] "POST /api/login/ HTTP/1.1" 400 76
+[29/Jul/2026 16:42:55] "POST /api/auth/company-portal-login/ HTTP/1.1" 404 179
+[30/Jul/2026 02:20:44] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 02:40:21] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 02:46:25] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 02:46:44] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 02:47:14] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 02:53:05] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 02:53:21] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:27:32] "POST /api/company-portal-login/ HTTP/1.1" 401 55
+[30/Jul/2026 03:27:34] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:27:37] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[30/Jul/2026 03:27:37] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:27:38] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField Contact.created_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField Contact.created_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField MarketingRecipient.sent_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField MarketingRecipient.sent_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField WhatsAppRecipient.sent_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField WhatsAppRecipient.sent_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+[30/Jul/2026 03:28:06] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 03:28:06] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 03:28:06] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 03:28:06] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 03:28:06] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 03:28:06] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 03:28:06] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 03:28:07] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 28441
+[30/Jul/2026 03:28:07] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 03:28:07] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 28441
+[30/Jul/2026 03:28:08] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:28:08] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:28:09] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:28:09] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:28:17] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:28:17] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:28:18] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 03:28:18] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:28:19] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 03:28:19] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 03:28:19] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:28:19] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:28:19] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:28:19] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 03:28:19] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 03:28:19] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:28:19] "GET /api/products/ HTTP/1.1" 200 305
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:28:19] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:28:22] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:28:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:28:22] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:28:22] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:28:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:22] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:28:26] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:26] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:26] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:26] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:27] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 37206
+[30/Jul/2026 03:28:27] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 37206
+[30/Jul/2026 03:28:27] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:28:28] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:28:31] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:31] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:28:31] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:28:31] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:28:31] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:28:31] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:28:35] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:28:35] "GET /api/tele-activities/ HTTP/1.1" 200 32112
+[30/Jul/2026 03:28:35] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:28:35] "GET /api/tele-activities/ HTTP/1.1" 200 32112
+[30/Jul/2026 03:28:36] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:28:37] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:28:40] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 03:28:40] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:40] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 03:28:40] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:28:41] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 03:28:41] "GET /api/tele-campaign-contacts/workspace/?campaign=30&scope=mine&show_all=true HTTP/1.1" 200 4677
+[30/Jul/2026 03:28:41] "GET /api/tele-campaigns/30/stats/ HTTP/1.1" 200 207
+[30/Jul/2026 03:28:41] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 03:28:42] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 03:28:48] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 03:28:48] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:28:48] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 03:28:48] "GET /api/tele-campaign-contacts/652/ HTTP/1.1" 200 998
+[30/Jul/2026 03:28:48] "GET /api/tele-campaign-contacts/contact_history/?contact_id=727 HTTP/1.1" 200 2218
+[30/Jul/2026 03:28:48] "GET /api/tele-campaign-contacts/contact_history/?contact_id=727 HTTP/1.1" 200 2218
+[30/Jul/2026 03:28:48] "GET /api/tele-campaigns/?scope=workspace HTTP/1.1" 200 12258
+[30/Jul/2026 03:28:55] "GET /api/products/?active=true HTTP/1.1" 200 305
+[30/Jul/2026 03:28:56] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:28:56] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:29:06] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:29:07] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:29:29] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:29:29] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:29:40] "GET /api/tele-activities/ HTTP/1.1" 200 32112
+[30/Jul/2026 03:29:59] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:02] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:03] "GET /api/tele-activities/ HTTP/1.1" 200 32112
+[30/Jul/2026 03:30:21] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:22] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:27] "GET /api/tele-campaigns/6/stats/ HTTP/1.1" 200 207
+[30/Jul/2026 03:30:27] "GET /api/tele-campaigns/6/stats/ HTTP/1.1" 200 207
+[30/Jul/2026 03:30:38] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:38] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:30:38] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 03:30:38] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:30:38] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 03:30:38] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:30:38] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:30:38] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 03:30:38] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:38] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 03:30:39] "GET /api/resumes/ HTTP/1.1" 200 30404
+[30/Jul/2026 03:30:39] "GET /api/resumes/ HTTP/1.1" 200 30404
+[30/Jul/2026 03:30:43] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 03:30:43] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 03:30:43] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 03:30:43] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 03:30:43] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 03:30:43] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 03:30:43] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 03:30:43] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 28441
+[30/Jul/2026 03:30:43] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 03:30:43] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 28441
+[30/Jul/2026 03:30:44] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 03:30:45] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:30:45] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:46] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 03:30:46] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:30:46] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:47] "GET /api/resumes/ HTTP/1.1" 200 30404
+[30/Jul/2026 03:30:47] "GET /api/resumes/ HTTP/1.1" 200 30404
+[30/Jul/2026 03:30:48] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:30:48] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:48] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 03:30:48] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:30:48] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:30:48] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 03:30:48] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 03:30:48] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:30:48] "GET /api/products/ HTTP/1.1" 200 305
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:48] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 03:30:49] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:50] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:50] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:50] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:51] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:52] "GET /api/tele-campaigns/?all=true HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:52] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:52] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 03:30:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:52] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 03:30:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:52] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:52] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 03:30:52] "GET /api/tele-campaign-contacts/652/ HTTP/1.1" 200 998
+[30/Jul/2026 03:30:52] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 03:30:52] "GET /api/tele-campaign-contacts/652/ HTTP/1.1" 200 998
+[30/Jul/2026 03:30:52] "GET /api/tele-campaign-contacts/contact_history/?contact_id=727 HTTP/1.1" 200 2218
+[30/Jul/2026 03:30:52] "GET /api/tele-campaign-contacts/contact_history/?contact_id=727 HTTP/1.1" 200 2218
+[30/Jul/2026 03:30:53] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:30:53] "GET /api/tele-activities/ HTTP/1.1" 200 32112
+[30/Jul/2026 03:30:53] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:30:53] "GET /api/tele-activities/ HTTP/1.1" 200 32112
+[30/Jul/2026 03:30:53] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:54] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:30:54] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:54] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:54] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:30:54] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:30:54] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:30:54] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:54] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:54] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:54] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:54] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:55] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 37206
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:55] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:30:55] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:55] "GET /api/salespie-users/ HTTP/1.1" 200 548
+[30/Jul/2026 03:30:55] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 03:30:55] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 37206
+[30/Jul/2026 03:30:55] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:30:55] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 12582
+[30/Jul/2026 03:30:55] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:56] "GET /api/products/ HTTP/1.1" 200 305
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:56] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 03:30:56] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:30:56] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:30:56] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:30:56] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 03:30:56] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 03:30:56] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 03:30:56] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 03:30:56] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 03:30:56] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 03:30:58] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:30:58] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 03:30:59] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 03:30:59] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 03:30:59] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 03:30:59] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 03:30:59] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 03:30:59] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 03:30:59] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 03:30:59] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 03:30:59] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 28441
+[30/Jul/2026 03:30:59] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:59] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:30:59] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 28441
+[30/Jul/2026 03:31:00] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 03:31:00] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:31:01] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:31:01] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:31:02] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 03:31:02] "GET /api/contacts/ HTTP/1.1" 200 151181
+[30/Jul/2026 03:31:02] "GET /api/tele-campaigns/ HTTP/1.1" 200 12258
+[30/Jul/2026 03:36:57] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:37:02] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:37:05] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[30/Jul/2026 03:37:06] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:37:06] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 03:38:28] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:38:59] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:40:59] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:41:09] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 03:55:24] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:11:36] "POST /api/integrations/sync/contact/ HTTP/1.1" 201 187
+[30/Jul/2026 04:12:11] "POST /api/integrations/sync/contact/ HTTP/1.1" 201 184
+[30/Jul/2026 04:13:22] "POST /api/integrations/sync/contact/ HTTP/1.1" 201 189
+[30/Jul/2026 04:13:53] "POST /api/integrations/sync/contact/ HTTP/1.1" 201 184
+[30/Jul/2026 04:18:40] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:19:07] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:19:09] "POST /api/login/ HTTP/1.1" 400 45
+[30/Jul/2026 04:19:15] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:19:18] "POST /api/login/ HTTP/1.1" 200 1100
+[30/Jul/2026 04:25:36] "POST /api/integrations/sync/tele-assignment/ HTTP/1.1" 200 35
+[30/Jul/2026 04:25:36] "POST /api/integrations/sync/tele-assignment/ HTTP/1.1" 200 35
+[30/Jul/2026 04:25:36] "POST /api/integrations/sync/tele-assignment/ HTTP/1.1" 200 35
+[30/Jul/2026 04:25:36] "POST /api/integrations/sync/tele-assignment/ HTTP/1.1" 200 35
+[30/Jul/2026 04:26:25] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:26:28] "POST /api/company-portal-login/ HTTP/1.1" 200 1169
+[30/Jul/2026 04:26:29] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 04:26:29] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 04:26:32] "GET /api/auth/me/ HTTP/1.1" 200 399
+[30/Jul/2026 04:26:33] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:26:33] "GET /api/auth/me/ HTTP/1.1" 200 399
+[30/Jul/2026 04:26:33] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:26:33] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 2030
+[30/Jul/2026 04:26:33] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 2030
+[30/Jul/2026 04:26:33] "GET /api/tele-campaigns/14/stats/ HTTP/1.1" 404 53
+[30/Jul/2026 04:26:33] "GET /api/tele-campaign-contacts/workspace/?campaign=14&scope=mine&show_all=true HTTP/1.1" 200 3844
+[30/Jul/2026 04:26:33] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 2030
+[30/Jul/2026 04:26:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 04:26:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 04:27:04] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 04:27:05] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 2
+[30/Jul/2026 04:27:12] "POST /api/logout/ HTTP/1.1" 205 57
+[30/Jul/2026 04:27:12] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:27:25] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 04:27:29] "POST /api/login/ HTTP/1.1" 200 1040
+[30/Jul/2026 04:27:30] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[30/Jul/2026 04:27:31] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:27:31] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:01] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:05] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:28:05] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:28:06] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:28:06] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:28:06] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:28:06] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:06] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:28:06] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:06] "GET /api/tele-campaign-contacts/contact_history/?contact_id=796 HTTP/1.1" 200 654
+[30/Jul/2026 04:28:06] "GET /api/tele-campaign-contacts/contact_history/?contact_id=796 HTTP/1.1" 200 654
+[30/Jul/2026 04:28:09] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:09] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:39] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:52] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:28:52] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:28:52] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:28:52] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:28:52] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:28:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:52] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:28:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4305
+[30/Jul/2026 04:28:52] "GET /api/tele-campaign-contacts/contact_history/?contact_id=796 HTTP/1.1" 200 654
+[30/Jul/2026 04:28:52] "GET /api/tele-campaign-contacts/contact_history/?contact_id=796 HTTP/1.1" 200 654
+[30/Jul/2026 04:29:12] "POST /api/contacts/796/verify-level2/ HTTP/1.1" 200 81
+[30/Jul/2026 04:29:14] "POST /api/contacts/796/verify-level3/ HTTP/1.1" 200 74
+[30/Jul/2026 04:29:44] "POST /api/tele-campaign-contacts/log_activity/ HTTP/1.1" 201 2376
+[30/Jul/2026 04:29:45] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 04:29:45] "GET /api/tele-activities/ HTTP/1.1" 200 32655
+[30/Jul/2026 04:29:45] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 04:29:45] "GET /api/tele-activities/ HTTP/1.1" 200 32655
+[30/Jul/2026 04:29:45] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 04:29:46] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 04:29:57] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:29:57] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:29:58] "GET /api/contacts/ HTTP/1.1" 200 154006
+[30/Jul/2026 04:30:29] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4974
+[30/Jul/2026 04:30:29] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4974
+[30/Jul/2026 04:30:46] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:30:46] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:30:46] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:30:46] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:30:46] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 04:30:47] "GET /api/tele-campaign-contacts/workspace/?campaign=30&scope=mine&show_all=true HTTP/1.1" 200 4677
+[30/Jul/2026 04:30:47] "GET /api/tele-campaigns/30/stats/ HTTP/1.1" 200 207
+[30/Jul/2026 04:30:47] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 04:30:47] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 04:30:48] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 04:30:48] "GET /api/tele-activities/ HTTP/1.1" 200 32655
+[30/Jul/2026 04:30:48] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 04:30:48] "GET /api/tele-activities/ HTTP/1.1" 200 32655
+[30/Jul/2026 04:30:49] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 04:30:49] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 04:31:12] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:31:12] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:31:12] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:31:12] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:31:12] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 04:31:12] "GET /api/tele-campaign-contacts/workspace/?campaign=30&scope=mine&show_all=true HTTP/1.1" 200 4677
+[30/Jul/2026 04:31:12] "GET /api/tele-campaigns/30/stats/ HTTP/1.1" 200 207
+[30/Jul/2026 04:31:13] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 04:31:13] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4974
+[30/Jul/2026 04:31:13] "GET /api/tele-campaigns/?scope=mine HTTP/1.1" 200 9328
+[30/Jul/2026 04:31:13] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4974
+[30/Jul/2026 04:31:15] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:31:15] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:31:15] "GET /api/auth/me/ HTTP/1.1" 200 379
+[30/Jul/2026 04:31:15] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:31:15] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 04:31:15] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4974
+[30/Jul/2026 04:31:15] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 04:31:15] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 4974
+[30/Jul/2026 04:31:15] "GET /api/tele-campaign-contacts/contact_history/?contact_id=797 HTTP/1.1" 200 654
+[30/Jul/2026 04:31:15] "GET /api/tele-campaign-contacts/contact_history/?contact_id=797 HTTP/1.1" 200 654
+[30/Jul/2026 04:31:23] "POST /api/tele-campaign-contacts/log_activity/ HTTP/1.1" 201 2259
+[30/Jul/2026 04:31:23] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 04:31:23] "GET /api/tele-activities/ HTTP/1.1" 200 33177
+[30/Jul/2026 04:31:23] "GET /api/users/ HTTP/1.1" 200 1755
+[30/Jul/2026 04:31:23] "GET /api/tele-activities/ HTTP/1.1" 200 33177
+[30/Jul/2026 04:31:24] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 04:31:24] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 04:31:32] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:31:32] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:32:03] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:32:33] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:33:03] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:33:32] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:33:33] "GET /api/tele-activities/ HTTP/1.1" 200 33177
+[30/Jul/2026 04:33:53] "GET /api/tele-activities/ HTTP/1.1" 200 33177
+[30/Jul/2026 04:33:59] "GET /api/tele-activities/ HTTP/1.1" 200 33177
+[30/Jul/2026 04:34:02] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 04:34:07] "GET /api/tele-activities/ HTTP/1.1" 200 33177
+[30/Jul/2026 09:09:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:10:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:11:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:12:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:13:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:14:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:14:37] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:14:40] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:14:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:15:11] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:15:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:16:11] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:16:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:17:11] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:17:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:18:11] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:18:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:19:11] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:20:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:21:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:22:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:23:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:24:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:25:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:26:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:27:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:28:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:29:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:30:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:31:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 09:32:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 10:23:41] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:17:05] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 13:17:24] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:17:35] "GET /admin/ HTTP/1.1" 302 0
+[30/Jul/2026 13:17:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3147
+[30/Jul/2026 13:17:36] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36] "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36] "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36,341] - Broken pipe from ('127.0.0.1', 51815)
+[30/Jul/2026 13:17:36] "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+[30/Jul/2026 13:17:36] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[30/Jul/2026 13:17:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:18:23] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:18:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:19:23] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:19:52] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:20:23] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:21:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:22:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:23:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:24:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:25:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:26:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:27:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:28:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:29:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:30:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:31:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:32:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:33:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:34:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:35:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:36:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:37:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:38:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:39:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:40:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:41:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:42:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:43:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:44:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:45:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:46:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:47:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:48:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:49:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:50:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:51:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:52:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:53:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:54:16] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 13:55:17] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 14:08:02] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 14:34:04] "POST /api/login/ HTTP/1.1" 400 76
+[30/Jul/2026 15:54:28] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 15:54:28] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5550
+[30/Jul/2026 15:54:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 15:54:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 15:54:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 15:54:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 15:54:33] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38952
+[30/Jul/2026 15:54:33] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38952
+[30/Jul/2026 15:54:33] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 15:54:34] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 15:54:41] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 15:54:41] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 15:54:41] "GET /api/products/ HTTP/1.1" 200 305
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 15:54:41] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 15:54:41] "GET /api/tele-cities/ HTTP/1.1" 200 40
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 15:54:41] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 15:54:41] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 15:54:41] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 15:54:41] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 15:54:41] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 15:57:57] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 15:57:57] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 15:57:57] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 15:57:57] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 15:57:57] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 15:57:57] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 15:57:57] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 15:57:57] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 15:57:57] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 15:57:57] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 15:58:45] "GET /api/products/ HTTP/1.1" 200 305
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 15:58:45] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 15:58:45] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 15:58:45] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 15:58:45] "GET /api/products/ HTTP/1.1" 200 305
+[30/Jul/2026 15:58:45] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 15:58:45] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 15:58:45] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 15:58:45] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 15:58:45] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 15:59:49] "PATCH /api/products/1/ HTTP/1.1" 200 297
+[30/Jul/2026 16:00:05] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 16:00:05] "GET /api/users-list/ HTTP/1.1" 200 546
+[30/Jul/2026 16:00:06] "GET /api/contacts/ HTTP/1.1" 200 154006
+[30/Jul/2026 16:02:20] "GET /api/email-templates/ HTTP/1.1" 200 5466
+[30/Jul/2026 16:02:20] "GET /api/email-templates/ HTTP/1.1" 200 5466
+[30/Jul/2026 16:02:20] "GET /media/template_images/download.jpg HTTP/1.1" 404 179
+[30/Jul/2026 16:02:20] "GET /media/template_images/download.jpg HTTP/1.1" 404 179
+[30/Jul/2026 16:03:55] "GET /api/tele-cities/ HTTP/1.1" 200 40
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:03:55] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:03:55] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:03:55] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:03:55] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:03:55] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:03:55] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:03:55] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:03:55] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:03:55] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:17:22] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:17:22] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:17:22] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:17:22] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:17:22] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:17:22] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:17:22] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:17:22] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:17:22] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:17:22] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:30:48] "POST /api/login/ HTTP/1.1" 400 76
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:30:54] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:30:54] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:30:54] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:30:54] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:30:54] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:30:54] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:30:54] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:30:54] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:30:54] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:30:54] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:34:26] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:34:26] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:34:26] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:34:26] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:34:26] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:34:26] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:34:26] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:34:26] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:34:26] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:34:26] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:34:34] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:34:34] "GET /api/methods/ HTTP/1.1" 200 1164
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:34:34] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:34:34] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:34:34] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:34:34] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:34:34] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:34:34] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:34:34] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:34:34] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:37:26] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:37:26] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:37:26] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:37:26] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:37:26] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:37:26] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:37:26] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:37:26] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:37:26] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:37:26] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:37:35] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:37:35] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:37:35] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:37:35] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:37:35] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:37:35] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:37:35] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:37:35] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:37:35] "GET /api/tele-categories/ HTTP/1.1" 200 579
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 16:37:35] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1278
+[30/Jul/2026 16:39:59] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:39:59] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:39:59] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:39:59] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:39:59] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[30/Jul/2026 16:39:59] "GET /api/products/ HTTP/1.1" 200 309
+[30/Jul/2026 16:39:59] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[30/Jul/2026 16:39:59] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1659
+[30/Jul/2026 16:39:59] "GET /api/methods/ HTTP/1.1" 200 1164
+[30/Jul/2026 16:39:59] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1659
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/99/ HTTP/1.1" 200 191
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/77/ HTTP/1.1" 200 188
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/78/ HTTP/1.1" 200 193
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/79/ HTTP/1.1" 200 181
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/81/ HTTP/1.1" 200 183
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/82/ HTTP/1.1" 200 172
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/100/ HTTP/1.1" 200 189
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/80/ HTTP/1.1" 200 178
+[30/Jul/2026 16:40:17] "PATCH /api/lead-allocation-rules/98/ HTTP/1.1" 200 179
+[30/Jul/2026 16:40:17] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1664
+[30/Jul/2026 16:40:23] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:40:23] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:40:23] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:40:23] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:40:24] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38952
+[30/Jul/2026 16:40:24] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38952
+[30/Jul/2026 16:40:24] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 16:40:25] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 16:40:27] "POST /api/tele-campaign-contacts/670/confirm/ HTTP/1.1" 500 145
+[30/Jul/2026 16:40:48] "POST /api/tele-campaign-contacts/670/confirm/ HTTP/1.1" 400 49
+[30/Jul/2026 16:40:53] "POST /api/tele-campaign-contacts/670/confirm/ HTTP/1.1" 400 49
+[30/Jul/2026 16:41:06] "POST /api/tele-campaign-contacts/670/confirm/ HTTP/1.1" 400 49
+[30/Jul/2026 16:41:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:41:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:41:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:41:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:41:22] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38958
+[30/Jul/2026 16:41:23] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38958
+[30/Jul/2026 16:41:23] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 16:41:23] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 16:41:41] "GET /api/email-templates/ HTTP/1.1" 200 5466
+[30/Jul/2026 16:41:41] "GET /api/email-templates/ HTTP/1.1" 200 5466
+[30/Jul/2026 16:41:41] "GET /media/template_images/download.jpg HTTP/1.1" 404 179
+[30/Jul/2026 16:41:41] "GET /media/template_images/download.jpg HTTP/1.1" 404 179
+[30/Jul/2026 16:41:43] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:41:43] "GET /api/salespie-users/ HTTP/1.1" 200 717
+[30/Jul/2026 16:41:43] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 16:41:43] "GET /api/salespie-users/ HTTP/1.1" 200 717
+[30/Jul/2026 16:41:43] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 13235
+[30/Jul/2026 16:41:43] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 13235
+[30/Jul/2026 17:09:21] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:21] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:21] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:21] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:22] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38958
+[30/Jul/2026 17:09:23] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38958
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 17:09:23] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:23] "GET /api/salespie-users/ HTTP/1.1" 200 717
+Auto-refresh of SalesPie users failed, serving cache: SALESPIE_COMPANY_ID is required. Refusing to share SalesPie users across companies.
+[30/Jul/2026 17:09:23] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:23] "GET /api/salespie-users/ HTTP/1.1" 200 717
+[30/Jul/2026 17:09:23] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 13234
+[30/Jul/2026 17:09:23] "GET /api/my-warm-leads/?filter=all HTTP/1.1" 200 13234
+[30/Jul/2026 17:09:23] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:09:24] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:09:28] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:28] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:28] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:29] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:09:30] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38958
+[30/Jul/2026 17:09:30] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38958
+[30/Jul/2026 17:09:30] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:09:31] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:09:38] "POST /api/tele-campaign-contacts/669/confirm/ HTTP/1.1" 500 145
+[30/Jul/2026 17:10:18] "POST /api/tele-campaign-contacts/669/confirm/ HTTP/1.1" 400 49
+[30/Jul/2026 17:15:27] "GET /api/tele-campaign-contacts/mql/?lead_type=cold HTTP/1.1" 200 14358
+[30/Jul/2026 17:15:30] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 38964
+[30/Jul/2026 17:15:47] "POST /api/integrations/sync/lead-status/ HTTP/1.1" 200 90
+[30/Jul/2026 17:15:53] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 17:15:53] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 17:15:53] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 17:15:53] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[30/Jul/2026 17:15:53] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 17:15:53] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[30/Jul/2026 17:15:53] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[30/Jul/2026 17:15:53] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[30/Jul/2026 17:15:54] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[30/Jul/2026 17:15:54] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[30/Jul/2026 17:15:55] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 17:15:55] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:15:55] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:15:56] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:15:56] "GET /api/contacts/ HTTP/1.1" 200 154006
+[30/Jul/2026 17:15:56] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[30/Jul/2026 17:15:56] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:15:56] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 37212
+[30/Jul/2026 17:15:57] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 37212
+[30/Jul/2026 17:15:58] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[30/Jul/2026 17:15:58] "GET /api/contacts/ HTTP/1.1" 200 154006
+[30/Jul/2026 17:15:58] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:15:59] "GET /api/tele-campaign-contacts/mql/?lead_type=cold HTTP/1.1" 200 16137
+[30/Jul/2026 17:15:59] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+[30/Jul/2026 17:16:00] "GET /api/tele-campaigns/ HTTP/1.1" 200 12815
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+Traceback (most recent call last):
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\core\management\__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 81, in __getattr__
+    self._setup(name)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\conf\__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Program Files\Python314\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1398, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "C:\Users\akhil\Desktop\Company_portal\email_campaign_project-4\backend\email_campaign_project\settings.py", line 149, in <module>
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: This project is configured to use PostgreSQL only. Set DATABASE_ENGINE=django.db.backends.postgresql.
+[03/Aug/2026 01:05:54] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:07:07] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:07:56] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:08:46] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:09:35] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:10:25] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:12:06] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:21:01] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:30:24] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 08:30:29] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[03/Aug/2026 08:42:21] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 09:15:38] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 09:15:44] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[03/Aug/2026 09:15:47] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[03/Aug/2026 09:15:47] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[03/Aug/2026 10:37:35] "GET /api/integrations/meta/oauth/callback/ HTTP/1.1" 400 5961
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35,511] - Broken pipe from ('127.0.0.1', 49421)
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+[03/Aug/2026 10:37:35] "GET /favicon.ico HTTP/1.1" 200 644
+[03/Aug/2026 10:42:20] "GET /api/integrations/meta/oauth/callback/ HTTP/1.1" 400 5961
+[03/Aug/2026 10:42:20] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+[03/Aug/2026 10:42:21] "GET /favicon.ico HTTP/1.1" 200 644
+[03/Aug/2026 12:15:24] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 12:15:27] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[03/Aug/2026 12:15:28] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[03/Aug/2026 12:15:28] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[03/Aug/2026 12:15:30] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:15:30] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:15:32] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:15:34] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:18:07] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:21:48] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:21:49] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:21:55] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:21:55] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:21:56] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:22:53] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:22:55] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 12:22:55] "GET /api/integrations/summary/ HTTP/1.1" 404 179
+[03/Aug/2026 17:47:17] "POST /api/login/ HTTP/1.1" 400 76
+[03/Aug/2026 18:04:19] "OPTIONS /api/contact/ HTTP/1.1" 200 0
+[03/Aug/2026 18:04:20] "POST /api/contact/ HTTP/1.1" 404 179
+[03/Aug/2026 18:05:00] "POST /api/contact/ HTTP/1.1" 404 179
+[03/Aug/2026 18:05:10] "GET /admin/ HTTP/1.1" 302 0
+[03/Aug/2026 18:05:10] "GET / HTTP/1.1" 200 644
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField Contact.created_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField Contact.created_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField MarketingRecipient.sent_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField MarketingRecipient.sent_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField WhatsAppRecipient.sent_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField WhatsAppRecipient.sent_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+[03/Aug/2026 18:58:28] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[03/Aug/2026 18:58:28] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[03/Aug/2026 18:58:28] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[03/Aug/2026 18:58:28] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[03/Aug/2026 18:58:28] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[03/Aug/2026 18:58:28] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[03/Aug/2026 18:58:31] "GET /api/users/ HTTP/1.1" 200 1755
+[03/Aug/2026 18:58:32] "GET /api/tele-activities/ HTTP/1.1" 200 34290
+[03/Aug/2026 18:58:32] "GET /api/users/ HTTP/1.1" 200 1755
+[03/Aug/2026 18:58:32] "GET /api/tele-activities/ HTTP/1.1" 200 34290
+[03/Aug/2026 18:58:32] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[03/Aug/2026 18:58:32] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[03/Aug/2026 18:58:45] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[03/Aug/2026 18:58:45] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[03/Aug/2026 18:58:45] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[03/Aug/2026 18:58:45] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[03/Aug/2026 18:58:45] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 36041
+[03/Aug/2026 18:58:46] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 36041
+[03/Aug/2026 18:58:46] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[03/Aug/2026 18:58:46] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[04/Aug/2026 06:36:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 06:36:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 06:36:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 06:36:22] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 06:36:23] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 36041
+[04/Aug/2026 06:36:23] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 36041
+[04/Aug/2026 06:36:23] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[04/Aug/2026 06:36:24] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[04/Aug/2026 06:49:22] "GET /api/tele-activities/?campaign_contact=669 HTTP/1.1" 200 572
+[04/Aug/2026 06:49:41] "GET /api/tele-activities/?campaign_contact=669 HTTP/1.1" 200 572
+[04/Aug/2026 06:56:54] "POST /api/login/ HTTP/1.1" 400 76
+[04/Aug/2026 06:57:06] "POST /api/login/ HTTP/1.1" 400 76
+[04/Aug/2026 06:57:18] "POST /api/login/ HTTP/1.1" 400 76
+[04/Aug/2026 06:57:22] "POST /api/login/ HTTP/1.1" 200 1040
+[04/Aug/2026 07:03:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 07:03:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 07:03:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 07:03:32] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 07:03:32] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 36041
+[04/Aug/2026 07:03:32] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 36041
+[04/Aug/2026 07:03:33] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[04/Aug/2026 07:03:33] "GET /api/tele-campaigns/ HTTP/1.1" 200 13287
+[04/Aug/2026 08:55:21] "GET /api/users-list/ HTTP/1.1" 200 546
+[04/Aug/2026 08:55:21] "GET /api/users-list/ HTTP/1.1" 200 546
+[04/Aug/2026 08:55:22] "GET /api/contacts/ HTTP/1.1" 200 155406
+[04/Aug/2026 08:57:59] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 08:57:59] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 08:57:59] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 08:57:59] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 08:57:59] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 41091
+[04/Aug/2026 08:58:00] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 41091
+[04/Aug/2026 08:58:00] "GET /api/tele-campaigns/ HTTP/1.1" 200 13289
+[04/Aug/2026 08:58:00] "GET /api/tele-campaigns/ HTTP/1.1" 200 13289
+[04/Aug/2026 08:58:15] "GET /api/tele-activities/?campaign_contact=692 HTTP/1.1" 200 637
+[04/Aug/2026 08:58:40] "GET /api/tele-activities/?campaign_contact=692 HTTP/1.1" 200 637
+[04/Aug/2026 09:27:15] "OPTIONS /api/contact/ HTTP/1.1" 404 179
+[04/Aug/2026 11:56:43] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 11:56:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 11:56:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 11:56:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[04/Aug/2026 11:56:44] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 42771
+[04/Aug/2026 11:56:45] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 42771
+[04/Aug/2026 11:56:45] "GET /api/integrations/summary/ HTTP/1.1" 200 767
+[04/Aug/2026 11:56:45] "GET /api/integrations/summary/ HTTP/1.1" 200 767
+[04/Aug/2026 11:56:45] "GET /api/tele-campaigns/ HTTP/1.1" 200 13289
+[04/Aug/2026 11:56:46] "GET /api/tele-campaigns/ HTTP/1.1" 200 13289
+[04/Aug/2026 11:56:53] "GET /api/integrations/website/status/ HTTP/1.1" 200 374
+[04/Aug/2026 11:57:13] "GET /api/integrations/meta/status/ HTTP/1.1" 200 367
+[04/Aug/2026 11:57:16] "POST /api/integrations/meta/disconnect/ HTTP/1.1" 200 20
+[04/Aug/2026 11:57:16] "GET /api/integrations/summary/ HTTP/1.1" 200 758
+[04/Aug/2026 11:57:16] "GET /api/integrations/meta/status/ HTTP/1.1" 200 358
+[04/Aug/2026 11:57:20] "GET /api/integrations/meta/status/ HTTP/1.1" 200 358
+[04/Aug/2026 11:57:21] "POST /api/integrations/meta/connect/ HTTP/1.1" 200 375
+[04/Aug/2026 11:57:52] "GET /api/integrations/google/status/ HTTP/1.1" 200 363
+[04/Aug/2026 15:41:54] "GET /api/integrations/google/status/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:05] "GET /api/integrations/google/status/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:09] "GET /api/integrations/meta/status/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:14] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:14] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:18] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:18] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:37] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:37] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:38] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:39] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:42:40] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:43:18] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:43:19] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:43:23] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:43:23] "GET /api/integrations/summary/ HTTP/1.1" 403 172
+[04/Aug/2026 15:43:26] "GET /api/users/ HTTP/1.1" 401 172
+[04/Aug/2026 15:43:26] "GET /api/users/ HTTP/1.1" 401 172
+[04/Aug/2026 15:43:30] "POST /api/login/ HTTP/1.1" 400 76
+[04/Aug/2026 15:43:33] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[04/Aug/2026 15:43:34] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[04/Aug/2026 15:43:35] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[04/Aug/2026 15:43:36] "GET /api/integrations/summary/ HTTP/1.1" 200 758
+[04/Aug/2026 15:43:36] "GET /api/integrations/summary/ HTTP/1.1" 200 758
+[04/Aug/2026 15:43:38] "GET /api/integrations/google/status/ HTTP/1.1" 200 363
+[04/Aug/2026 15:43:41] "POST /api/integrations/google/connect/ HTTP/1.1" 400 112
+[04/Aug/2026 15:44:01] "GET /api/integrations/google/status/ HTTP/1.1" 200 363
+[04/Aug/2026 15:44:03] "POST /api/integrations/google/connect/ HTTP/1.1" 400 112
+[04/Aug/2026 15:44:20] "GET /admin/ HTTP/1.1" 302 0
+[04/Aug/2026 15:44:21] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3147
+[04/Aug/2026 15:44:21] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:21] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3467
+[04/Aug/2026 15:44:33] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:33] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3467
+[04/Aug/2026 15:44:51] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+[04/Aug/2026 15:44:51] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 3467
+[04/Aug/2026 15:45:07] "GET /static/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "GET /static/vendor/adminlte/css/adminlte.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "GET /static/vendor/adminlte/img/AdminLTELogo.png HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "GET /static/jazzmin/css/main.css HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "GET /static/vendor/adminlte/js/adminlte.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 404 179
+[04/Aug/2026 15:45:07] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:49:50] "GET /api/integrations/google/status/ HTTP/1.1" 200 361
+[04/Aug/2026 15:49:51] "POST /api/integrations/google/connect/ HTTP/1.1" 200 412
+[04/Aug/2026 15:56:57] "GET /api/integrations/google/oauth/callback/?state=eyJ1c2VyX2lkIjoyfQ:1wrCFT:yTS-IRWXf5R2w8GVafSs2iK8QiXEWsiYWOOChfqZfXA&iss=https://accounts.google.com&code=4/0AXEQxICbe4Mb1fnqnITker_2yrg68kfz3Uvn-fLq82T0R7-Bq7x_UrllUdS1LavUYvT_xg&scope=https://www.googleapis.com/auth/adwords HTTP/1.1" 502 7322
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+[04/Aug/2026 15:56:57] "GET /favicon.ico HTTP/1.1" 200 644
+[04/Aug/2026 16:04:22] "GET /api/integrations/google/oauth/callback/?state=eyJ1c2VyX2lkIjoyfQ:1wrCFT:yTS-IRWXf5R2w8GVafSs2iK8QiXEWsiYWOOChfqZfXA&iss=https://accounts.google.com&code=4/0AXEQxIBn51GdtE_gwuc8baOKm1QDjw3qN8qWnCQxcRupUzaPhxNzs3sFFAPM338XsJulzw&scope=https://www.googleapis.com/auth/adwords HTTP/1.1" 400 7234
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 179
+[04/Aug/2026 16:04:23] "GET /favicon.ico HTTP/1.1" 200 644
+[04/Aug/2026 16:06:09] "GET /api/integrations/summary/ HTTP/1.1" 403 58
+[04/Aug/2026 16:06:17] "GET /api/methods/ HTTP/1.1" 200 1164
+[04/Aug/2026 16:06:17] "GET /api/products/ HTTP/1.1" 200 309
+[04/Aug/2026 16:06:17] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[04/Aug/2026 16:06:17] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[04/Aug/2026 16:06:17] "GET /api/products/ HTTP/1.1" 200 309
+[04/Aug/2026 16:06:17] "GET /api/methods/ HTTP/1.1" 200 1164
+[04/Aug/2026 16:06:17] "GET /api/tele-cities/ HTTP/1.1" 200 40
+[04/Aug/2026 16:06:17] "GET /api/tele-categories/ HTTP/1.1" 200 579
+[04/Aug/2026 16:06:18] "GET /api/users/ HTTP/1.1" 200 1755
+[04/Aug/2026 16:06:18] "GET /api/users/ HTTP/1.1" 200 1755
+Auto-refresh of SalesPie users failed, serving cache: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /api/integrations/sync/users/ (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8001): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+[04/Aug/2026 16:06:19] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1664
+Auto-refresh of SalesPie users failed, serving cache: HTTPConnectionPool(host='127.0.0.1', port=8001): Max retries exceeded with url: /api/integrations/sync/users/ (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8001): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+[04/Aug/2026 16:06:21] "GET /api/lead-allocation-rules/ HTTP/1.1" 200 1664
+[04/Aug/2026 16:06:30] "GET /api/users-list/ HTTP/1.1" 200 546
+[04/Aug/2026 16:06:30] "GET /api/users-list/ HTTP/1.1" 200 546
+[04/Aug/2026 16:06:31] "GET /api/contacts/ HTTP/1.1" 200 156094
+[07/Aug/2026 13:24:31] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 13:25:43] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 13:27:49] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-campaigns/ HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-campaigns/ HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[07/Aug/2026 13:27:49] "POST /api/token/refresh/ HTTP/1.1" 200 777
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[07/Aug/2026 13:27:49] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[07/Aug/2026 13:27:49] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 44470
+[07/Aug/2026 13:27:50] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 44470
+[07/Aug/2026 13:27:50] "GET /api/tele-campaigns/ HTTP/1.1" 200 13761
+[07/Aug/2026 13:27:51] "GET /api/tele-campaigns/ HTTP/1.1" 200 13761
+[07/Aug/2026 13:28:02] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 13:28:17] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 13:28:22] "POST /api/login/ HTTP/1.1" 200 1040
+[07/Aug/2026 13:34:17] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[07/Aug/2026 13:34:17] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[07/Aug/2026 13:34:17] "GET /logos/ HTTP/1.1" 200 644
+[07/Aug/2026 13:34:17] "GET /reports/comprehensive/ HTTP/1.1" 200 644
+[07/Aug/2026 13:34:17] "GET /logos/ HTTP/1.1" 200 644
+[07/Aug/2026 13:34:17] "GET /reports/comprehensive/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:20] "GET /tools/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:20] "GET /toolkits/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:20] "GET /racks/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:20] "GET /toolkits/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:20] "GET /tools/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:20] "GET /racks/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:50] "GET /racks/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:51] "GET /racks/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[07/Aug/2026 13:40:55] "GET /racks/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "GET /tools/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "GET /toolkits/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "GET /logos/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "GET /racks/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "GET /tools/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "GET /toolkits/ HTTP/1.1" 200 644
+[07/Aug/2026 13:40:55] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[07/Aug/2026 13:40:55] "GET /logos/ HTTP/1.1" 200 644
+[07/Aug/2026 13:43:07] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:10] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:13] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:17] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:38] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:41] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:44] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:43:50] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 13:44:38] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 13:45:04] "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[07/Aug/2026 14:26:11] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:34:53] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:35:10] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:35:24] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:35:30] "POST /api/login/ HTTP/1.1" 200 1040
+[07/Aug/2026 14:35:30] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:35:52] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:36:14] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:36:24] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 14:36:36] "POST /api/login/ HTTP/1.1" 400 76
+[07/Aug/2026 17:03:04] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[07/Aug/2026 17:03:04] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[07/Aug/2026 17:03:04] "GET /tools/ HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /logos/ HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=4 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=5 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=7 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /logos/ HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=2 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=1 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=6 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=9 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /toolkits/ HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=8 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=4 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=2 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /tools/ HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=1 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=6 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=5 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=7 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=9 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /sections/?rack=8 HTTP/1.1" 200 644
+[07/Aug/2026 17:03:04] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[10/Aug/2026 07:43:06] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[10/Aug/2026 07:43:06] "GET /logos/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /logos/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /tools/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /racks/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /racks/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /tools/ HTTP/1.1" 200 644
+[10/Aug/2026 07:43:06] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 08:37:12] "POST /api/login/ HTTP/1.1" 400 76
+[10/Aug/2026 08:37:25] "POST /api/login/ HTTP/1.1" 400 76
+[10/Aug/2026 08:37:30] "POST /api/login/ HTTP/1.1" 200 1040
+[10/Aug/2026 08:37:30] "POST /api/login/ HTTP/1.1" 400 76
+[10/Aug/2026 09:21:28] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[10/Aug/2026 09:21:28] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[10/Aug/2026 09:21:28] "GET /logos/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:28] "GET /logos/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:29] "GET /racks/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:29] "GET /tools/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:29] "GET /racks/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:29] "GET /tools/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:29] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 09:21:29] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 11:53:20] "GET / HTTP/1.1" 200 644
+[10/Aug/2026 12:07:29] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-campaigns/ HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-campaigns/ HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "GET /api/tele-categories/?active=true HTTP/1.1" 401 172
+[10/Aug/2026 12:07:29] "POST /api/token/refresh/ HTTP/1.1" 401 58
+[10/Aug/2026 12:07:58] "POST /api/login/ HTTP/1.1" 400 76
+[10/Aug/2026 12:08:01] "POST /api/company-portal-login/ HTTP/1.1" 200 1109
+[10/Aug/2026 12:08:02] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[10/Aug/2026 12:08:02] "GET /api/tele-campaign-contacts/?assigned_only=true HTTP/1.1" 200 5650
+[10/Aug/2026 12:08:06] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:06] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:06] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:06] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:07] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 44470
+[10/Aug/2026 12:08:07] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 44470
+[10/Aug/2026 12:08:07] "GET /api/tele-campaigns/ HTTP/1.1" 200 13761
+[10/Aug/2026 12:08:08] "GET /api/tele-campaigns/ HTTP/1.1" 200 13761
+[10/Aug/2026 12:08:20] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:20] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:20] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:20] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:08:20] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 44470
+[10/Aug/2026 12:08:20] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 44470
+[10/Aug/2026 12:08:21] "GET /api/tele-campaigns/ HTTP/1.1" 200 13761
+[10/Aug/2026 12:08:21] "GET /api/tele-campaigns/ HTTP/1.1" 200 13761
+[10/Aug/2026 12:12:55] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField Contact.created_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField Contact.created_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField MarketingRecipient.sent_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField MarketingRecipient.sent_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField WhatsAppRecipient.sent_at received a naive datetime (2026-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+C:\Users\akhil\AppData\Roaming\Python\Python314\site-packages\django\db\models\fields\__init__.py:1612: RuntimeWarning: DateTimeField WhatsAppRecipient.sent_at received a naive datetime (2027-04-01 00:00:00) while time zone support is active.
+  warnings.warn(
+[10/Aug/2026 12:12:55] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 12:12:55] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 12:12:55] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 12:12:55] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 12:12:55] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 12:12:55] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 12:12:55] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 12:12:55] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 12:12:56] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 12:12:57] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:12:57] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:12:57] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:12:57] "GET /api/contacts/ HTTP/1.1" 200 157599
+[10/Aug/2026 12:12:57] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 12:12:57] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 12:12:57] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 47649
+[10/Aug/2026 12:12:58] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 47649
+[10/Aug/2026 12:12:58] "GET /api/contacts/ HTTP/1.1" 200 157599
+[10/Aug/2026 12:12:59] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 12:12:59] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 12:13:00] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 12:13:00] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 12:13:01] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 12:22:51] "POST /api/login/ HTTP/1.1" 400 76
+[10/Aug/2026 15:17:41] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 15:17:41] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 15:17:42] "GET /api/contacts/ HTTP/1.1" 200 159008
+[10/Aug/2026 15:17:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 15:17:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 15:17:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 15:17:44] "GET /api/tele-categories/?active=true HTTP/1.1" 200 579
+[10/Aug/2026 15:17:45] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 50836
+[10/Aug/2026 15:17:45] "GET /api/tele-campaign-contacts/mql/?lead_type=warm HTTP/1.1" 200 50836
+[10/Aug/2026 15:17:45] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 15:17:46] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 15:43:51] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[10/Aug/2026 15:43:51] "OPTIONS /users/me/ HTTP/1.1" 200 0
+[10/Aug/2026 15:43:51] "GET /logos/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /logos/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /racks/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /tools/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /racks/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /tools/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:51] "GET /toolkits/ HTTP/1.1" 200 644
+[10/Aug/2026 15:43:54] "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[10/Aug/2026 15:43:54] "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[10/Aug/2026 15:43:58] "OPTIONS /api/departments/ HTTP/1.1" 200 0
+[10/Aug/2026 15:43:58] "OPTIONS /api/departments/ HTTP/1.1" 200 0
+[10/Aug/2026 15:59:47] "POST /api/integrations/sync/opportunity/ HTTP/1.1" 200 114
+[10/Aug/2026 16:15:30] "GET /api/contact-verification/?status=verified HTTP/1.1" 200 850
+[10/Aug/2026 16:15:30] "GET /api/contact-verification/?status=pending HTTP/1.1" 200 1423
+[10/Aug/2026 16:15:30] "GET /api/contact-verification/?status=dumped HTTP/1.1" 200 734
+[10/Aug/2026 16:15:30] "GET /api/contact-verification/?status=dumped HTTP/1.1" 200 734
+[10/Aug/2026 16:15:30] "GET /api/contact-verification/?status=verified HTTP/1.1" 200 850
+[10/Aug/2026 16:15:30] "GET /api/contact-verification/?status=pending HTTP/1.1" 200 1423
+[10/Aug/2026 16:15:32] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 16:15:32] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 16:15:36] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:15:36] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:15:36] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:15:36] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:15:36] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6951
+[10/Aug/2026 16:15:36] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6951
+[10/Aug/2026 16:15:40] "GET /api/whatsapp-templates/ HTTP/1.1" 200 1611
+[10/Aug/2026 16:15:40] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:15:40] "GET /api/products/?active=true HTTP/1.1" 200 309
+[10/Aug/2026 16:15:40] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:15:40] "GET /api/whatsapp-templates/ HTTP/1.1" 200 1611
+[10/Aug/2026 16:15:40] "GET /api/products/?active=true HTTP/1.1" 200 309
+[10/Aug/2026 16:15:41] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:15:42] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:16:53] "POST /api/whatsapp-campaigns/ HTTP/1.1" 201 703
+[10/Aug/2026 16:16:53] "POST /api/whatsapp-campaigns/71/add_from_contacts/ HTTP/1.1" 200 94
+\u274c Session 6 not connected. Gateway status: initializing
+[10/Aug/2026 16:16:54] "POST /api/whatsapp-campaigns/71/schedule_or_send/ HTTP/1.1" 200 194
+[10/Aug/2026 16:17:03] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 16:17:03] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 16:17:08] "POST /api/whatsapp-accounts/6/disconnect/ HTTP/1.1" 200 114
+[10/Aug/2026 16:17:08] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 163
+[10/Aug/2026 16:17:12] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 105
+[10/Aug/2026 16:17:12] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:15] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:18] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:21] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:24] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:27] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:30] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:33] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:36] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:39] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:42] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:45] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:48] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:51] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:54] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:17:57] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:00] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:03] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:06] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:09] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:12] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:15] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:18] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:21] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:24] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:27] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:30] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:33] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:36] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:39] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:42] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:45] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:48] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:51] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:18:54] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:18:57] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:19:00] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:19:03] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:19:06] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:19:06] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 163
+[10/Aug/2026 16:19:09] "POST /api/whatsapp-accounts/6/init_session/ HTTP/1.1" 200 97
+[10/Aug/2026 16:19:09] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:19:09] "GET /api/whatsapp-accounts/6/qr/ HTTP/1.1" 200 106
+[10/Aug/2026 16:19:11] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 163
+[10/Aug/2026 16:19:19] "POST /api/whatsapp-accounts/6/logout_device/ HTTP/1.1" 200 109
+[10/Aug/2026 16:19:19] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 163
+[10/Aug/2026 16:19:43] "POST /api/whatsapp-accounts/6/logout_device/ HTTP/1.1" 200 109
+[10/Aug/2026 16:19:43] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 163
+[10/Aug/2026 16:19:50] "DELETE /api/whatsapp-accounts/6/ HTTP/1.1" 204 0
+[10/Aug/2026 16:19:50] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 52
+[10/Aug/2026 16:30:22] "POST /api/whatsapp-accounts/ HTTP/1.1" 201 389
+[10/Aug/2026 16:30:22] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:30:22] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:30:26] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:30:29] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:30:32] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:30:34] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 16:30:38] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:40] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:43] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:46] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:49] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:52] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:55] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:30:58] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6845
+[10/Aug/2026 16:31:01] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:04] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:07] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:10] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:13] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:16] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:19] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 6847
+[10/Aug/2026 16:31:22] "GET /api/whatsapp-accounts/7/qr/ HTTP/1.1" 200 79
+[10/Aug/2026 16:31:25] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 16:32:14] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:32:14] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:32:14] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:32:14] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6449
+[10/Aug/2026 16:32:15] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:32:15] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:32:15] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6449
+[10/Aug/2026 16:33:11] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:33:11] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:33:11] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:33:11] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:33:11] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6449
+[10/Aug/2026 16:33:11] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6449
+[10/Aug/2026 16:33:39] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 865
+[10/Aug/2026 16:33:39] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 865
+[10/Aug/2026 16:33:44] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 865
+[10/Aug/2026 16:33:46] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:33:46] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:33:46] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:33:46] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:33:46] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6534
+[10/Aug/2026 16:33:46] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6534
+[10/Aug/2026 16:34:21] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 865
+[10/Aug/2026 16:34:21] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 865
+[10/Aug/2026 16:34:27] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 865
+\u274c [1/2] Failed for 918078992875: Gateway timeout for 918078992875.
+[10/Aug/2026 16:34:32] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:34:37] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:34:42] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:34:47] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:34:52] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:34:57] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:02] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:07] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:12] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:17] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:22] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:27] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:32] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:37] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:42] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:44] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:35:44] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:35:44] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:35:44] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:35:44] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6534
+[10/Aug/2026 16:35:44] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6534
+[10/Aug/2026 16:35:47] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:47] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:53] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:35:57] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+[10/Aug/2026 16:36:02] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 895
+\u274c [2/2] Failed for 919947778194: Gateway timeout for 919947778194.
+[10/Aug/2026 16:36:06] "POST /api/whatsapp-campaigns/71/schedule_or_send/ HTTP/1.1" 200 114
+[10/Aug/2026 16:37:07] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 924
+[10/Aug/2026 16:37:11] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:37:11] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:37:11] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:37:11] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:37:11] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 16:37:11] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 16:41:18] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:18] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:18] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:18] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:18] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:18] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:18] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:18] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:19] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:19] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:20] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:20] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:20] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:21] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:21] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:21] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:24] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 16:41:24] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 16:41:25] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:27] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:27] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:27] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:27] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:27] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:27] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:27] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:27] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:27] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:28] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:28] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 16:41:28] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:28] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 16:41:28] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:29] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:29] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:29] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:30] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:30] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:30] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:30] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:30] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:30] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:30] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:30] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:30] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:30] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:30] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:31] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 16:41:31] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:31] "GET /api/users-list/ HTTP/1.1" 200 546
+[10/Aug/2026 16:41:31] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:32] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:32] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:32] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:32] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:32] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:32] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:41:32] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:41:32] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:32] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:41:32] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:41:32] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:32] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:32] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:41:34] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:34] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:34] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:34] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:41:34] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:35] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:35] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:41:36] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 16:41:36] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:42:10] "POST /api/login/ HTTP/1.1" 400 76
+[10/Aug/2026 16:43:22] "GET /api/users/ HTTP/1.1" 200 1755
+[10/Aug/2026 16:43:22] "GET /api/users/ HTTP/1.1" 200 1755
+[10/Aug/2026 16:49:13] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:49:13] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:49:13] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:49:13] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:49:13] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 16:49:13] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 16:49:22] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:22] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:27] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:32] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:37] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:43] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:48] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:52] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 16:49:52] "POST /api/whatsapp-campaigns/71/pause/ HTTP/1.1" 200 108
+[10/Aug/2026 16:49:52] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 925
+[10/Aug/2026 16:49:54] "POST /api/whatsapp-campaigns/71/resume/ HTTP/1.1" 200 98
+[10/Aug/2026 16:49:54] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 923
+[10/Aug/2026 16:49:59] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:49:59] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:49:59] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:49:59] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:49:59] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:49:59] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+\u274c [1/2] Failed for 918078992875: Gateway timeout for 918078992875.
+[10/Aug/2026 16:50:19] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 922
+[10/Aug/2026 16:50:19] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 922
+[10/Aug/2026 16:50:24] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:50:24] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:50:24] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:50:24] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:50:24] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:50:24] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:50:28] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:50:28] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:50:28] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:50:28] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:50:28] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:50:28] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:51:19] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 922
+[10/Aug/2026 16:51:19] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 922
+[10/Aug/2026 16:52:01] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:52:01] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:52:01] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:52:01] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:52:01] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:52:01] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:52:06] "GET /api/whatsapp-campaigns/70/report/ HTTP/1.1" 200 658
+[10/Aug/2026 16:52:06] "GET /api/whatsapp-campaigns/70/report/ HTTP/1.1" 200 658
+[10/Aug/2026 16:52:10] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:52:10] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:52:10] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 16:52:10] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:52:10] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+[10/Aug/2026 16:52:10] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6531
+\u274c [2/2] Failed for 919947778194: Gateway timeout for 919947778194.
+[10/Aug/2026 16:59:58] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:59:58] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:59:58] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:59:58] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 16:59:58] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:59:58] "GET /api/dashboard/monthly-performance/ HTTP/1.1" 200 1115
+[10/Aug/2026 16:59:58] "GET /api/dashboard/recent-activity/ HTTP/1.1" 200 1443
+[10/Aug/2026 16:59:58] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:59:58] "GET /api/dashboard/stats/ HTTP/1.1" 200 250
+[10/Aug/2026 16:59:58] "GET /api/contacts/?is_verified=true HTTP/1.1" 200 29173
+[10/Aug/2026 16:59:59] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 16:59:59] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 16:59:59] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 17:00:00] "GET /api/marketing-campaigns/ HTTP/1.1" 200 100616
+[10/Aug/2026 17:00:00] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 17:00:00] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:00:00] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:00:00] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:00:00] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:00:00] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 17:00:00] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 17:00:00] "GET /api/tele-campaigns/ HTTP/1.1" 200 14236
+[10/Aug/2026 17:00:04] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 924
+[10/Aug/2026 17:00:04] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 924
+[10/Aug/2026 17:00:07] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:00:07] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:00:07] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:00:07] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:00:07] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 17:00:07] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 17:00:17] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:17] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:22] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:27] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:32] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:37] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:42] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:47] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:52] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:00:57] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:01:02] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+[10/Aug/2026 17:01:07] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+\u274c [1/2] Failed for 918078992875: Gateway timeout for 918078992875.
+[10/Aug/2026 17:01:12] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 925
+[10/Aug/2026 17:01:17] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 925
+[10/Aug/2026 17:01:22] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 925
+[10/Aug/2026 17:01:27] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 925
+[10/Aug/2026 17:02:20] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 925
+[10/Aug/2026 17:03:20] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 926
+\u274c [2/2] Failed for 919947778194: Gateway timeout for 919947778194.
+[10/Aug/2026 17:03:23] "POST /api/whatsapp-campaigns/71/schedule_or_send/ HTTP/1.1" 200 114
+[10/Aug/2026 17:15:57] "GET /api/whatsapp-campaigns/71/report/ HTTP/1.1" 200 924
+[10/Aug/2026 17:15:59] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 17:15:59] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 17:16:49] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:16:49] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:16:49] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:16:49] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:16:49] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 17:16:49] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6533
+[10/Aug/2026 17:16:51] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:16:51] "GET /api/products/?active=true HTTP/1.1" 200 309
+[10/Aug/2026 17:16:51] "GET /api/whatsapp-templates/ HTTP/1.1" 200 1611
+[10/Aug/2026 17:16:51] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:16:51] "GET /api/products/?active=true HTTP/1.1" 200 309
+[10/Aug/2026 17:16:51] "GET /api/whatsapp-templates/ HTTP/1.1" 200 1611
+[10/Aug/2026 17:16:51] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 17:16:52] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 17:17:15] "POST /api/whatsapp-campaigns/ HTTP/1.1" 201 700
+[10/Aug/2026 17:17:16] "POST /api/whatsapp-campaigns/72/add_from_contacts/ HTTP/1.1" 200 94
+\u274c [1/1] Failed for 919961390075: Gateway timeout for 919961390075.
+[10/Aug/2026 17:18:16] "POST /api/whatsapp-campaigns/72/schedule_or_send/ HTTP/1.1" 200 114
+[10/Aug/2026 17:19:05] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 17:19:05] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 17:19:18] "POST /api/whatsapp-accounts/7/disconnect/ HTTP/1.1" 200 114
+[10/Aug/2026 17:19:18] "DELETE /api/whatsapp-accounts/7/ HTTP/1.1" 204 0
+[10/Aug/2026 17:19:18] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 52
+[10/Aug/2026 17:19:30] "POST /api/whatsapp-accounts/ HTTP/1.1" 201 389
+[10/Aug/2026 17:19:30] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 17:19:30] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 17:19:33] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 17:19:37] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 17:19:40] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 83
+[10/Aug/2026 17:19:43] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:19:45] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:19:48] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:19:51] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:19:54] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:19:57] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:20:00] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:20:03] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6849
+[10/Aug/2026 17:20:06] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:09] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:12] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:15] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:18] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:19] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:21] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:25] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 6851
+[10/Aug/2026 17:20:27] "GET /api/whatsapp-accounts/8/qr/ HTTP/1.1" 200 79
+[10/Aug/2026 17:20:29] "GET /api/whatsapp-accounts/ HTTP/1.1" 200 159
+[10/Aug/2026 17:20:30] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:20:30] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:20:30] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:20:30] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:20:30] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6424
+[10/Aug/2026 17:20:30] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6424
+[10/Aug/2026 17:20:34] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:20:34] "GET /api/products/?active=true HTTP/1.1" 200 309
+[10/Aug/2026 17:20:34] "GET /api/whatsapp-templates/ HTTP/1.1" 200 1611
+[10/Aug/2026 17:20:34] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:20:34] "GET /api/products/?active=true HTTP/1.1" 200 309
+[10/Aug/2026 17:20:34] "GET /api/whatsapp-templates/ HTTP/1.1" 200 1611
+[10/Aug/2026 17:20:34] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 17:20:36] "GET /api/contacts/ HTTP/1.1" 200 159703
+[10/Aug/2026 17:21:05] "POST /api/whatsapp-campaigns/ HTTP/1.1" 201 699
+[10/Aug/2026 17:21:05] "POST /api/whatsapp-campaigns/73/add_from_contacts/ HTTP/1.1" 200 94
+[10/Aug/2026 17:21:09] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:21:10] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:21:10] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:21:10] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:21:10] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6482
+[10/Aug/2026 17:21:10] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6482
+[10/Aug/2026 17:21:12] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 655
+[10/Aug/2026 17:21:12] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 655
+[10/Aug/2026 17:21:18] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 655
+[10/Aug/2026 17:21:23] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 655
+[10/Aug/2026 17:21:28] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 655
+[10/Aug/2026 17:21:30] "POST /api/whatsapp-campaigns/73/schedule_or_send/ HTTP/1.1" 200 113
+[10/Aug/2026 17:21:30] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:21:30] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:21:30] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:21:30] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:21:30] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[10/Aug/2026 17:21:30] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[10/Aug/2026 17:21:44] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 697
+[10/Aug/2026 17:21:44] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 697
+[10/Aug/2026 17:22:46] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:22:46] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:22:46] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:22:46] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:22:46] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[10/Aug/2026 17:22:46] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[10/Aug/2026 17:22:49] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 697
+[10/Aug/2026 17:22:49] "GET /api/whatsapp-campaigns/73/report/ HTTP/1.1" 200 697
+[10/Aug/2026 17:22:52] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:22:52] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:22:52] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[10/Aug/2026 17:22:52] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[10/Aug/2026 17:22:52] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[10/Aug/2026 17:22:52] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[11/Aug/2026 05:29:56] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[11/Aug/2026 05:29:56] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[11/Aug/2026 05:29:56] "GET /api/whatsapp-campaigns/get_senders/ HTTP/1.1" 200 146
+[11/Aug/2026 05:29:56] "GET /api/whatsapp-stats/ HTTP/1.1" 200 120
+[11/Aug/2026 05:29:56] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509
+[11/Aug/2026 05:29:57] "GET /api/whatsapp-campaigns/?page=1 HTTP/1.1" 200 6509

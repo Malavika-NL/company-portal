@@ -169,7 +169,7 @@ def find_bdcrm_account(email, company_id, portal_username='', role='member'):
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
-        'Host': '192.168.1.56',
+        'Host': '127.0.0.1',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
@@ -188,7 +188,7 @@ def find_salespie_account(email, company_id, portal_username='', role='member'):
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
-        'Host': '192.168.1.56',
+        'Host': '127.0.0.1',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
@@ -357,7 +357,7 @@ class SSOPreflightView(APIView):
                     'Accept': 'application/json', 'Content-Type': 'application/json',
                     'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
                     'X-Company-ID': str(company_id),
-                    'Host': '192.168.1.56',
+                    'Host': '127.0.0.1',
                 }, method='POST',
             )
             try:
