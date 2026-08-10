@@ -17,7 +17,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from .local_services import ensure_application_services, warm_application_services
+from .local_services import ensure_application_services
 from .models import (
     ApplicationUserMapping,
     Company,
@@ -120,10 +120,15 @@ def marketing_credentials_login(email, password, company_id):
                 return None
         except (TypeError, ValueError):
             return None
-    return str(user_id)
+    return {
+        'id': str(user_id),
+        'email': str(user.get('email') or '').strip().lower() if isinstance(user, dict) else '',
+        'first_name': str(user.get('firstName') or '').strip() if isinstance(user, dict) else '',
+        'last_name': str(user.get('lastName') or '').strip() if isinstance(user, dict) else '',
+    }
 
 
-def ensure_portal_identity(marketing_user_id, company, email=''):
+def ensure_portal_identity(marketing_user_id, company, email='', first_name='', last_name=''):
     """Create the portal-side, passwordless link for a verified Marketing user."""
     profile = PortalProfile.objects.select_related('user').filter(marketing_user_id=marketing_user_id).first()
     if not profile:
@@ -131,7 +136,7 @@ def ensure_portal_identity(marketing_user_id, company, email=''):
         username = f'marketing-{marketing_user_id}'
         user, _ = User.objects.get_or_create(
             username=username,
-            defaults={'is_active': True, 'email': email},
+            defaults={'is_active': True, 'email': email, 'first_name': first_name, 'last_name': last_name},
         )
         if user.has_usable_password():
             user.set_unusable_password()
@@ -140,7 +145,12 @@ def ensure_portal_identity(marketing_user_id, company, email=''):
     normalized_email = str(email or '').strip().lower()
     if normalized_email and profile.user.email != normalized_email:
         profile.user.email = normalized_email
-        profile.user.save(update_fields=['email'])
+    if first_name and profile.user.first_name != first_name:
+        profile.user.first_name = first_name
+    if last_name and profile.user.last_name != last_name:
+        profile.user.last_name = last_name
+    if normalized_email or first_name or last_name:
+        profile.user.save(update_fields=['email', 'first_name', 'last_name'])
     if not profile.is_active or not profile.user.is_active:
         return None, None
     # VBSAI is the trusted company identity provider for this portal. An active
@@ -180,10 +190,10 @@ def find_bdcrm_account(email, company_id, portal_username='', role='member'):
     return str(external_user_id) if external_user_id is not None and not isinstance(external_user_id, (dict, list, bool)) else None
 
 
-def find_salespie_account(email, company_id, portal_username='', role='member'):
+def find_salespie_account(email, company_id, portal_username='', role='member', display_name=''):
     request = Request(settings.SALESPIE_ACCOUNT_LOOKUP_URL, data=json.dumps({
         'email': email, 'company_id': company_id, 'provision': True,
-        'portal_username': portal_username, 'role': role,
+        'portal_username': portal_username, 'role': role, 'display_name': display_name,
     }).encode(), headers={
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
@@ -205,9 +215,6 @@ class CompaniesView(APIView):
 
     def get(self, request):
         ensure_default_companies()
-        # Warm the three connected workspaces as soon as the portal page loads.
-        # This is backgrounded and idempotent, so the company selector stays fast.
-        warm_application_services()
         return Response(list(Company.objects.filter(is_active=True).values('id', 'code', 'name')))
 
 
@@ -259,12 +266,17 @@ class MarketingCredentialsLoginView(APIView):
                 'detail': f'{failed_services} could not be started. Check the Marketing CRM project and try again.',
             }, status=502)
 
-        marketing_user_id = marketing_credentials_login(email, password, company.id)
-        if marketing_user_id is MARKETING_LOGIN_UNAVAILABLE:
+        marketing_user = marketing_credentials_login(email, password, company.id)
+        if marketing_user is MARKETING_LOGIN_UNAVAILABLE:
             return Response({'detail': 'Marketing CRM backend is not running. Start Marketing CRM and try again.'}, status=502)
-        if marketing_user_id is None:
+        if marketing_user is None:
             return Response({'detail': 'Invalid Marketing CRM email or password.'}, status=401)
-        profile, membership = ensure_portal_identity(marketing_user_id, company, email=email)
+        profile, membership = ensure_portal_identity(
+            marketing_user['id'], company,
+            email=marketing_user['email'] or email,
+            first_name=marketing_user['first_name'],
+            last_name=marketing_user['last_name'],
+        )
         if not profile:
             return Response({'detail': 'This Marketing CRM user is inactive.'}, status=403)
         if not membership:
@@ -330,7 +342,6 @@ class WorkspaceView(APIView):
             {'key': 'salespie', 'name': 'SalesPie', 'launch_url': settings.SALESPIE_CRM_URL},
             {'key': 'bdcrm', 'name': 'BDCRM', 'launch_url': settings.BDCRM_URL},
         ]
-        warm_application_services()
         return Response({'company': {'id': membership.company_id, 'code': membership.company.code, 'name': membership.company.name}, 'applications': apps})
 
 
@@ -404,7 +415,10 @@ class SSOLaunchView(APIView):
             # accounts and provisions a passwordless account on first use.
             email = str(request.user.email or '').strip().lower()
             resolved_user_id = (
-                find_salespie_account(email, membership.company_id, request.user.username, membership.role)
+                find_salespie_account(
+                    email, membership.company_id, request.user.username, membership.role,
+                    request.user.get_full_name(),
+                )
                 if application == 'salespie'
                 else find_bdcrm_account(email, membership.company_id, request.user.username, membership.role)
             ) if email else None

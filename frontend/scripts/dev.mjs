@@ -2,8 +2,8 @@ import { createServer } from 'vite';
 import { get } from 'node:http';
 import { createConnection } from 'node:net';
 
-const portalHost = '192.168.1.56';
-const portalPort = 8002;
+const portalHost = process.env.PORTAL_VITE_HOST || '127.0.0.1';
+const portalPort = Number(process.env.PORTAL_VITE_PORT || 8002);
 const portalUrl = `http://${portalHost}:${portalPort}`;
 
 const isPortOpen = () => new Promise((complete) => {
@@ -15,14 +15,36 @@ const isPortOpen = () => new Promise((complete) => {
 });
 
 const isPortalServer = () => new Promise((complete) => {
+  const checkDockerPortal = () => {
+    const rootRequest = get(`${portalUrl}/`, { timeout: 1000 }, (response) => {
+      let body = '';
+      response.setEncoding('utf8');
+      response.on('data', (chunk) => { body += chunk; });
+      response.on('end', () => complete(response.statusCode === 200 && body.includes('id="root"')));
+    });
+    rootRequest.once('timeout', () => { rootRequest.destroy(); complete(false); });
+    rootRequest.once('error', () => complete(false));
+  };
+
   const request = get(`${portalUrl}/__company-portal/status`, { timeout: 1000 }, (response) => {
     let body = '';
     response.setEncoding('utf8');
     response.on('data', (chunk) => { body += chunk; });
-    response.on('end', () => complete(response.statusCode === 200 && body.includes('company-portal')));
+    response.on('end', () => {
+      if (response.statusCode === 200 && body.includes('company-portal')) complete(true);
+      else checkDockerPortal();
+    });
   });
   request.once('timeout', () => { request.destroy(); complete(false); });
-  request.once('error', () => complete(false));
+  request.once('error', checkDockerPortal);
+});
+
+const backendIsRunning = () => new Promise((complete) => {
+  const socket = createConnection({ host: '127.0.0.1', port: 8004 });
+  socket.setTimeout(500);
+  socket.once('connect', () => { socket.destroy(); complete(true); });
+  socket.once('timeout', () => { socket.destroy(); complete(false); });
+  socket.once('error', () => complete(false));
 });
 
 const explainExistingServer = async () => {
@@ -31,13 +53,17 @@ const explainExistingServer = async () => {
     console.log('Open that address in your browser. A second portal server was not started.');
   } else {
     console.log(`\nPort ${portalPort} is being used by another application.`);
-    console.log('Close that application, then run npm run dev again.');
+    console.log('Use npm run dev:local to run a separate local portal on port 8012.');
   }
 };
 
 let server;
 
-if (await isPortOpen()) {
+if (process.env.PORTAL_EXTERNAL_BACKEND === 'true' && !await backendIsRunning()) {
+  console.error('\nThe Docker portal backend is not running on port 8004.');
+  console.error('Run: docker compose up --build backend');
+  process.exitCode = 1;
+} else if (await isPortOpen()) {
   await explainExistingServer();
 } else {
   try {

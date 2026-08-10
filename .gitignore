@@ -38,3 +38,6 @@ backups/
 # --- Django specific ---
 media/
 staticfiles/
+
+# --- Runtime logs ---
+backend/logs/*.log

@@ -40,7 +40,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     host.strip() for host in os.getenv(
         'PORTAL_ALLOWED_HOSTS',
-        '127.0.0.1,localhost',
+        '127.0.0.1,localhost,192.168.1.56',
     ).split(',') if host.strip()
 ]
 
@@ -92,21 +92,14 @@ WSGI_APPLICATION = 'portal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': os.getenv('PORTAL_DATABASE_ENGINE', 'django.db.backends.postgresql'),
-#         'NAME': os.getenv('PORTAL_DATABASE_NAME', 'portal_identity'),
-#         'USER': os.getenv('PORTAL_DATABASE_USER', 'postgres'),
-#         'PASSWORD': os.getenv('PORTAL_DATABASE_PASSWORD', 'admin'),
-#         'HOST': os.getenv('PORTAL_DATABASE_HOST', '127.0.0.1'),
-#         'PORT': os.getenv('PORTAL_DATABASE_PORT', '5432'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': os.getenv('PORTAL_DATABASE_ENGINE', 'django.db.backends.postgresql'),
+        'NAME': os.getenv('PORTAL_DATABASE_NAME', 'portal_identity'),
+        'USER': os.getenv('PORTAL_DATABASE_USER', 'postgres'),
+        'PASSWORD': os.getenv('PORTAL_DATABASE_PASSWORD', 'admin'),
+        'HOST': os.getenv('PORTAL_DATABASE_HOST', '127.0.0.1'),
+        'PORT': os.getenv('PORTAL_DATABASE_PORT', '5432'),
     }
 }
 
@@ -159,7 +152,7 @@ REST_FRAMEWORK = {
 
 PORTAL_SSO_SHARED_SECRET = os.getenv('PORTAL_SSO_SHARED_SECRET', 'change-this-local-shared-secret')
 PORTAL_SSO_CODE_TTL_SECONDS = int(os.getenv('PORTAL_SSO_CODE_TTL_SECONDS', '60'))
-MARKETING_CRM_URL = os.getenv('MARKETING_CRM_URL', 'http://localhost:5173')
+MARKETING_CRM_URL = os.getenv('MARKETING_CRM_URL', 'http://192.168.1.56:5173')
 # Marketing CRM authorization-code provider settings.  The client secret is used
 # only for the portal-to-Marketing token exchange, never in a browser.
 MARKETING_CRM_AUTHORIZE_URL = os.getenv('MARKETING_CRM_AUTHORIZE_URL', f'{MARKETING_CRM_URL}/api/sso/authorize/')
@@ -169,29 +162,39 @@ MARKETING_CRM_CLIENT_SECRET = os.getenv('MARKETING_CRM_CLIENT_SECRET', '')
 MARKETING_CRM_REDIRECT_URI = os.getenv('MARKETING_CRM_REDIRECT_URI', 'http://localhost:8004/api/auth/marketing/callback/')
 MARKETING_CRM_AUTH_STATE_TTL_SECONDS = int(os.getenv('MARKETING_CRM_AUTH_STATE_TTL_SECONDS', '300'))
 MARKETING_CRM_TOKEN_TIMEOUT_SECONDS = int(os.getenv('MARKETING_CRM_TOKEN_TIMEOUT_SECONDS', '10'))
-MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://127.0.0.1:8000/api/login/')
-BDCRM_ACCOUNT_LOOKUP_URL = os.getenv('BDCRM_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8005/api/portal/company-account/')
+MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://127.0.0.1:8003/api/login/')
+BDCRM_ACCOUNT_LOOKUP_URL = os.getenv('BDCRM_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8000/api/portal/company-account/')
 SALESPIE_ACCOUNT_LOOKUP_URL = os.getenv('SALESPIE_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8001/portal/company-account/')
-SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://localhost:5174')
-BDCRM_URL = os.getenv('BDCRM_URL', 'http://localhost:5175')
-PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://localhost:8002')
+SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://192.168.1.56:8001')
+BDCRM_URL = os.getenv('BDCRM_URL', 'http://192.168.1.56:8003')
+PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://192.168.1.56:8002')
 
 PORTAL_AUTO_START_CRMS = env_bool('PORTAL_AUTO_START_CRMS', DEBUG)
-PORTAL_AUTO_START_CRMS_ON_BOOT = env_bool('PORTAL_AUTO_START_CRMS_ON_BOOT', PORTAL_AUTO_START_CRMS)
 PORTAL_AUTO_RESTART_UNHEALTHY_CRMS = env_bool('PORTAL_AUTO_RESTART_UNHEALTHY_CRMS', DEBUG)
 PORTAL_AUTO_START_TIMEOUT_SECONDS = float(os.getenv('PORTAL_AUTO_START_TIMEOUT_SECONDS', '45'))
 PORTAL_SERVICE_HEALTH_CACHE_SECONDS = float(os.getenv('PORTAL_SERVICE_HEALTH_CACHE_SECONDS', '5'))
 
 NPM_COMMAND = os.getenv('PORTAL_NPM_COMMAND', 'npm.cmd' if os.name == 'nt' else 'npm')
+
+# Backend ports for the supervised CRMs.  Overridable so a developer whose
+# machine already has one of these ports taken can remap it from .env instead
+# of editing (and accidentally committing) this file.
+MARKETING_CRM_BACKEND_PORT = int(os.getenv('MARKETING_CRM_BACKEND_PORT', '8003'))
+SALESPIE_BACKEND_PORT = int(os.getenv('SALESPIE_BACKEND_PORT', '8001'))
+BDCRM_BACKEND_PORT = int(os.getenv('BDCRM_BACKEND_PORT', '8000'))
+
 CRM_LOCAL_SERVICES = {
     'marketing_crm': [
         {
             'name': 'Marketing CRM backend',
-            'port': 8000,
-            'health_url': 'http://127.0.0.1:8000/api/login/',
-            'health_method': 'POST',
-            'healthy_statuses': [400, 401, 403],
-            'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8000', '--noreload'],
+            'port': MARKETING_CRM_BACKEND_PORT,
+            # The login endpoint intentionally rejects empty POSTs.  A TCP check
+            # verifies that Django is listening without creating noisy 400 logs.
+            'port_only_health': True,
+            'command': [
+                sys.executable, 'manage.py', 'runserver',
+                f'127.0.0.1:{MARKETING_CRM_BACKEND_PORT}', '--noreload',
+            ],
             'cwd': str(WORKSPACE_HOME / 'email_campaign_project-4' / 'backend'),
             'env': {'DJANGO_SETTINGS_MODULE': 'email_campaign_project.settings'},
         },
@@ -213,11 +216,14 @@ CRM_LOCAL_SERVICES = {
     'salespie': [
         {
             'name': 'SalesPie backend',
-            'port': 8001,
-            'health_url': 'http://127.0.0.1:8001/api/company-portal-login/',
-            'health_method': 'POST',
-            'healthy_statuses': [400, 401, 403],
-            'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8001', '--noreload'],
+            'port': SALESPIE_BACKEND_PORT,
+            # The SSO endpoint intentionally rejects empty POSTs.  A TCP check
+            # verifies that Django is listening without creating noisy 400 logs.
+            'port_only_health': True,
+            'command': [
+                sys.executable, 'manage.py', 'runserver',
+                f'127.0.0.1:{SALESPIE_BACKEND_PORT}', '--noreload',
+            ],
             'cwd': str(WORKSPACE_HOME / 'SalesPie' / 'backend'),
             'env': {'DJANGO_SETTINGS_MODULE': 'spplus.settings'},
         },
@@ -235,11 +241,14 @@ CRM_LOCAL_SERVICES = {
     'bdcrm': [
         {
             'name': 'BDCRM backend',
-            'port': 8005,
-            'health_url': 'http://127.0.0.1:8005/api/auth/company-portal-login/',
-            'health_method': 'POST',
-            'healthy_statuses': [400, 401, 403],
-            'command': [sys.executable, 'manage.py', 'runserver', '127.0.0.1:8005', '--noreload'],
+            'port': BDCRM_BACKEND_PORT,
+            # The SSO endpoint intentionally rejects empty POSTs.  A TCP check
+            # verifies that Django is listening without creating noisy 400 logs.
+            'port_only_health': True,
+            'command': [
+                sys.executable, 'manage.py', 'runserver',
+                f'127.0.0.1:{BDCRM_BACKEND_PORT}', '--noreload',
+            ],
             'cwd': str(WORKSPACE_HOME / 'BDCRM-1' / 'BDCRM' / 'bdcrm'),
             # BDCRM routes Contact queries through its contacts_db alias. Keep
             # it on the existing BDCRM database when the portal supervises it.

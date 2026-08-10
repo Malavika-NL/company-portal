@@ -13,8 +13,6 @@ from django.conf import settings
 
 _application_locks = defaultdict(threading.Lock)
 _healthy_until = {}
-_warm_lock = threading.Lock()
-_last_warm_started = 0.0
 
 
 def _health_cache_key(service):
@@ -152,23 +150,3 @@ def ensure_application_services(application, include_frontend=True):
         return False, ', '.join(failed)
     return True, ''
 
-
-def warm_application_services():
-    """Start all CRM services in the background while the workspace cards render."""
-    global _last_warm_started
-    if not settings.PORTAL_AUTO_START_CRMS:
-        return
-
-    with _warm_lock:
-        now = time.monotonic()
-        if now - _last_warm_started < 10:
-            return
-        _last_warm_started = now
-
-    for application in settings.CRM_LOCAL_SERVICES:
-        threading.Thread(
-            target=ensure_application_services,
-            args=(application,),
-            name=f'portal-warm-{application}',
-            daemon=True,
-        ).start()

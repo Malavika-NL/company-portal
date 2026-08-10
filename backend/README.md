@@ -24,7 +24,8 @@ mappings. It never matches CRM users by email.
    endpoints then send each CRM a short-lived one-time code, which it exchanges
    for the explicitly mapped local user ID.
 
-1. Create PostgreSQL database `portal_identity`.
+1. Create PostgreSQL database `portal_identity` in the local PostgreSQL
+   server used by pgAdmin.
 2. Copy `.env.example` to `.env` and supply the PostgreSQL password.
 3. Set the Marketing client URLs/secret in `.env`, load the environment
    variables, then run `python manage.py migrate`.
@@ -53,20 +54,32 @@ are deployed.
 For normal local development, start the portal from the `frontend` directory:
 
 ```powershell
-npm run dev
+npm.cmd run dev
 ```
 
-This starts the portal at `http://192.168.1.56:8002`, starts the portal backend on
-port 8004, and automatically warms the Marketing CRM, SalesPie, and BDCRM
-backends and frontends. Running the command again reuses the existing portal
-instead of attempting to start a second server on port 8002.
+This starts a local frontend at `http://localhost:8012` and uses the portal
+backend at port 8004. It deliberately does not probe or start CRM login
+endpoints in the background. First start the backend in Docker so it can reach
+the CRM APIs through their Docker networks:
+
+```powershell
+$env:PORTAL_FRONTEND_URL = 'http://localhost:8012'
+docker compose up --build backend
+```
+
+Then, in a second terminal:
+
+```powershell
+cd frontend
+npm.cmd run dev:local
+```
 
 To choose a startup mode, run one of these commands from `frontend`:
 
 | Command | Starts |
 | --- | --- |
-| `npm run dev` or `npm run dev:all` | Company Portal and all three CRMs |
-| `npm run dev:portal` | Company Portal only, without CRM warm-up |
+| `npm.cmd run dev`, `dev:all`, `dev:portal`, or `dev:local` | Local frontend on port 8012 alongside the Docker backend |
+| `npm.cmd run dev:standalone` | Standalone portal on port 8002; use only when all CRM services also run directly on the host |
 | `npm run dev:marketing` | Marketing CRM only |
 | `npm run dev:salespie` | SalesPie only |
 | `npm run dev:bdcrm` | BDCRM only |
