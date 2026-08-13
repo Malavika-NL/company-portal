@@ -589,6 +589,12 @@ h1, h2 { font-family: Manrope, sans-serif; }
 }
 .app-card:hover:not(:disabled) { transform: translateY(-6px); border-color: var(--card-accent, rgba(84,210,237,.55)); box-shadow: 0 24px 45px rgba(0,8,20,.32); }
 .app-card:disabled { cursor: wait; opacity: .68; }
+.app-card-muted { filter: saturate(.4); }
+.app-card-muted:disabled { cursor: not-allowed; opacity: .5; }
+.app-card-muted .app-icon { filter: grayscale(1); opacity: .6; }
+.app-card-muted .connected-badge { color: #7087a0; }
+.app-card-muted .connected-badge svg { color: #46566b; background: rgba(151,183,218,.18); }
+.app-card-muted .open-action { color: #7087a0; }
 .app-marketing_crm { --card-accent: rgba(84,210,237,.58); --card-glow: rgba(41,189,221,.15); }
 .app-salespie { --card-accent: rgba(140,124,246,.6); --card-glow: rgba(124,104,246,.16); }
 .app-bdcrm { --card-accent: rgba(89,214,165,.55); --card-glow: rgba(55,193,142,.14); }

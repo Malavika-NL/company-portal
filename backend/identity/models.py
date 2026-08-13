@@ -48,6 +48,8 @@ class PortalProfile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='portal_profile')
     marketing_user_id = models.CharField(max_length=128, unique=True)
     is_active = models.BooleanField(default=True)
+    # Cached from Marketing's login response (user.app_access)
+    app_access = models.JSONField(null=True, blank=True, default=None)
 
     def __str__(self):
         return f'Marketing CRM user {self.marketing_user_id}'

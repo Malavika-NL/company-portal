@@ -31,6 +31,10 @@ from .models import (
 
 MARKETING_LOGIN_UNAVAILABLE = object()
 
+# Distinguishes "caller has no app_access info" (e.g. the OAuth callback,
+# which does not capture it) from an explicit None/list value.
+APP_ACCESS_UNSPECIFIED = object()
+
 
 def token_payload(user, membership):
     refresh = RefreshToken.for_user(user)
@@ -120,15 +124,27 @@ def marketing_credentials_login(email, password, company_id):
                 return None
         except (TypeError, ValueError):
             return None
+    raw_app_access = user.get('app_access') if isinstance(user, dict) else None
+    if isinstance(raw_app_access, list):
+        app_access = sorted({str(item) for item in raw_app_access if isinstance(item, str)})
+    else:
+        # Key missing (or not a list) -- an older Marketing build that
+        # predates the app_access contract. ensure_portal_identity() treats
+        # None as "unknown", and WorkspaceView falls back to every tile.
+        app_access = None
     return {
         'id': str(user_id),
         'email': str(user.get('email') or '').strip().lower() if isinstance(user, dict) else '',
         'first_name': str(user.get('firstName') or '').strip() if isinstance(user, dict) else '',
         'last_name': str(user.get('lastName') or '').strip() if isinstance(user, dict) else '',
+        'app_access': app_access,
     }
 
 
-def ensure_portal_identity(marketing_user_id, company, email='', first_name='', last_name=''):
+def ensure_portal_identity(
+    marketing_user_id, company, email='', first_name='', last_name='',
+    app_access=APP_ACCESS_UNSPECIFIED,
+):
     """Create the portal-side, passwordless link for a verified Marketing user."""
     profile = PortalProfile.objects.select_related('user').filter(marketing_user_id=marketing_user_id).first()
     if not profile:
@@ -151,6 +167,9 @@ def ensure_portal_identity(marketing_user_id, company, email='', first_name='', 
         profile.user.last_name = last_name
     if normalized_email or first_name or last_name:
         profile.user.save(update_fields=['email', 'first_name', 'last_name'])
+    if app_access is not APP_ACCESS_UNSPECIFIED and profile.app_access != app_access:
+        profile.app_access = app_access
+        profile.save(update_fields=['app_access'])
     if not profile.is_active or not profile.user.is_active:
         return None, None
     # VBSAI is the trusted company identity provider for this portal. An active
@@ -171,42 +190,58 @@ def ensure_portal_identity(marketing_user_id, company, email='', first_name='', 
 
 
 def find_bdcrm_account(email, company_id, portal_username='', role='member'):
+    """Resolve-only lookup. Marketing CRM is the sole provisioning origin
+    (see provision_workspace_accounts() in email_campaign/serializers.py) --
+    this must never create or reactivate a downstream account.
+
+    Returns (external_user_id, is_active) or (None, None) if no account was
+    found or the lookup failed.
+    """
     body = json.dumps({
-        'email': email, 'company_id': company_id, 'provision': True,
+        'email': email, 'company_id': company_id, 'provision': False,
         'portal_username': portal_username, 'role': role,
     }).encode()
     request = Request(settings.BDCRM_ACCOUNT_LOOKUP_URL, data=body, headers={
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
-        'Host': '127.0.0.1',
+        'Host': '192.168.1.56',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
             payload = json.loads(response.read().decode())
     except (HTTPError, URLError, TimeoutError, json.JSONDecodeError, ValueError):
-        return None
+        return None, None
     external_user_id = payload.get('external_user_id') if isinstance(payload, dict) else None
-    return str(external_user_id) if external_user_id is not None and not isinstance(external_user_id, (dict, list, bool)) else None
+    if external_user_id is None or isinstance(external_user_id, (dict, list, bool)):
+        return None, None
+    # A resolve-only 200 always carries is_active now; an absent key means an
+    # older receiver build that only ever matched active accounts.
+    is_active = payload.get('is_active') if isinstance(payload, dict) else None
+    return str(external_user_id), (True if is_active is None else bool(is_active))
 
 
 def find_salespie_account(email, company_id, portal_username='', role='member', display_name=''):
+    """Resolve-only lookup; see find_bdcrm_account() docstring."""
     request = Request(settings.SALESPIE_ACCOUNT_LOOKUP_URL, data=json.dumps({
-        'email': email, 'company_id': company_id, 'provision': True,
+        'email': email, 'company_id': company_id, 'provision': False,
         'portal_username': portal_username, 'role': role, 'display_name': display_name,
     }).encode(), headers={
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
-        'Host': '127.0.0.1',
+        'Host': '192.168.1.56',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
             payload = json.loads(response.read().decode())
     except (HTTPError, URLError, TimeoutError, json.JSONDecodeError, ValueError):
-        return None
+        return None, None
     user_id = payload.get('external_user_id') if isinstance(payload, dict) else None
-    return str(user_id) if user_id is not None and not isinstance(user_id, (dict, list, bool)) else None
+    if user_id is None or isinstance(user_id, (dict, list, bool)):
+        return None, None
+    is_active = payload.get('is_active') if isinstance(payload, dict) else None
+    return str(user_id), (True if is_active is None else bool(is_active))
 
 
 class CompaniesView(APIView):
@@ -276,6 +311,7 @@ class MarketingCredentialsLoginView(APIView):
             email=marketing_user['email'] or email,
             first_name=marketing_user['first_name'],
             last_name=marketing_user['last_name'],
+            app_access=marketing_user['app_access'],
         )
         if not profile:
             return Response({'detail': 'This Marketing CRM user is inactive.'}, status=403)
@@ -337,16 +373,27 @@ class WorkspaceView(APIView):
         membership = Membership.objects.select_related('company').filter(user=request.user, company_id=company_id, is_active=True).first()
         if not membership:
             return Response({'detail': 'Select an authorized company.'}, status=403)
+        profile = PortalProfile.objects.filter(user=request.user, is_active=True).first()
+        app_access = profile.app_access if profile else None
+        
         apps = [
-            {'key': 'marketing_crm', 'name': 'Marketing CRM', 'launch_url': settings.MARKETING_CRM_URL},
-            {'key': 'salespie', 'name': 'SalesPie', 'launch_url': settings.SALESPIE_CRM_URL},
-            {'key': 'bdcrm', 'name': 'BDCRM', 'launch_url': settings.BDCRM_URL},
+            {'key': 'marketing_crm', 'name': 'Marketing CRM', 'launch_url': settings.MARKETING_CRM_URL, 'entitled': True},
+            {
+                'key': 'salespie', 'name': 'SalesPie', 'launch_url': settings.SALESPIE_CRM_URL,
+                'entitled': app_access is None or 'salespie' in app_access,
+            },
+            {
+                'key': 'bdcrm', 'name': 'BDCRM', 'launch_url': settings.BDCRM_URL,
+                'entitled': app_access is None or 'bdcrm' in app_access,
+            },
         ]
         return Response({'company': {'id': membership.company_id, 'code': membership.company.code, 'name': membership.company.name}, 'applications': apps})
 
 
 class SSOPreflightView(APIView):
-    """Check downstream SSO credentials without consuming or creating a login."""
+    """Report whether the signed-in user is entitled to each downstream CRM.
+
+    """
 
     def get(self, request):
         company_id = request.auth.get('company_id') if request.auth else None
@@ -356,11 +403,18 @@ class SSOPreflightView(APIView):
         if not membership:
             return Response({'detail': 'Select an authorized company.'}, status=403)
 
+        profile = PortalProfile.objects.filter(user=request.user, is_active=True).first()
+        app_access = profile.app_access if profile else None
+
         result = {}
         for application, target_url in (
             ('salespie', settings.SALESPIE_ACCOUNT_LOOKUP_URL),
             ('bdcrm', settings.BDCRM_ACCOUNT_LOOKUP_URL),
         ):
+            if app_access is not None and application not in app_access:
+                result[application] = {'status': 'not_entitled'}
+                continue
+
             probe = Request(
                 target_url,
                 data=json.dumps({'email': request.user.email, 'company_id': company_id, 'provision': False}).encode(),
@@ -368,20 +422,39 @@ class SSOPreflightView(APIView):
                     'Accept': 'application/json', 'Content-Type': 'application/json',
                     'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
                     'X-Company-ID': str(company_id),
-                    'Host': '127.0.0.1',
+                    'Host': '192.168.1.56',
                 }, method='POST',
             )
             try:
-                with urlopen(probe, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS):
-                    result[application] = {'ready': True}
+                with urlopen(probe, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
+                    payload = json.loads(response.read().decode())
+                # A resolve-only 200 always carries is_active now; an absent
+                # key means an older receiver build that only matched active
+                # accounts.
+                is_active = payload.get('is_active') if isinstance(payload, dict) else None
+                if is_active is not False:
+                    result[application] = {'status': 'entitled'}
+                elif app_access is not None:
+                    # Marketing granted this app but the downstream account is
+                    # switched off -- a provisioning gap, not a missing grant.
+                    result[application] = {'status': 'not_provisioned'}
+                else:
+                    result[application] = {'status': 'not_entitled'}
             except HTTPError as exc:
-                # 404 only means this user has not been provisioned yet; the
-                # protected Portal-to-CRM credential was accepted.
-                result[application] = {'ready': exc.code == 404, 'status': exc.code}
-            except (URLError, TimeoutError, ValueError):
-                result[application] = {'ready': False, 'status': 'unreachable'}
-        healthy = all(item['ready'] for item in result.values())
-        return Response({'ready': healthy, 'applications': result}, status=200 if healthy else 503)
+                if exc.code != 404:
+                    result[application] = {'status': 'unreachable'}
+                elif app_access is not None:
+                    # Entitled in Marketing, but no downstream row exists yet.
+                    result[application] = {'status': 'not_provisioned'}
+                else:
+                    result[application] = {'status': 'not_entitled'}
+            except (URLError, TimeoutError, ValueError, json.JSONDecodeError):
+                result[application] = {'status': 'unreachable'}
+
+        # A user entitled to one CRM but not another is a normal state, not a
+        # failure -- 503 is reserved for every probe having failed outright.
+        all_unreachable = all(item['status'] == 'unreachable' for item in result.values())
+        return Response({'ready': not all_unreachable, 'applications': result}, status=503 if all_unreachable else 200)
 
 
 class SSOLaunchView(APIView):
@@ -402,39 +475,49 @@ class SSOLaunchView(APIView):
         if application == 'marketing_crm':
             linked = PortalProfile.objects.filter(user=request.user, is_active=True).exists()
         else:
-            mapping = ApplicationUserMapping.objects.filter(
-                user=request.user,
-                company=membership.company,
-                application=application,
-                is_active=True,
-            ).first()
-            external_user_id = mapping.external_user_id if mapping else None
-
-            # Each downstream CRM is keyed by the verified Marketing email.
-            # Resolve it on every launch: this repairs renamed/deactivated local
-            # accounts and provisions a passwordless account on first use.
-            email = str(request.user.email or '').strip().lower()
-            resolved_user_id = (
-                find_salespie_account(
-                    email, membership.company_id, request.user.username, membership.role,
-                    request.user.get_full_name(),
-                )
-                if application == 'salespie'
-                else find_bdcrm_account(email, membership.company_id, request.user.username, membership.role)
-            ) if email else None
-            external_user_id = resolved_user_id or external_user_id
-            if external_user_id:
-                ApplicationUserMapping.objects.update_or_create(
+            profile = PortalProfile.objects.filter(user=request.user, is_active=True).first()
+            app_access = profile.app_access if profile else None
+            if app_access is not None and application not in app_access:
+                
+                linked = False
+            else:
+                mapping = ApplicationUserMapping.objects.filter(
                     user=request.user,
                     company=membership.company,
                     application=application,
-                    defaults={'external_user_id': external_user_id, 'is_active': True},
-                )
-            linked = bool(external_user_id)
+                    is_active=True,
+                ).first()
+                external_user_id = mapping.external_user_id if mapping else None
+
+                
+                email = str(request.user.email or '').strip().lower()
+                resolved_user_id, resolved_is_active = (
+                    find_salespie_account(
+                        email, membership.company_id, request.user.username, membership.role,
+                        request.user.get_full_name(),
+                    )
+                    if application == 'salespie'
+                    else find_bdcrm_account(email, membership.company_id, request.user.username, membership.role)
+                ) if email else (None, None)
+
+                if resolved_user_id is not None and not resolved_is_active:
+                    
+                    if mapping:
+                        ApplicationUserMapping.objects.filter(pk=mapping.pk).update(is_active=False)
+                    external_user_id = None
+                elif resolved_user_id is not None:
+                    external_user_id = resolved_user_id
+                    ApplicationUserMapping.objects.update_or_create(
+                        user=request.user,
+                        company=membership.company,
+                        application=application,
+                        defaults={'external_user_id': external_user_id, 'is_active': True},
+                    )
+                linked = bool(external_user_id)
         if not linked:
             return Response({
                 'code': 'ACCOUNT_NOT_LINKED',
-                'detail': f'No active {application} account uses your Marketing CRM email address.',
+                'detail': 'No access. Contact your Marketing CRM administrator to enable this application.',
             }, status=403)
         raw = secrets.token_urlsafe(32)
         SSOCode.objects.create(

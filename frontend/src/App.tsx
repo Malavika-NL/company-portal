@@ -21,7 +21,9 @@ import {
 } from 'lucide-react';
 import { api, Company, Session, session } from './api';
 
-type Application = { key: string; name: string; launch_url: string };
+type Application = { key: string; name: string; launch_url: string; entitled?: boolean };
+type TileState = 'entitled' | 'not_entitled' | 'not_provisioned' | 'unreachable' | 'checking';
+const DOWNSTREAM_STATUSES: TileState[] = ['entitled', 'not_entitled', 'not_provisioned', 'unreachable'];
 
 const applicationDetails: Record<string, { description: string; label: string }> = {
   marketing_crm: {
@@ -56,6 +58,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [launchingApp, setLaunchingApp] = useState<string | null>(null);
   const [active, setActive] = useState<Session | null>(() => session.get());
+  const [tileStatus, setTileStatus] = useState<Record<string, TileState>>({});
 
   useEffect(() => {
     let cancelled = false;
@@ -135,6 +138,44 @@ export default function App() {
     return () => links.forEach((link) => link.remove());
   }, [apps]);
 
+  useEffect(() => {
+    if (!apps.length) { setTileStatus({}); return; }
+    setTileStatus(Object.fromEntries(
+      apps.map((app) => [
+        app.key,
+        app.entitled === false ? 'not_entitled' : app.key === 'marketing_crm' ? 'entitled' : 'checking',
+      ]),
+    ));
+
+    let cancelled = false;
+    api('/api/portal/sso/preflight/')
+      .then(async (response) => {
+        const data = await response.json().catch(() => ({}));
+        if (cancelled || !data.applications) return;
+        setTileStatus((current) => {
+          const next = { ...current };
+          for (const [key, info] of Object.entries<{ status: string }>(data.applications)) {
+            next[key] = DOWNSTREAM_STATUSES.includes(info.status as TileState)
+              ? (info.status as TileState)
+              : 'unreachable';
+          }
+          return next;
+        });
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setTileStatus((current) => {
+          const next = { ...current };
+          for (const app of apps) {
+            if (app.key !== 'marketing_crm' && app.entitled !== false) next[app.key] = 'unreachable';
+          }
+          return next;
+        });
+      });
+
+    return () => { cancelled = true; };
+  }, [apps]);
+
   const openLogin = (company: Company) => {
     setError('');
     setPassword('');
@@ -177,7 +218,7 @@ export default function App() {
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data.launch_url) {
         throw new Error(data.code === 'ACCOUNT_NOT_LINKED'
-          ? 'Your Marketing CRM email is not linked to an account in this CRM.'
+          ? 'No access — contact your Marketing CRM administrator.'
           : data.detail || 'Unable to open CRM.');
       }
       window.location.assign(data.launch_url);
@@ -185,6 +226,15 @@ export default function App() {
       setError(reason instanceof Error ? reason.message : 'Unable to open CRM.');
       setLaunchingApp(null);
     }
+  };
+
+  const badgeLabel = (key: string) => {
+    const state = tileStatus[key];
+    if (state === 'entitled') return 'Connected';
+    if (state === 'not_entitled') return 'No access';
+    if (state === 'not_provisioned') return 'Setup pending';
+    if (state === 'unreachable') return 'Unavailable';
+    return 'Checking…';
   };
 
   const appIcon = (key: string) => key === 'marketing_crm'
@@ -269,23 +319,24 @@ export default function App() {
                   description: 'Open your connected business workspace.',
                   label: 'Connected application',
                 };
+                const muted = app.entitled === false;
                 return (
                   <button
-                    className={`app-card app-${app.key}`}
+                    className={`app-card app-${app.key}${muted ? ' app-card-muted' : ''}`}
                     key={app.key}
-                    disabled={!!launchingApp}
-                    onClick={() => launch(app.key)}
+                    disabled={muted || !!launchingApp}
+                    onClick={() => { if (!muted) launch(app.key); }}
                   >
                     <div className="app-card-top">
                       <span className="app-icon">{appIcon(app.key)}</span>
-                      <span className="connected-badge"><Check size={12} /> Connected</span>
+                      <span className="connected-badge"><Check size={12} /> {badgeLabel(app.key)}</span>
                     </div>
                     <span className="app-label">{details.label}</span>
                     <h2>{app.name}</h2>
                     <p>{details.description}</p>
                     <span className="open-action">
-                      {launchingApp === app.key ? 'Opening workspace...' : 'Open workspace'}
-                      {launchingApp !== app.key && <ArrowRight size={17} />}
+                      {muted ? 'Access not enabled' : launchingApp === app.key ? 'Opening workspace...' : 'Open workspace'}
+                      {!muted && launchingApp !== app.key && <ArrowRight size={17} />}
                     </span>
                   </button>
                 );
