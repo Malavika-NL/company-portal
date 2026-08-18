@@ -57,7 +57,16 @@ export default function App() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [launchingApp, setLaunchingApp] = useState<string | null>(null);
-  const [active, setActive] = useState<Session | null>(() => session.get());
+  const [active, setActive] = useState<Session | null>(() => {
+    // A direct visit to the Portal address is always a fresh entry point.
+    // Do not restore a previously selected company and bypass the company
+    // chooser into the CRM-card workspace.
+    if (window.location.pathname === '/') {
+      session.clear();
+      return null;
+    }
+    return session.get();
+  });
   const [tileStatus, setTileStatus] = useState<Record<string, TileState>>({});
 
   useEffect(() => {

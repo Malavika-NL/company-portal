@@ -145,11 +145,19 @@ def ensure_portal_identity(
     marketing_user_id, company, email='', first_name='', last_name='',
     app_access=APP_ACCESS_UNSPECIFIED,
 ):
-    """Create the portal-side, passwordless link for a verified Marketing user."""
-    profile = PortalProfile.objects.select_related('user').filter(marketing_user_id=marketing_user_id).first()
+    """Create a passwordless identity inside the selected company only.
+
+    A successful CRM authentication is sufficient to use the selected
+    company.  Membership is retained as the portal's internal company/role
+    record, but it is created automatically; administrators no longer need
+    to pre-provision it before a user can sign in.
+    """
+    profile = PortalProfile.objects.select_related('user').filter(
+        company=company, marketing_user_id=marketing_user_id,
+    ).first()
     if not profile:
         User = get_user_model()
-        username = f'marketing-{marketing_user_id}'
+        username = f'marketing-{company.pk}-{marketing_user_id}'
         user, _ = User.objects.get_or_create(
             username=username,
             defaults={'is_active': True, 'email': email, 'first_name': first_name, 'last_name': last_name},
@@ -157,7 +165,11 @@ def ensure_portal_identity(
         if user.has_usable_password():
             user.set_unusable_password()
             user.save(update_fields=['password'])
-        profile = PortalProfile.objects.create(user=user, marketing_user_id=marketing_user_id)
+        profile = PortalProfile.objects.create(
+            user=user, company=company, marketing_user_id=marketing_user_id,
+        )
+    # These are user fields only, held on the company-scoped local identity so
+    # downstream CRM account resolution does not need a cross-company lookup.
     normalized_email = str(email or '').strip().lower()
     if normalized_email and profile.user.email != normalized_email:
         profile.user.email = normalized_email
@@ -172,24 +184,20 @@ def ensure_portal_identity(
         profile.save(update_fields=['app_access'])
     if not profile.is_active or not profile.user.is_active:
         return None, None
-    # VBSAI is the trusted company identity provider for this portal. An active
-    # VBSAI user may select a portal company on first sign-in; the membership
-    # is created then, so no separate portal/CRM account setup is required.
-    membership = Membership.objects.filter(
+    membership, created = Membership.objects.get_or_create(
         user=profile.user,
         company=company,
-        is_active=True,
-    ).first()
-    if not membership and normalized_email.endswith('@vbsai.com'):
-        membership, _ = Membership.objects.update_or_create(
-            user=profile.user,
-            company=company,
-            defaults={'role': 'member', 'is_active': True},
-        )
+        defaults={'role': 'user', 'is_active': True},
+    )
+    # A user who can successfully authenticate with the CRM must not remain
+    # blocked by a stale, manually-disabled portal membership.
+    if not membership.is_active:
+        membership.is_active = True
+        membership.save(update_fields=['is_active'])
     return profile, membership
 
 
-def find_bdcrm_account(email, company_id, portal_username='', role='member'):
+def find_bdcrm_account(email, company_id, portal_username='', role='user'):
     """Resolve-only lookup. Marketing CRM is the sole provisioning origin
     (see provision_workspace_accounts() in email_campaign/serializers.py) --
     this must never create or reactivate a downstream account.
@@ -205,7 +213,7 @@ def find_bdcrm_account(email, company_id, portal_username='', role='member'):
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
-        'Host': '192.168.1.56',
+        'Host': '192.168.1.94',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
@@ -221,7 +229,7 @@ def find_bdcrm_account(email, company_id, portal_username='', role='member'):
     return str(external_user_id), (True if is_active is None else bool(is_active))
 
 
-def find_salespie_account(email, company_id, portal_username='', role='member', display_name=''):
+def find_salespie_account(email, company_id, portal_username='', role='user', display_name=''):
     """Resolve-only lookup; see find_bdcrm_account() docstring."""
     request = Request(settings.SALESPIE_ACCOUNT_LOOKUP_URL, data=json.dumps({
         'email': email, 'company_id': company_id, 'provision': False,
@@ -230,7 +238,7 @@ def find_salespie_account(email, company_id, portal_username='', role='member', 
         'Accept': 'application/json', 'Content-Type': 'application/json',
         'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
         'X-Company-ID': str(company_id),
-        'Host': '192.168.1.56',
+        'Host': '192.168.1.94',
     }, method='POST')
     try:
         with urlopen(request, timeout=settings.MARKETING_CRM_TOKEN_TIMEOUT_SECONDS) as response:
@@ -373,7 +381,7 @@ class WorkspaceView(APIView):
         membership = Membership.objects.select_related('company').filter(user=request.user, company_id=company_id, is_active=True).first()
         if not membership:
             return Response({'detail': 'Select an authorized company.'}, status=403)
-        profile = PortalProfile.objects.filter(user=request.user, is_active=True).first()
+        profile = PortalProfile.objects.filter(user=request.user, company_id=company_id, is_active=True).first()
         app_access = profile.app_access if profile else None
         
         apps = [
@@ -403,7 +411,7 @@ class SSOPreflightView(APIView):
         if not membership:
             return Response({'detail': 'Select an authorized company.'}, status=403)
 
-        profile = PortalProfile.objects.filter(user=request.user, is_active=True).first()
+        profile = PortalProfile.objects.filter(user=request.user, company_id=company_id, is_active=True).first()
         app_access = profile.app_access if profile else None
 
         result = {}
@@ -422,7 +430,7 @@ class SSOPreflightView(APIView):
                     'Accept': 'application/json', 'Content-Type': 'application/json',
                     'X-Portal-SSO-Secret': settings.PORTAL_SSO_SHARED_SECRET,
                     'X-Company-ID': str(company_id),
-                    'Host': '192.168.1.56',
+                    'Host': '192.168.1.94',
                 }, method='POST',
             )
             try:
@@ -473,9 +481,13 @@ class SSOLaunchView(APIView):
                 'detail': f'{failed_services} could not be started. Check the project folder and try again.',
             }, status=502)
         if application == 'marketing_crm':
-            linked = PortalProfile.objects.filter(user=request.user, is_active=True).exists()
+            linked = PortalProfile.objects.filter(
+                user=request.user, company=membership.company, is_active=True,
+            ).exists()
         else:
-            profile = PortalProfile.objects.filter(user=request.user, is_active=True).first()
+            profile = PortalProfile.objects.filter(
+                user=request.user, company=membership.company, is_active=True,
+            ).first()
             app_access = profile.app_access if profile else None
             if app_access is not None and application not in app_access:
                 
@@ -544,7 +556,9 @@ class SSOExchangeView(APIView):
             if not handoff:
                 return Response({'detail': 'Code expired or already used.'}, status=401)
             if app == 'marketing_crm':
-                profile = PortalProfile.objects.filter(user_id=handoff.user_id, is_active=True).first()
+                profile = PortalProfile.objects.filter(
+                    user_id=handoff.user_id, company_id=handoff.company_id, is_active=True,
+                ).first()
                 external_user_id = profile.marketing_user_id if profile else None
             else:
                 mapping = ApplicationUserMapping.objects.filter(

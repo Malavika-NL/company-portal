@@ -29,10 +29,10 @@ def ensure_default_companies():
 
 
 class Membership(models.Model):
-    ROLE_CHOICES = [('platform_admin', 'Platform admin'), ('admin', 'Admin'), ('member', 'Member')]
+    ROLE_CHOICES = [('platform_admin', 'Platform admin'), ('admin', 'Admin'), ('user', 'User')]
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='portal_memberships')
     company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='memberships')
-    role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='member')
+    role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='user')
     is_active = models.BooleanField(default=True)
 
     class Meta:
@@ -40,19 +40,30 @@ class Membership(models.Model):
 
 
 class PortalProfile(models.Model):
-    """Portal-side identity linked to one immutable Marketing CRM user ID.
+    """Company-scoped portal identity linked to a Marketing CRM local user ID.
 
-    This deliberately contains no password, password hash, or Marketing email.
-    Marketing CRM is the only credential authority.
+    The company scope is a hard tenancy boundary: IDs from NL Technologies
+    and VBS are never treated as the same portal identity.  This deliberately
+    contains no password, password hash, or CRM contact data.
     """
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='portal_profile')
-    marketing_user_id = models.CharField(max_length=128, unique=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='portal_profiles')
+    # Null only preserves unscoped legacy rows. They are never used at runtime.
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, null=True, blank=True, related_name='portal_profiles')
+    marketing_user_id = models.CharField(max_length=128)
     is_active = models.BooleanField(default=True)
     # Cached from Marketing's login response (user.app_access)
     app_access = models.JSONField(null=True, blank=True, default=None)
 
     def __str__(self):
         return f'Marketing CRM user {self.marketing_user_id}'
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['company', 'marketing_user_id'],
+                name='unique_company_marketing_user',
+            ),
+        ]
 
 
 class ApplicationUserMapping(models.Model):

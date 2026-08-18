@@ -17,7 +17,9 @@ class MarketingProviderLoginTests(TestCase):
         self.user = User.objects.create_user(username='portal-identity', password='legacy-password')
         self.user.set_unusable_password()
         self.user.save(update_fields=['password'])
-        self.profile = PortalProfile.objects.create(user=self.user, marketing_user_id='15')
+        self.profile = PortalProfile.objects.create(
+            user=self.user, company=self.company, marketing_user_id='15',
+        )
         Membership.objects.create(user=self.user, company=self.company)
 
     def test_companies_endpoint_initializes_default_companies(self):
@@ -39,7 +41,10 @@ class MarketingProviderLoginTests(TestCase):
         self.assertEqual(MarketingAuthorizationState.objects.count(), 1)
 
     @patch('identity.views.ensure_application_services', return_value=(True, ''))
-    @patch('identity.views.marketing_credentials_login', return_value='15')
+    @patch('identity.views.marketing_credentials_login', return_value={
+        'id': '15', 'email': 'member@example.com', 'first_name': 'Member',
+        'last_name': 'Example', 'app_access': None,
+    })
     def test_common_portal_login_uses_marketing_crm_credentials(self, _login, _services):
         response = self.client.post('/api/auth/marketing/login/', {
             'company_code': self.company.code,
@@ -81,12 +86,18 @@ class MarketingProviderLoginTests(TestCase):
         self.assertIn('company_code=nl-technologies-test', response['Location'])
 
     @patch('identity.views.marketing_token_exchange', return_value='unmapped-marketing-id')
-    def test_callback_creates_a_portal_link_for_a_verified_marketing_user(self, _exchange):
+    def test_callback_does_not_grant_company_access_to_an_unassigned_user(self, _exchange):
         start = self.client.post('/api/auth/marketing/start/', {'company_code': self.company.code}, format='json')
         state = start.data['authorization_url'].split('state=', 1)[1]
         response = self.client.get('/api/auth/marketing/callback/', {'code': 'provider-code', 'state': state})
-        self.assertEqual(response.status_code, 302)
-        self.assertTrue(PortalProfile.objects.filter(marketing_user_id='unmapped-marketing-id').exists())
+        self.assertEqual(response.status_code, 403)
+        self.assertTrue(PortalProfile.objects.filter(
+            company=self.company, marketing_user_id='unmapped-marketing-id',
+        ).exists())
+        self.assertFalse(Membership.objects.filter(
+            company=self.company,
+            user__portal_profiles__marketing_user_id='unmapped-marketing-id',
+        ).exists())
 
     def test_workspace_always_returns_all_three_tiles_with_entitled_flags(self):
         self.profile.app_access = ['salespie']
@@ -131,6 +142,19 @@ class MarketingProviderLoginTests(TestCase):
 
         self.profile.refresh_from_db()
         self.assertEqual(self.profile.app_access, ['salespie'])
+
+    def test_identity_is_scoped_to_company_and_auto_grants_membership(self):
+        vbs = Company.objects.create(code='vbs-test', name='VBS Test')
+        profile, membership = ensure_portal_identity(
+            '15', vbs, email='employee@vbsai.com', app_access=[],
+        )
+
+        self.assertIsNotNone(membership)
+        self.assertNotEqual(profile.user_id, self.profile.user_id)
+        self.assertTrue(Membership.objects.filter(
+            user=profile.user, company=vbs, is_active=True,
+        ).exists())
+        self.assertEqual(profile.user.email, 'employee@vbsai.com')
 
     @patch('identity.views.urlopen')
     def test_marketing_credentials_login_falls_back_when_app_access_absent(self, mock_urlopen):

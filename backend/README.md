@@ -1,12 +1,27 @@
 # Company Portal backend
 
 This is a separate identity and SSO service. Marketing CRM is the password
-authority: the portal never accepts, stores, copies, or verifies normal-user
-passwords, hashes, Marketing emails, or Marketing user records.
+authority: the portal never persists or verifies normal-user passwords or
+password hashes. User identity fields used for SSO account resolution are held
+only inside their selected company scope.
 
-The portal stores a `PortalProfile.marketing_user_id` (the immutable Marketing
-local user ID), company memberships, and explicit SalesPie/BDCRM local user-ID
-mappings. It never matches CRM users by email.
+The portal stores a company-scoped `PortalProfile.marketing_user_id` (the
+immutable local user ID), company memberships, and explicit SalesPie/BDCRM
+local user-ID mappings. It never matches CRM users by email.
+
+## NL Technologies / VBS data boundary
+
+NL Technologies and VBS are independent companies and tenants. This service
+does not provide a cross-company data-sync API: it scopes portal identities,
+memberships, SSO codes, and downstream user-ID mappings to one company.
+Selecting a company cannot create access to the other company, including for
+users with the same email address or local CRM ID.
+
+Any direct CRM integration must enforce this allowlist: only NL Technologies
+CRM contacts and explicitly approved NL Technologies user records may be sent
+to VBS CRM. No other CRM entities, records, attachments, or settings may cross
+the company boundary. Contact/user synchronization itself is not implemented
+by this portal and must remain in the CRM integration service.
 
 ## Marketing CRM provider contract
 
