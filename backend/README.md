@@ -66,6 +66,26 @@ Marketing CRM, SalesPie, and BDCRM URLs and shared SSO secret as environment
 variables on the `backend` service when those separately maintained services
 are deployed.
 
+### LAN deployments
+
+Each Portal installation must use its *own* LAN address for the browser return
+URLs. Before starting the local installation, set these values in the
+repository-root `.env` file (the file is intentionally not committed):
+
+```dotenv
+PORTAL_FRONTEND_URL=http://192.168.1.56:8002
+PORTAL_ALLOWED_HOSTS=127.0.0.1,localhost,192.168.1.56,backend,company-portal-api
+MARKETING_CRM_REDIRECT_URI=http://192.168.1.56:8004/api/auth/marketing/callback/
+MARKETING_CRM_URL=http://192.168.1.56:8000
+SALESPIE_CRM_URL=http://192.168.1.56:8001
+BDCRM_URL=http://192.168.1.56:8003
+```
+
+On the server, use its own address instead (for example `192.168.1.94`), not
+the workstation address. The Marketing CRM authorization server must also
+allow each configured `MARKETING_CRM_REDIRECT_URI`; add both callback URLs to
+its client redirect-URI allowlist when users can log in through both systems.
+
 For normal local development, start the portal from the `frontend` directory:
 
 ```powershell
