@@ -58,10 +58,10 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [launchingApp, setLaunchingApp] = useState<string | null>(null);
   const [active, setActive] = useState<Session | null>(() => {
-    // A direct visit to the Portal address is always a fresh entry point.
-    // Do not restore a previously selected company and bypass the company
-    // chooser into the CRM-card workspace.
-    if (window.location.pathname === '/') {
+    // A manual visit to the Portal starts a new sign-in flow.  CRM logout
+    // redirects include ?workspace=1, which is the only route allowed to
+    // restore the portal session and show the CRM buttons again.
+    if (new URLSearchParams(window.location.search).get('workspace') !== '1') {
       session.clear();
       return null;
     }

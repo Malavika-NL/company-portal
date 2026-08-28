@@ -474,13 +474,13 @@ class SSOLaunchView(APIView):
         membership = Membership.objects.select_related('company').filter(user=request.user, company_id=company_id, is_active=True).first()
         if not membership:
             return Response({'detail': 'Select an authorized company.'}, status=403)
-        if application == 'marketing_crm':
-            # Keep the user on the same LAN host used to access the Portal.
-            # Only the service port changes: Portal 8002 -> Marketing CRM 8000.
-            host = request.get_host().rsplit(':', 1)[0]
-            url = f'{request.scheme}://{host}:8000'
-        else:
-            url = {'salespie': settings.SALESPIE_CRM_URL, 'bdcrm': settings.BDCRM_URL}[application]
+        # Keep the browser on the same LAN host used to access the Portal.
+        # The CRM containers are published on fixed ports of that host.  Using
+        # a configured fallback URL here sent users on another workstation to
+        # the old 192.168.1.94 address instead of their selected CRM.
+        host = request.get_host().rsplit(':', 1)[0]
+        crm_ports = {'marketing_crm': 8000, 'salespie': 8001, 'bdcrm': 8003}
+        url = f'{request.scheme}://{host}:{crm_ports[application]}'
         services_ready, failed_services = ensure_application_services(application)
         if not services_ready:
             return Response({

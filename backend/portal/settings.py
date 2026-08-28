@@ -40,7 +40,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     host.strip() for host in os.getenv(
         'PORTAL_ALLOWED_HOSTS',
-        '127.0.0.1,localhost,192.168.1.94',
+        '127.0.0.1,localhost,192.168.1.56',
     ).split(',') if host.strip()
 ]
 
@@ -152,22 +152,22 @@ REST_FRAMEWORK = {
 
 PORTAL_SSO_SHARED_SECRET = os.getenv('PORTAL_SSO_SHARED_SECRET', 'change-this-local-shared-secret')
 PORTAL_SSO_CODE_TTL_SECONDS = int(os.getenv('PORTAL_SSO_CODE_TTL_SECONDS', '60'))
-MARKETING_CRM_URL = os.getenv('MARKETING_CRM_URL', 'http://192.168.1.94:8000')
+MARKETING_CRM_URL = os.getenv('MARKETING_CRM_URL', 'http://192.168.1.56:8000')
 # Marketing CRM authorization-code provider settings.  The client secret is used
 # only for the portal-to-Marketing token exchange, never in a browser.
 MARKETING_CRM_AUTHORIZE_URL = os.getenv('MARKETING_CRM_AUTHORIZE_URL', f'{MARKETING_CRM_URL}/api/sso/authorize/')
 MARKETING_CRM_TOKEN_URL = os.getenv('MARKETING_CRM_TOKEN_URL', f'{MARKETING_CRM_URL}/api/sso/token/')
 MARKETING_CRM_CLIENT_ID = os.getenv('MARKETING_CRM_CLIENT_ID', 'company-portal')
 MARKETING_CRM_CLIENT_SECRET = os.getenv('MARKETING_CRM_CLIENT_SECRET', '')
-MARKETING_CRM_REDIRECT_URI = os.getenv('MARKETING_CRM_REDIRECT_URI', 'http://192.168.1.94:8004/api/auth/marketing/callback/')
+MARKETING_CRM_REDIRECT_URI = os.getenv('MARKETING_CRM_REDIRECT_URI', 'http://192.168.1.56:8004/api/auth/marketing/callback/')
 MARKETING_CRM_AUTH_STATE_TTL_SECONDS = int(os.getenv('MARKETING_CRM_AUTH_STATE_TTL_SECONDS', '300'))
 MARKETING_CRM_TOKEN_TIMEOUT_SECONDS = int(os.getenv('MARKETING_CRM_TOKEN_TIMEOUT_SECONDS', '10'))
-MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://127.0.0.1:8003/api/login/')
+MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://192.168.1.56:8003/api/login/')
 BDCRM_ACCOUNT_LOOKUP_URL = os.getenv('BDCRM_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8000/api/portal/company-account/')
 SALESPIE_ACCOUNT_LOOKUP_URL = os.getenv('SALESPIE_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8001/portal/company-account/')
-SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://192.168.1.94:8001')
-BDCRM_URL = os.getenv('BDCRM_URL', 'http://192.168.1.94:8003')
-PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://192.168.1.94:8002')
+SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://192.168.1.56:8001')
+BDCRM_URL = os.getenv('BDCRM_URL', 'http://192.168.1.56:8003')
+PORTAL_FRONTEND_URL = os.getenv('PORTAL_FRONTEND_URL', 'http://192.168.1.56:8002')
 
 PORTAL_AUTO_START_CRMS = env_bool('PORTAL_AUTO_START_CRMS', DEBUG)
 PORTAL_AUTO_RESTART_UNHEALTHY_CRMS = env_bool('PORTAL_AUTO_RESTART_UNHEALTHY_CRMS', DEBUG)

@@ -67,6 +67,7 @@ class MarketingProviderLoginTests(TestCase):
         response = self.client.post('/api/portal/sso/launch/', {'application': 'salespie'}, format='json')
 
         self.assertEqual(response.status_code, 200)
+        self.assertTrue(response.data['launch_url'].startswith('http://testserver:8001?sso_code='))
         self.assertIn('sso_code=', response.data['launch_url'])
         self.assertTrue(ApplicationUserMapping.objects.filter(
             user=self.user,
