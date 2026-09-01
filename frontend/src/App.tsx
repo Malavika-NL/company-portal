@@ -48,6 +48,18 @@ const companyInitials = (name: string) => name
   .join('')
   .toUpperCase();
 
+const companyLogos: Record<string, string> = {
+  'nl-technologies': '/nl_technologies.png',
+  'vbs': '/vbs-logo-transparent.png',
+};
+
+const getCompanyLogo = (code?: string) => code ? companyLogos[code] || '/nl_technologies.png' : '/nl_technologies.png';
+const companyIcon = (company: Company) => company.code === 'nl-technologies'
+  ? 'NL'
+  : company.code === 'vbs'
+    ? 'VBS'
+    : companyInitials(company.name);
+
 export default function App() {
   const [companies, setCompanies] = useState<Company[]>([]);
   const [apps, setApps] = useState<Application[]>([]);
@@ -93,6 +105,40 @@ export default function App() {
     void loadCompanies();
     return () => { cancelled = true; };
   }, []);
+
+  useEffect(() => {
+    if (!companies.length) return;
+
+    const syncCompanyFromAddress = (event?: PopStateEvent) => {
+      const search = new URLSearchParams(window.location.search);
+      const companyCode = search.get('company');
+
+      // CRM logout uses location.replace(...?workspace=1). Its preceding
+      // entry is often another identical portal URL, so Back otherwise looks
+      // like it has done nothing. Restore the company-selection screen when
+      // the user navigates back to that legacy portal entry.
+      if (event && search.get('workspace') === '1' && event.state?.workspace !== true) {
+        session.clear();
+        setActive(null);
+        setApps([]);
+        setSelectedCompany(null);
+        setError('');
+        return;
+      }
+
+      if (event && search.get('workspace') !== '1') {
+        session.clear();
+        setActive(null);
+        setApps([]);
+      }
+      setSelectedCompany(companyCode ? companies.find((company) => company.code === companyCode) || null : null);
+      setError('');
+    };
+
+    syncCompanyFromAddress();
+    window.addEventListener('popstate', syncCompanyFromAddress);
+    return () => window.removeEventListener('popstate', syncCompanyFromAddress);
+  }, [companies]);
 
   useEffect(() => {
     if (!active?.company) return;
@@ -189,6 +235,19 @@ export default function App() {
     setError('');
     setPassword('');
     setSelectedCompany(company);
+    const address = new URL(window.location.href);
+    address.searchParams.set('company', company.code);
+    window.history.pushState({ companyCode: company.code }, '', address);
+  };
+
+  const returnToCompanySelection = () => {
+    const address = new URL(window.location.href);
+    if (address.searchParams.has('company')) {
+      window.history.back();
+      return;
+    }
+    setError('');
+    setSelectedCompany(null);
   };
 
   const login = async (event: FormEvent) => {
@@ -208,6 +267,10 @@ export default function App() {
       setActive(data);
       setPassword('');
       setSelectedCompany(null);
+      const address = new URL(window.location.href);
+      address.searchParams.delete('company');
+      address.searchParams.delete('workspace');
+      window.history.replaceState({ portalSelection: false }, '', address);
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : 'Unable to sign in.');
     } finally {
@@ -263,6 +326,8 @@ export default function App() {
     setLaunchingApp(null);
   };
 
+  const displayedCompanyCode = (active?.company?.code || selectedCompany?.code || '').toLowerCase();
+
   return (
     <div className="portal-shell">
       <div className="ambient ambient-one" />
@@ -271,9 +336,14 @@ export default function App() {
       <header className="portal-header">
         <div className="header-inner">
           <div className="brand-lockup">
-            <span className="brand-mark"><Building2 size={21} aria-hidden="true" /></span>
+            {(active?.company || selectedCompany) && (
+              <img
+                src={getCompanyLogo(displayedCompanyCode)}
+                alt={displayedCompanyCode === 'vbs' ? 'VBS' : 'NL Technologies'}
+                className={`brand-logo ${displayedCompanyCode === 'vbs' ? 'brand-logo-vbs' : ''}`}
+              />
+            )}
             <span className="brand-copy">
-              <strong>Company Portal</strong>
               <small>Unified CRM access</small>
             </span>
           </div>
@@ -360,11 +430,11 @@ export default function App() {
         ) : selectedCompany ? (
           <section className="auth-layout">
             <div className="auth-context">
-              <button className="back-button" onClick={() => { setError(''); setSelectedCompany(null); }}>
+              <button className="back-button" onClick={returnToCompanySelection}>
                 <ArrowLeft size={16} /> Change company
               </button>
               <div className="company-identity">
-                <span className="company-monogram">{companyInitials(selectedCompany.name)}</span>
+                <span className="company-monogram">{companyIcon(selectedCompany)}</span>
                 <div><small>Signing in to</small><strong>{selectedCompany.name}</strong></div>
               </div>
               <h1>One login.<br />Every CRM.</h1>
@@ -431,7 +501,7 @@ export default function App() {
         ) : (
           <section className="selection-layout">
             <div className="welcome-copy">
-              <div className="hero-meta"><span>NL Technologies</span><i /> <span>Company access portal</span></div>
+              <div className="hero-meta"><span>Company access portal</span></div>
               <p className="eyebrow"><span className="eyebrow-spark"><Sparkles size={13} /></span> Unified workspace access</p>
               <h1>Every team.<br /><span>One secure</span> starting point.</h1>
               <p className="lead-copy">
@@ -478,7 +548,7 @@ export default function App() {
                 {companies.map((company) => (
                   <button className="company-option" key={company.code} onClick={() => openLogin(company)}>
                     <span className="company-option-top">
-                      <span className="company-monogram">{companyInitials(company.name)}</span>
+                      <span className="company-monogram">{companyIcon(company)}</span>
                       <span className="option-arrow"><ArrowRight size={18} /></span>
                     </span>
                     <span className="company-option-copy">
@@ -496,7 +566,7 @@ export default function App() {
       </main>
 
       <footer className="portal-footer">
-        <span>NL Technologies</span>
+        <img src={getCompanyLogo(active?.company?.code)} alt="Company Logo" className="footer-logo" />
         <span>Secure company access portal</span>
       </footer>
     </div>
