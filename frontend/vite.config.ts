@@ -88,6 +88,13 @@ export default defineConfig({
     host: '0.0.0.0',
     port: portalFrontendPort,
     strictPort: true,
-    proxy: { '/api': { target: `http://127.0.0.1:${portalBackendPort}`, changeOrigin: true } },
+    proxy: {
+      '/api': {
+        target: `http://127.0.0.1:${portalBackendPort}`,
+        changeOrigin: true,
+        // Let the backend construct CRM launch URLs for the browser's LAN host.
+        xfwd: true,
+      },
+    },
   },
 });

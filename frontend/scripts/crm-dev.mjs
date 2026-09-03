@@ -14,7 +14,7 @@ const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 const crms = {
   marketing: {
     name: 'Marketing CRM',
-    backend: { port: 8003, cwd: resolve(workspaceHome, 'email_campaign_project-4', 'backend'), args: ['manage.py', 'runserver', '127.0.0.1:8003', '--noreload'] },
+    backend: { port: 8000, cwd: resolve(workspaceHome, 'email_campaign_project-4', 'backend'), args: ['manage.py', 'runserver', '127.0.0.1:8000', '--noreload'] },
     frontend: { port: 5173, cwd: resolve(workspaceHome, 'email_campaign_project-4', 'frontend') },
   },
   salespie: {
@@ -24,7 +24,7 @@ const crms = {
   },
   bdcrm: {
     name: 'BDCRM',
-    backend: { port: 8000, cwd: resolve(workspaceHome, 'BDCRM-1', 'BDCRM', 'bdcrm'), args: ['manage.py', 'runserver', '127.0.0.1:8000', '--noreload'] },
+    backend: { port: 8003, cwd: resolve(workspaceHome, 'BDCRM-1', 'BDCRM', 'bdcrm'), args: ['manage.py', 'runserver', '127.0.0.1:8003', '--noreload'] },
     frontend: { port: 5175, cwd: resolve(workspaceHome, 'BDCRM-1', 'frontend') },
   },
 };

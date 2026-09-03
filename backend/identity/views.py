@@ -478,10 +478,20 @@ class SSOLaunchView(APIView):
         # The CRM containers are published on fixed ports of that host.  Using
         # a configured fallback URL here sent users on another workstation to
         # the old 192.168.1.94 address instead of their selected CRM.
-        host = request.get_host().rsplit(':', 1)[0]
+        # Vite proxies browser requests to this backend during local/LAN use.
+        # Prefer its forwarded browser host so a workstation at (for example)
+        # 192.168.x.x is never redirected to its own 127.0.0.1 CRM ports.
+        forwarded_host = request.META.get('HTTP_X_FORWARDED_HOST', '').split(',')[0].strip()
+        host = (forwarded_host or request.get_host()).rsplit(':', 1)[0]
         crm_ports = {'marketing_crm': 8000, 'salespie': 8001, 'bdcrm': 8003}
         url = f'{request.scheme}://{host}:{crm_ports[application]}'
-        services_ready, failed_services = ensure_application_services(application)
+        # The browser is sent to the CRM's Django/static service (ports 8000,
+        # 8001, and 8003), not its Vite development server. Starting and
+        # waiting for a Vite process here made every SSO switch unnecessarily
+        # slow even though the destination CRM was already ready.
+        services_ready, failed_services = ensure_application_services(
+            application, include_frontend=False,
+        )
         if not services_ready:
             return Response({
                 'detail': f'{failed_services} could not be started. Check the project folder and try again.',

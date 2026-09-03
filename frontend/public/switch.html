@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opening CRM…</title>
+    <style>
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f6f9fc; color: #17324d; font: 600 16px/1.5 system-ui, sans-serif; }
+    </style>
+  </head>
+  <body>Opening your CRM…
+    <script>
+      (() => {
+        const applications = new Set(['marketing_crm', 'salespie', 'bdcrm']);
+        const application = new URLSearchParams(location.search).get('open');
+        const sessionKey = 'company_portal_session';
+        const returnToLogin = () => location.replace(`${location.origin}/`);
+
+        if (!applications.has(application)) { returnToLogin(); return; }
+
+        let current;
+        try { current = JSON.parse(localStorage.getItem(sessionKey) || 'null'); } catch { current = null; }
+        if (!current || !current.access || !current.refresh) { returnToLogin(); return; }
+
+        const requestLaunch = (access) => fetch('/api/portal/sso/launch/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${access}` },
+          body: JSON.stringify({ application }),
+        });
+
+        const refresh = async () => {
+          const response = await fetch('/api/auth/token/refresh/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ refresh: current.refresh }),
+          });
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok || !data.access) return false;
+          current = { ...current, access: data.access, refresh: data.refresh || current.refresh };
+          localStorage.setItem(sessionKey, JSON.stringify(current));
+          return true;
+        };
+
+        const launch = async () => {
+          let response = await requestLaunch(current.access);
+          if (response.status === 401 && await refresh()) response = await requestLaunch(current.access);
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok || !data.launch_url) returnToLogin();
+          // Replace the temporary handoff entry so Back returns to the CRM
+          // the user was working in, rather than a loading page.
+          location.replace(data.launch_url);
+        };
+
+        launch().catch(returnToLogin);
+      })();
+    </script>
+  </body>
+</html>

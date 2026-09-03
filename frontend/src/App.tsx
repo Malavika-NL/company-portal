@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import {
   Activity,
   ArrowLeft,
@@ -40,6 +40,12 @@ const applicationDetails: Record<string, { description: string; label: string }>
   },
 };
 
+const crmNames: Record<string, string> = {
+  marketing_crm: 'Marketing CRM',
+  salespie: 'SalesPie',
+  bdcrm: 'BDCRM',
+};
+
 const companyInitials = (name: string) => name
   .split(/\s+/)
   .filter(Boolean)
@@ -69,6 +75,10 @@ export default function App() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [launchingApp, setLaunchingApp] = useState<string | null>(null);
+  const [autoLaunchTarget, setAutoLaunchTarget] = useState(() =>
+    new URLSearchParams(window.location.search).get('open'),
+  );
+  const handledRequestedCrm = useRef(false);
   const [active, setActive] = useState<Session | null>(() => {
     // A manual visit to the Portal starts a new sign-in flow.  CRM logout
     // redirects include ?workspace=1, which is the only route allowed to
@@ -122,6 +132,8 @@ export default function App() {
         setActive(null);
         setApps([]);
         setSelectedCompany(null);
+        setEmail('');
+        setPassword('');
         setError('');
         return;
       }
@@ -130,6 +142,8 @@ export default function App() {
         session.clear();
         setActive(null);
         setApps([]);
+        setEmail('');
+        setPassword('');
       }
       setSelectedCompany(companyCode ? companies.find((company) => company.code === companyCode) || null : null);
       setError('');
@@ -139,6 +153,23 @@ export default function App() {
     window.addEventListener('popstate', syncCompanyFromAddress);
     return () => window.removeEventListener('popstate', syncCompanyFromAddress);
   }, [companies]);
+
+  useEffect(() => {
+    const clearRestoredLogin = (event: PageTransitionEvent) => {
+      // Back/Forward Cache can restore form fields as they were typed. Do not
+      // expose a previous user's email or password on a public login screen.
+      if (!event.persisted || new URLSearchParams(window.location.search).get('workspace') === '1') return;
+      session.clear();
+      setActive(null);
+      setApps([]);
+      setEmail('');
+      setPassword('');
+      setError('');
+    };
+
+    window.addEventListener('pageshow', clearRestoredLogin);
+    return () => window.removeEventListener('pageshow', clearRestoredLogin);
+  }, []);
 
   useEffect(() => {
     if (!active?.company) return;
@@ -247,6 +278,8 @@ export default function App() {
       return;
     }
     setError('');
+    setEmail('');
+    setPassword('');
     setSelectedCompany(null);
   };
 
@@ -265,6 +298,7 @@ export default function App() {
       if (!response.ok) throw new Error(data.detail || 'Unable to sign in.');
       session.set(data);
       setActive(data);
+      setEmail('');
       setPassword('');
       setSelectedCompany(null);
       const address = new URL(window.location.href);
@@ -326,6 +360,27 @@ export default function App() {
     setLaunchingApp(null);
   };
 
+  useEffect(() => {
+    const requestedCrm = autoLaunchTarget;
+    if (handledRequestedCrm.current || !requestedCrm || !apps.length || !active?.company) return;
+
+    handledRequestedCrm.current = true;
+    const requestedApp = apps.find((app) => app.key === requestedCrm && app.entitled !== false);
+    const address = new URL(window.location.href);
+    address.searchParams.delete('open');
+    window.history.replaceState({ workspace: true }, '', address);
+
+    if (requestedApp) {
+      // Clear this transient state before leaving. A browser Back restore must
+      // show the workspace, not a stale handoff loader.
+      setAutoLaunchTarget(null);
+      void launch(requestedApp.key);
+    } else {
+      setAutoLaunchTarget(null);
+      setError('This CRM is not available for your account.');
+    }
+  }, [active?.company, apps, autoLaunchTarget]);
+
   const displayedCompanyCode = (active?.company?.code || selectedCompany?.code || '').toLowerCase();
 
   return (
@@ -375,7 +430,21 @@ export default function App() {
           </div>
         )}
 
-        {active?.company ? (
+        {active?.company ? autoLaunchTarget ? (
+          <section className="workspace-view" aria-live="polite">
+            <div className="workspace-heading">
+              <div>
+                <p className="eyebrow"><Sparkles size={14} /> Secure CRM handoff</p>
+                <h1>Opening {crmNames[autoLaunchTarget] || 'your CRM'}…</h1>
+                <p className="lead-copy">Your secure session is being transferred automatically.</p>
+              </div>
+              <div className="connection-card">
+                <CircleCheck size={22} />
+                <div><strong>Single sign-on active</strong><span>No additional login is needed</span></div>
+              </div>
+            </div>
+          </section>
+        ) : (
           <section className="workspace-view">
             <div className="workspace-heading">
               <div>
@@ -427,7 +496,8 @@ export default function App() {
               Your Marketing CRM identity is securely shared with each connected workspace.
             </div>
           </section>
-        ) : selectedCompany ? (
+        )
+        : selectedCompany ? (
           <section className="auth-layout">
             <div className="auth-context">
               <button className="back-button" onClick={returnToCompanySelection}>

@@ -162,8 +162,8 @@ MARKETING_CRM_CLIENT_SECRET = os.getenv('MARKETING_CRM_CLIENT_SECRET', '')
 MARKETING_CRM_REDIRECT_URI = os.getenv('MARKETING_CRM_REDIRECT_URI', 'http://192.168.1.56:8004/api/auth/marketing/callback/')
 MARKETING_CRM_AUTH_STATE_TTL_SECONDS = int(os.getenv('MARKETING_CRM_AUTH_STATE_TTL_SECONDS', '300'))
 MARKETING_CRM_TOKEN_TIMEOUT_SECONDS = int(os.getenv('MARKETING_CRM_TOKEN_TIMEOUT_SECONDS', '10'))
-MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://192.168.1.56:8003/api/login/')
-BDCRM_ACCOUNT_LOOKUP_URL = os.getenv('BDCRM_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8000/api/portal/company-account/')
+MARKETING_CRM_LOGIN_URL = os.getenv('MARKETING_CRM_LOGIN_URL', 'http://127.0.0.1:8000/api/login/')
+BDCRM_ACCOUNT_LOOKUP_URL = os.getenv('BDCRM_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8003/api/portal/company-account/')
 SALESPIE_ACCOUNT_LOOKUP_URL = os.getenv('SALESPIE_ACCOUNT_LOOKUP_URL', 'http://127.0.0.1:8001/portal/company-account/')
 SALESPIE_CRM_URL = os.getenv('SALESPIE_CRM_URL', 'http://192.168.1.56:8001')
 BDCRM_URL = os.getenv('BDCRM_URL', 'http://192.168.1.56:8003')
@@ -179,9 +179,9 @@ NPM_COMMAND = os.getenv('PORTAL_NPM_COMMAND', 'npm.cmd' if os.name == 'nt' else 
 # Backend ports for the supervised CRMs.  Overridable so a developer whose
 # machine already has one of these ports taken can remap it from .env instead
 # of editing (and accidentally committing) this file.
-MARKETING_CRM_BACKEND_PORT = int(os.getenv('MARKETING_CRM_BACKEND_PORT', '8003'))
+MARKETING_CRM_BACKEND_PORT = int(os.getenv('MARKETING_CRM_BACKEND_PORT', '8000'))
 SALESPIE_BACKEND_PORT = int(os.getenv('SALESPIE_BACKEND_PORT', '8001'))
-BDCRM_BACKEND_PORT = int(os.getenv('BDCRM_BACKEND_PORT', '8000'))
+BDCRM_BACKEND_PORT = int(os.getenv('BDCRM_BACKEND_PORT', '8003'))
 
 CRM_LOCAL_SERVICES = {
     'marketing_crm': [
