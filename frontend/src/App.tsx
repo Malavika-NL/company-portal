@@ -398,9 +398,6 @@ export default function App() {
                 className={`brand-logo ${displayedCompanyCode === 'vbs' ? 'brand-logo-vbs' : ''}`}
               />
             )}
-            <span className="brand-copy">
-              <small>Unified CRM access</small>
-            </span>
           </div>
 
           <div className="header-actions">
