@@ -388,7 +388,7 @@ export default function App() {
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
 
-      <header className="portal-header">
+      <header className={`portal-header ${(selectedCompany || active?.company) ? 'company-brand-header' : ''}`}>
         <div className="header-inner">
           <div className="brand-lockup">
             {(active?.company || selectedCompany) && (
@@ -612,8 +612,13 @@ export default function App() {
               <div className="company-panel-note"><span><ShieldCheck size={15} /></span><p>One verified identity gives you access to every authorized workspace.</p></div>
               <div className="company-list">
                 {companies.length === 0 && !error && [1, 2].map((item) => <div className="company-option skeleton" key={item} />)}
-                {companies.map((company) => (
-                  <button className="company-option" key={company.code} onClick={() => openLogin(company)}>
+                {companies.map((company, index) => (
+                  <button
+                    className="company-option company-option-enter"
+                    key={company.code}
+                    onClick={() => openLogin(company)}
+                    style={{ animationDelay: `${140 + index * 110}ms` }}
+                  >
                     <span className="company-option-top">
                       <span className="company-monogram">{companyIcon(company)}</span>
                       <span className="option-arrow"><ArrowRight size={18} /></span>

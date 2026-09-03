@@ -81,6 +81,15 @@ button { -webkit-tap-highlight-color: transparent; }
   justify-content: space-between;
 }
 
+/* On company-specific screens, anchor the company logo to the actual left
+   edge of the portal instead of the centered content column. */
+.company-brand-header .header-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 28px;
+}
+
 .brand-lockup,
 .header-actions,
 .company-chip,
@@ -658,6 +667,7 @@ h1, h2 { font-family: Manrope, sans-serif; }
   .header-inner,
   .portal-main,
   .portal-footer { width: min(100% - 28px, 1180px); }
+  .company-brand-header .header-inner { width: 100%; padding: 0 14px; }
   .portal-header { height: 72px; }
   .brand-copy small,
   .secure-chip,
@@ -713,5 +723,47 @@ h1, h2 { font-family: Manrope, sans-serif; }
 .hero-assurance { display: flex; align-items: center; gap: 9px; margin-top: 14px; color: #869fb8; font-size: 11px; line-height: 1.4; }.hero-assurance svg { flex: 0 0 auto; color: var(--success); }.hero-assurance strong { color: #bad1e7; font-weight: 700; }
 .company-panel { padding: 37px; }.company-panel-note { display: flex; align-items: center; gap: 10px; margin: 0 0 20px; padding: 10px 11px; border: 1px solid rgba(84,210,237,.14); border-radius: 11px; background: rgba(84,210,237,.055); }.company-panel-note span { display: grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 8px; color: var(--cyan); background: rgba(84,210,237,.1); }.company-panel-note p { margin: 0; color: #9ab5ce; font-size: 11px; line-height: 1.45; }
 .company-option { min-height: 182px; padding: 19px; border-radius: 16px; }.company-option:hover { transform: translateY(-5px) scale(1.015); }
+
+/* Company selection motion: a calm animated backdrop, staged entry, and a
+   little feedback around the organization cards. */
+.ambient-one { animation: ambient-drift-one 13s ease-in-out infinite alternate; }
+.ambient-two { animation: ambient-drift-two 16s ease-in-out infinite alternate; }
+.company-panel { animation: panel-arrive .6s cubic-bezier(.2,.8,.2,1) both; }
+.company-option-enter { opacity: 0; animation: company-card-arrive .5s cubic-bezier(.2,.8,.2,1) both; }
+.company-option::before {
+  content: '';
+  position: absolute;
+  inset: -70% -30%;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 43%, rgba(158, 240, 255, .2) 50%, transparent 57%);
+  transform: translateX(-55%) rotate(8deg);
+}
+.company-option:hover::before { opacity: 1; animation: card-sheen .7s ease-out; }
+.company-option:hover .company-monogram { animation: monogram-pop .45s cubic-bezier(.2,.8,.2,1); }
+.panel-orbit { animation: orbit-breathe 5s ease-in-out infinite alternate; }
+.orbit-two { animation-delay: -2.5s; }
+
+@keyframes ambient-drift-one {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(90px, 55px, 0) scale(1.16); }
+}
+@keyframes ambient-drift-two {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-75px, -45px, 0) scale(1.13); }
+}
+@keyframes panel-arrive {
+  from { opacity: 0; transform: translateY(18px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes company-card-arrive {
+  from { opacity: 0; transform: translateY(16px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes card-sheen { to { transform: translateX(55%) rotate(8deg); } }
+@keyframes monogram-pop {
+  50% { transform: scale(1.1) rotate(-4deg); box-shadow: 0 8px 22px rgba(84,210,237,.24), inset 0 1px 0 rgba(255,255,255,.14); }
+}
+@keyframes orbit-breathe { to { transform: scale(1.08) rotate(8deg); opacity: .58; } }
 @media (max-width: 900px) { .selection-layout { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .header-status { display: none; } .company-panel { padding: 24px 18px; } .hero-meta { margin-bottom: 18px; } }
